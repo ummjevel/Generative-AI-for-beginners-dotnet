@@ -1,0 +1,14 @@
+{
+    "containerApps.deploymentConfigurations": [
+        {
+            "label": "pythonparksinformationserver",
+            "type": "AcrDockerBuildRequest",
+            "dockerfilePath": "dockerfile",
+            "srcPath": ".",
+            "envPath": ".env",
+            "resourceGroup": "labs",
+            "containerApp": "pythonparksinformationserver",
+            "containerRegistry": "labs741749"
+        }
+    ]
+}
