@@ -55,6 +55,7 @@ dotnet user-secrets set "tenantid" "<AzureSubscriptionTenantId>"
 
 ### Main Flow Layout
 
+```mermaid
 flowchart TD
     A[Start] --> B[Create Agent Client]
     B --> C[Upload Files and Get File IDs]
@@ -70,6 +71,7 @@ flowchart TD
     L --> M[Sort Messages by Creation Date]
     M --> N[Display Messages and Annotations]
     N --> O[End]
+```
 
 ### References
 For more detailed information, refer to the [Azure AI Projects Documentation](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.projects-readme?context=%2Fazure%2Fai-services%2Fagents%2Fcontext%2Fcontext&view=azure-dotnet-preview).
