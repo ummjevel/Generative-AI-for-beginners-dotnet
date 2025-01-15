@@ -4,15 +4,6 @@ using Azure.Identity;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Concurrent;
 
-// This project requires the following user secrets
-// - Azure AI Foundry Project connection string
-//   At the moment, it should be in the format "<HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>"
-// - Azure tenant id
-// set them using the following commands:
-// dotnet user-secrets init
-// dotnet user-secrets set "connectionstring" "<HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>"
-// dotnet user-secrets set "tenantid" "<AzureSubscriptionTenantId>"
-
 // Create Agent Client
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 var options = new DefaultAzureCredentialOptions

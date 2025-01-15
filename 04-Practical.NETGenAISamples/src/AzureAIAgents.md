@@ -9,11 +9,23 @@ The `Program.cs` file demonstrates how to use the Azure AI Projects SDK to creat
 - Azure AI Foundry Project connection string
 - Azure tenant ID
 
+This project requires the following user secrets
+- Azure AI Foundry Project connection string
+  At the moment, it should be in the format "<HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>"
+ - Azure tenant id
+
+Set them using the following commands:
+
+```bash
+dotnet user-secrets init
+dotnet user-secrets set "connectionstring" "<HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>"
+dotnet user-secrets set "tenantid" "<AzureSubscriptionTenantId>"
+``bash
+
 ### Steps
 
 1. **Configuration and Secrets Setup**
-   - The project requires user secrets for the Azure AI Foundry Project connection string and Azure tenant ID.
-   - Initialize user secrets and set the required secrets using the following commands:
+   - Read user secrets
      
 2. **Create Agent Client**
    - Build the configuration and set up the `DefaultAzureCredentialOptions` with the tenant ID.
@@ -42,6 +54,22 @@ The `Program.cs` file demonstrates how to use the Azure AI Projects SDK to creat
    - Display the response messages, including any annotations and images.
 
 ### Main Flow Layout
+
+flowchart TD
+    A[Start] --> B[Create Agent Client]
+    B --> C[Upload Files and Get File IDs]
+    C --> D[Create Vector Store with Files]
+    D --> E[Create FileSearchToolResource]
+    E --> F[Create Agent with Tool Resources]
+    F --> G[Create Thread for Communication]
+    G --> H[User Question]
+    H --> I[Agent Task to Answer Question]
+    I --> J[Run the Agent Thread]
+    J --> K[Wait for Response]
+    K --> L[Show the Response]
+    L --> M[Sort Messages by Creation Date]
+    M --> N[Display Messages and Annotations]
+    N --> O[End]
 
 ### References
 For more detailed information, refer to the [Azure AI Projects Documentation](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.projects-readme?context=%2Fazure%2Fai-services%2Fagents%2Fcontext%2Fcontext&view=azure-dotnet-preview).
