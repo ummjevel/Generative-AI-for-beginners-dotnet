@@ -13,8 +13,8 @@ This project requires the following user secrets
 - Azure AI Foundry Project connection string.
   At the moment, it should be in the format:
 
-  ```
-  <HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>
+  ```  
+   <HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName> 
   ```
 
 - Azure tenant id
