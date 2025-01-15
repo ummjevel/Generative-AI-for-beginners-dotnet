@@ -20,7 +20,7 @@ Set them using the following commands:
 dotnet user-secrets init
 dotnet user-secrets set "connectionstring" "<HostName>;<AzureSubscriptionId>;<ResourceGroup>;<ProjectName>"
 dotnet user-secrets set "tenantid" "<AzureSubscriptionTenantId>"
-``bash
+```
 
 ### Steps
 
