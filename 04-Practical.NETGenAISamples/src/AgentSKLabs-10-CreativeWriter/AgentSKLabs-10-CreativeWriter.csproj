@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>AgentSKLabs_04_FileSearch</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <UserSecretsId>4d9d76d2-c77b-4f69-99b1-dc43838a12d4</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>AgentSKLabs_10_CreativeWriter</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>28df85ff-c4b7-4cd7-8012-ec02f3e8124b</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="..\SKShared\AgentServiceHandler.cs" Link="AgentServiceHandler.cs" />
-    <Compile Include="..\SKShared\ObjectExtensions.cs" Link="ObjectExtensions.cs" />
-  </ItemGroup>
+	<ItemGroup>
+	  <Compile Include="..\SKShared\AgentServiceHandler.cs" Link="AgentServiceHandler.cs" />
+	  <Compile Include="..\SKShared\KernelServiceHandler.cs" Link="KernelServiceHandler.cs" />
+	  <Compile Include="..\SKShared\ObjectExtensions.cs" Link="ObjectExtensions.cs" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Azure.Identity" Version="1.13.2" />
@@ -38,28 +39,5 @@
 		<PackageReference Include="Microsoft.SemanticKernel.Experimental.Agents" Version="1.18.2-alpha" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Update="sampledocs\Benefit_Options.pdf">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\CampingProducts.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\Contoso Camping Chair.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\Contoso LED Camping Lantern.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\Contoso Portable Camping Stove.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\Contoso Sleeping Bag.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="sampledocs\Contoso Waterproof Tent.md">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	</ItemGroup>
 
 </Project>

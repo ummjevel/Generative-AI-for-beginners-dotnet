@@ -10,6 +10,7 @@ using System.ClientModel;
 using OpenAI.Assistants;
 using OpenAI.Chat;
 using Microsoft.Extensions.Configuration;
+using AgentLabs;
 
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 var apiKey = config["AZURE_OPENAI_APIKEY"];
@@ -67,8 +68,8 @@ string threadId =
 // Respond to user input
 try
 {
-    await InvokeAgentAsync("I want to go camping, but it seems that it maybe raining, what products do you suggest to go camping on rainy days?");
-    await InvokeAgentAsync("what healthcare benefits are part of the Northwind Health plans?");
+    await AgentServiceHandler.InvokeAgentAsync(agent, threadId, "I want to go camping, but it seems that it maybe raining, what products do you suggest to go camping on rainy days?");
+    await AgentServiceHandler.InvokeAgentAsync(agent, threadId, "what healthcare benefits are part of the Northwind Health plans?");
 }
 finally
 {
@@ -81,68 +82,3 @@ finally
         await fileClient.DeleteFileAsync(fileInfo);
 }
 
-// Local function to invoke agent and display the conversation messages.
-async Task InvokeAgentAsync(string input)
-{
-    Microsoft.SemanticKernel.ChatMessageContent message = new(AuthorRole.User, input);
-    await agent.AddChatMessageAsync(threadId, message);
-    WriteAgentChatMessage(message);
-
-    await foreach (Microsoft.SemanticKernel.ChatMessageContent response in agent.InvokeAsync(threadId))
-    {
-        WriteAgentChatMessage(response);
-    }
-}
-void WriteAgentChatMessage(Microsoft.SemanticKernel.ChatMessageContent message)
-{
-    // Include ChatMessageContent.AuthorName in output, if present.
-    string authorExpression = message.Role == AuthorRole.User ? string.Empty : $" - {message.AuthorName ?? "*"}";
-
-    // Include TextContent (via ChatMessageContent.Content), if present.
-    string contentExpression = string.IsNullOrWhiteSpace(message.Content) ? string.Empty : message.Content;
-    bool isCode = message.Metadata?.ContainsKey(OpenAIAssistantAgent.CodeInterpreterMetadataKey) ?? false;
-    string codeMarker = isCode ? "\n  [CODE]\n" : " ";
-    Console.WriteLine($"\n# {message.Role}{authorExpression}:{codeMarker}{contentExpression}");
-
-    // Provide visibility for inner content (that isn't TextContent).
-    foreach (KernelContent item in message.Items)
-    {
-        if (item is AnnotationContent annotation)
-        {
-            Console.WriteLine($"  [{item.GetType().Name}] {annotation.Quote}: File #{annotation.FileId}");
-        }
-        else if (item is FileReferenceContent fileReference)
-        {
-            Console.WriteLine($"  [{item.GetType().Name}] File #{fileReference.FileId}");
-        }
-        else if (item is ImageContent image)
-        {
-            Console.WriteLine($"  [{item.GetType().Name}] {image.Uri?.ToString() ?? image.DataUri ?? $"{image.Data?.Length} bytes"}");
-        }
-        else if (item is FunctionCallContent functionCall)
-        {
-            Console.WriteLine($"  [{item.GetType().Name}] {functionCall.Id}");
-        }
-        else if (item is FunctionResultContent functionResult)
-        {
-            Console.WriteLine($"  [{item.GetType().Name}] {functionResult.CallId} - {functionResult.Result?.AsJson() ?? "*"}");
-        }
-    }
-
-    if (message.Metadata?.TryGetValue("Usage", out object? usage) ?? false)
-    {
-        if (usage is RunStepTokenUsage assistantUsage)
-        {
-            WriteUsage(assistantUsage.TotalTokenCount, assistantUsage.InputTokenCount, assistantUsage.OutputTokenCount);
-        }
-        else if (usage is ChatTokenUsage chatUsage)
-        {
-            WriteUsage(chatUsage.TotalTokenCount, chatUsage.InputTokenCount, chatUsage.OutputTokenCount);
-        }
-    }
-
-    void WriteUsage(int totalTokens, int inputTokens, int outputTokens)
-    {
-        Console.WriteLine($"  [Usage] Tokens: {totalTokens}, Input: {inputTokens}, Output: {outputTokens}");
-    }
-}
