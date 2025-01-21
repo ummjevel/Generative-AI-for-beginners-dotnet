@@ -80,33 +80,35 @@ dotnet run
 
 ## 🧠 Test Another Model in Your App
 
-The current app uses the "**llama3.2**" model. Let’s switch it up and try the "**Mistral-Nemo**" model instead!
+The current app uses the "**llama3.2**" model. Let’s switch it up and try the "**phi3.5**" model instead!
 
-### Step 1: Update the Model in Code
+### Step 1: Download a new model in ollama
+
+Download the Phi3.5 model running the comamnd:
+
+```bash
+ollama pull phi3.5
+```
+
+You can learn mode about the [Phi3.5](https://ollama.com/library/phi3.5) and other available models in the [Ollama library](https://ollama.com/library/).
+
+### Step 2: Upload the model name and run the Chat App
 
 Edit the main code to update the model name:
 
 ```csharp
-IChatClient client = new ChatCompletionsClient(
-    endpoint: new Uri("https://models.inference.ai.azure.com"),
-    new AzureKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")))
-    .AsChatClient("Mistral-Nemo");
+IChatClient client = new OllamaChatClient(new Uri("http://localhost:11434/"), "phi3.5");
 ```
-
-### Step 2: Run the Chat App
 
 Run the following command:
 ```bash
 dotnet run
 ```
-🎉 **Done!** You’ve just switched to a new model. Notice how the response is longer and more detailed. Here’s what it looks like:
-
-![1st .NET AI chat application using Mistral model](./images/firsttesps-20-useMistralModel.png)
+🎉 **Done!** You’ve just switched to a new model. Notice how the response is longer and more detailed. 
 
 ---
 
 ## 📖 References and Resources
 
 - [Working with GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)
-- [How to Generate a Personal Access Token on GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/en-us/dotnet/)
