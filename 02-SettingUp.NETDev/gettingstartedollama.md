@@ -48,13 +48,17 @@ Your app might take a while to answer questions. Let’s make it cooler by enabl
 
 ### Step 1: Edit the Program.cs File
 
-Go to the file `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-01MEAI/Program.cs`
+Go to the file `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-03Ollama/Program.cs`
 
 ### Step 2: Replace the Code (Lines 10 to End)
 
-Replace everything from line 10 onward with:
+Replace the current code with:
 
 ```csharp
+using Microsoft.Extensions.AI;
+
+IChatClient client = new OllamaChatClient(new Uri("http://localhost:11434/"), "llama3.2");
+
 var response = client.CompleteStreamingAsync("What is AI?");
 await foreach (var item in response)
 {
@@ -70,15 +74,13 @@ Run the following command:
 dotnet run
 ```
 
-🎉 **Done!** Now your app streams the response live as it’s being generated. Here’s what it looks like:
-
-![.NET AI chat application using streaming mode](./images/firsttesps-15-apprunstreaming.gif)
+🎉 **Done!** Now your app streams the response live as it’s being generated. 
 
 ---
 
 ## 🧠 Test Another Model in Your App
 
-The current app uses the "**Phi-3.5-MoE-instruct**" model. Let’s switch it up and try the "**Mistral-Nemo**" model instead!
+The current app uses the "**llama3.2**" model. Let’s switch it up and try the "**Mistral-Nemo**" model instead!
 
 ### Step 1: Update the Model in Code
 
