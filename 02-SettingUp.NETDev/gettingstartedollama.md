@@ -1,3 +1,10 @@
+<div align="center">
+    <h2>Lesson 2: Setting Up the Environment</h2>
+    <h3>Guide: Run Your First AI App with .NET with Ollama</h3>
+    <p><em>Get your .NET AI application running with local models.</em></p>
+</div>
+
+
 # 🚀 Getting Started in 5 Minutes: Run Your First AI App with .NET with Ollama
 
 Welcome to the **Generative AI for Beginners - .NET** ([GenAINET]) repo! 🎉 Let’s get your first .NET AI application up and running in no time. Follow along as we dive into a step-by-step guide to build, tweak, and enhance your AI app. Let’s go!

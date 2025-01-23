@@ -1,6 +1,8 @@
-# 🌟 Use Azure AI Foundry models in your .NET AI applications
-
-Welcome to the **Generative AI for Beginners - .NET** ([GenAINET]) repo! Ready to explore how to use models from Azure AI Foundry in your AI applications? Let’s dive right in!
+<div align="center">
+    <h2>Lesson 2: Setting Up the Environment</h2>
+    <h3>Guide: Use Azure AI Foundry models in your .NET AI applications</h3>
+    <p><em>Use Azure AI Foundry models for your .NET AI apps, in simple steps!</em></p>
+</div>
 
 ---
 

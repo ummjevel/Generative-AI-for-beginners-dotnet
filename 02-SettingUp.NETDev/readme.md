@@ -103,6 +103,12 @@ Before diving into generative AI development, we need to configure essential sec
 
 > 💡 **Security Tip**: Always use the minimum required scope and shortest practical expiration time for your access tokens. This follows the principle of least privilege and helps maintain your account's tokens safe.
 
+If desired, it is possible to use Azure OpenAi for the demos, in this case, follow the instruction in the guide below:
+
+<p align="center">
+    <a href="../02-SettingUp.NETDev/usedemoswithAzure.md">Use Azure OpenAi Demos - Guide</a>
+</p>
+
 ## Taking Off with AI 🚀
 
 Let's dive into practical implementations with three powerful AI demonstrations that showcase different approaches to AI integration.
@@ -113,6 +119,12 @@ Let's dive into practical implementations with three powerful AI demonstrations 
     - Experience Microsoft's Phi 3.5 language model
     - See real-time AI responses in action and the API integration patterns
 
+<p align="center">
+    <a href="../02-SettingUp.NETDev/gettingstarted.md">Experiment with Phi-3.5 - Guide</a>
+</p>
+
+
+
 2. **Semantic Kernel Implementation**
     - Learn Microsoft's powerful AI orchestration framework
     - Explore complex AI patterns and workflows in the next lessons
@@ -120,6 +132,10 @@ Let's dive into practical implementations with three powerful AI demonstrations 
 3. **Local Llama Integration**
     - Experience edge computing with AI running in your Codespace
     - Understand local vs. cloud AI tradeoffs
+
+<p align="center">
+    <a href="../02-SettingUp.NETDev/gettingstartedollama.md">Experiment with Ollama - Guide</a>
+</p>
 
 ### Setting Up Your Development Environment
 
