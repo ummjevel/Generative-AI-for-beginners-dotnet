@@ -44,7 +44,7 @@ var question = questionEn;
 SpectreConsoleOutput.DisplayTitle(modelIdChat);
 SpectreConsoleOutput.DisplayTitleH2($"This program will answer the following question:");
 SpectreConsoleOutput.DisplayTitleH2(question);
-SpectreConsoleOutput.DisplayTitleH3("1st approach will be to ask the question directly to the Phi-3 model.");
+SpectreConsoleOutput.DisplayTitleH3($"1st approach will be to ask the question directly to the {modelIdChat} model.");
 SpectreConsoleOutput.DisplayTitleH3("2nd approach will be to add facts to a semantic memory and ask the question again");
 Console.WriteLine("");
 
