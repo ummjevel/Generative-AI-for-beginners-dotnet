@@ -82,7 +82,14 @@ Follow these steps to ensure your generative AI solutions in .NET are responsibl
 
 ---
 
-## Tools
+
+## Conclusions and resources
+
+Responsibly implementing generative AI in .NET applications is essential for ensuring ethical, secure, and unbiased outcomes. By adhering to fairness, inclusivity, transparency, accountability, and security principles, developers can build trustworthy AI systems that benefit users and society.
+
+### Additional Resources
+
+> ⚠️ **Note**: If you encounter any issues, please, open an issue in the repository.
 
 Leverage the following tools to implement responsible AI practices:
 
@@ -96,12 +103,14 @@ Leverage the following tools to implement responsible AI practices:
 
 - [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/): Build ethical AI solutions.
 
----
+- [Microsoft Learn - Responsible AI](https://learn.microsoft.com/training/modules/embrace-responsible-ai-principles-practices/): Explore responsible AI practices.
 
-## Great Work, Continue Your Learning
+- [Microsoft Responsible AI](https://www.microsoft.com/ai/responsible-ai): Learn how Microsoft does responsible AI practices.
+### Next Steps
 
-You have now gained insights into the responsible use of generative AI in .NET applications. To deepen your understanding, explore additional resources and examples:
+See real scenarios for Generative AI with scalable applications in the next chapter.
 
-- [Generative AI for Beginners - A Course](https://github.com/microsoft/generative-ai-for-beginners/tree/main/03-using-generative-ai-responsibly)
+<p align="center">
+    <a href="../06-Real-WorldScenarios/readme.md">Go to Chapter 6</a>
+</p>
 
-Thank you for prioritizing responsibility in AI development.
