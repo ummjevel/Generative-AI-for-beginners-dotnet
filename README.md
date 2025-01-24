@@ -12,6 +12,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Fork)](https://GitHub.com/microsoft/Generative-AI-For-Beginner-Dotnets/network/)
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://GitHub.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)
 
+[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-137032-kinfeylo)
+
 Welcome to **Generative AI for Beginners .NET** (aka **GenAINET**), the hands-on course for .NET developers diving into the world of Generative AI! 
 
 This isn’t your typical “here’s some theory, good luck” course. This repository is all about **real-world applications** and **live coding** to empower .NET developers to take full advantage of Generative AI.

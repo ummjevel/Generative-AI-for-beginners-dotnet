@@ -277,12 +277,189 @@ public async Task RunAsync(
 ```
 
 >  💡 **Pro Tip**: For more information on eShopLite with Realtime Audio, look at the repository to learn more: https://github.com/Azure-Samples/eShopLite-RealtimeAudio
----
+
+See a local demo of the feature as File Search in action:
+
+<p align="center">
+    <a href=".\src\AgentsKLabs-04-FileSearch">Go to the File Search sample</a>
+</p>
 
 ## Chat with your Data
 ### Coming Soon
+
+---
+
 ## Creative Writer Agent
-### Coming Soon
+Agents are a big topic in the current AI landscape, and to demonstrate their capabilities, we'll use the Creative Writer Agent, a tool that can generate creative and engaging text based on the user's input, helping to write researched, specific, and engaging content.
+
+![Image demonstrating the Creative Writer Agent](./images/creative-writer-agent.png)
+
+This AI application is composed of four main components: Researcher, Marketing, Writer, and Editor. The Researcher component is responsible for understanding context, gathering information with a Bing search, and then summarizing the information. The Marketing component is responsible for understanding the user's intent, formulate queries, and retrieve information from the Vector DB. The Writer component is responsible for gathering the information from the other components and produce the article, while the Editor component is responsible for reviewing the article, providing feedback, it decides if the article is ready to be published or not. All of this behavior is orchestrated by Semantic Kernel, Microsoft AI Extension, and .NET Aspire.
+
+![Image demonstrating the Creative Writer Agent architecture](./images/creative-writer-agent-architecture.png)
+
+Understanding how the components interact with each other can be a reference for creating your own Agentic applications, take a look at the code below to understand how the components interact with each other, first look at the ChatController.cs call to the Creative Writer:
+
+```csharp
+var userInput = request.Messages.Last();
+
+// Deserialize the user input content into a CreateWriterRequest object
+CreateWriterRequest createWriterRequest = _yamlDeserializer.Deserialize<CreateWriterRequest>(userInput.Content);
+
+// Create a new session for the Creative Writer application
+var session = await _creativeWriterApp.CreateSessionAsync(Response);
+
+// Process the streaming request and write the response in real-time
+await foreach (var delta in session.ProcessStreamingRequest(createWriterRequest))
+{
+    // Serialize the delta and write it to the response stream and flush
+    await response.WriteAsync($"{JsonSerializer.Serialize(delta)}\r\n");
+    await response.Body.FlushAsync();
+}
+```
+
+The type `CreateWriterRequest` needs to have three properties: `Research`, `Products`, and `Writing`. After that, it calls the `CreateSessionAsync` method, which looks like this:
+
+```csharp
+internal async Task<CreativeWriterSession> CreateSessionAsync(HttpResponse response)
+{
+    // Add custom function invocation filters to handle response modifications
+    defaultKernel.FunctionInvocationFilters.Add(new FunctionInvocationFilter(response));
+
+    // Create a separate kernel for Bing search integration and intialize the Bing service, and create a plugin for Bing search
+    Kernel bingKernel = defaultKernel.Clone();
+    BingTextSearch textSearch = new(apiKey: configuration["BingAPIKey"]!);
+    KernelPlugin searchPlugin = textSearch.CreateWithSearch("BingSearchPlugin");
+    bingKernel.Plugins.Add(searchPlugin);
+
+    // Clone the default kernel to set up the vector search capabilities, and create the vector search kernel
+    Kernel vectorSearchKernel = defaultKernel.Clone();
+    await ConfigureVectorSearchKernel(vectorSearchKernel);
+
+    // Return a new session encapsulating all configured kernels for comprehensive AI functionalities
+    return new CreativeWriterSession(defaultKernel, bingKernel, vectorSearchKernel);
+}
+```
+
+Now, we can see the `CreativeWriterSession` class for the `ProcessStreamingRequest` function, to understand how the components interact with each other, first look at the `Research` and `Marketing` components:
+
+```csharp
+// Initialize the Researcher Agent with a specific prompt template.
+// This agent leverages the Bing Kernel for enhanced semantic search capabilities.
+ChatCompletionAgent researcherAgent = new(ReadFileForPromptTemplateConfig("./Agents/Prompts/researcher.yaml"))
+{
+    Name = ResearcherName,
+    Kernel = bingKernel,
+    Arguments = CreateFunctionChoiceAutoBehavior(),
+    LoggerFactory = bingKernel.LoggerFactory
+};
+
+// Initialize the Marketing Agent with its own prompt template.
+// This agent utilizes the Vector Search Kernel to handle product-related queries efficiently.
+ChatCompletionAgent marketingAgent = new(ReadFileForPromptTemplateConfig("./Agents/Prompts/marketing.yaml"))
+{
+    Name = MarketingName,
+    Kernel = vectorSearchKernel,
+    Arguments = CreateFunctionChoiceAutoBehavior(),
+    LoggerFactory = vectorSearchKernel.LoggerFactory
+};
+
+// ...
+
+// Invoke the Researcher Agent asynchronously with the provided research context.
+await foreach (ChatMessageContent response in researcherAgent.InvokeAsync(
+    new object[] { }, 
+    new Dictionary<string, string> { { "research_context", createWriterRequest.Research } }))
+{
+    // Aggregate the research results for further processing or display.
+    sbResearchResults.AppendLine(response.Content);
+    
+    yield return new AIChatCompletionDelta(Delta: new AIChatMessageDelta
+    {
+        Role = AIChatRole.Assistant,
+        Context = new AIChatAgentInfo(ResearcherName),
+        Content = response.Content,
+    });
+}
+
+// ...
+
+// Invoke the Marketing Agent with the provided product context.
+await foreach (ChatMessageContent response in marketingAgent.InvokeAsync(
+    new object[] { },
+    new Dictionary<string, string> { { "product_context", createWriterRequest.Products } }))
+{
+    // Consolidate the product-related results for use in marketing strategies or user feedback.
+    sbProductResults.AppendLine(response.Content);
+    
+    yield return new AIChatCompletionDelta(Delta: new AIChatMessageDelta
+    {
+        Role = AIChatRole.Assistant,
+        Context = new AIChatAgentInfo(MarketingName),
+        Content = response.Content,
+    });
+}
+```
+Now, we initialize and configure the `Writer` and `Editor` agents. Look at the code:
+
+```csharp
+// Initialize the Writer Agent with its specific prompt configuration
+ChatCompletionAgent writerAgent = new(ReadFileForPromptTemplateConfig("./Agents/Prompts/writer.yaml"))
+{
+    Name = WriterName, 
+    Kernel = kernel, /
+    Arguments = new Dictionary<string, string>(), 
+    LoggerFactory = kernel.LoggerFactory 
+};
+
+// Initialize the Editor Agent with its specific prompt configuration
+ChatCompletionAgent editorAgent = new(ReadFileForPromptTemplateConfig("./Agents/Prompts/editor.yaml"))
+{
+    Name = EditorName, 
+    Kernel = kernel, 
+    LoggerFactory = kernel.LoggerFactory
+};
+
+// Populate the Writer Agent with contextual data required for generating content, gathered from the User, Researcher and Marketing Agents
+writerAgent.Arguments["research_context"] = createWriterRequest.Research;
+writerAgent.Arguments["research_results"] = sbResearchResults.ToString();
+writerAgent.Arguments["product_context"] = createWriterRequest.Products;
+writerAgent.Arguments["product_results"] = sbProductResults.ToString();
+writerAgent.Arguments["assignment"] = createWriterRequest.Writing;
+
+// Configure the Agent Group Chat to manage interactions between Writer and Editor
+AgentGroupChat chat = new(writerAgent, editorAgent)
+{
+    LoggerFactory = kernel.LoggerFactory,
+    ExecutionSettings = new AgentGroupChatSettings
+    {
+        // Define the strategy for selecting which agent interacts next
+        SelectionStrategy = new SequentialSelectionStrategy() 
+        { 
+            InitialAgent = writerAgent // Start the conversation with the Writer Agent
+        },
+        // Define the termination condition for the agent interactions, in this case, the Editor Agent will terminate the conversation
+        TerminationStrategy = new NoFeedbackLeftTerminationStrategy()
+    }
+};
+```
+
+In .NET Aspire, we notice how the components are orchestrated to create a seamless experience for the user. The tracing feature allows us to monitor the interactions between the agents, and the telemetry feature provides insights into the user's behavior and the performance of the AI models.
+
+![Image demonstrating the .NET Aspire tracing capabilities](./images/aspire-tracing-creative-writer.png)
+
+![Image demonstrating the .NET Aspire telemetry capabilities](./images/aspire-telemetry-creative-writer.png)
+
+> 💡**Pro Tip**: For more information on the Creative Writer Agent, look at the repository to learn more: [Contoso Creative Writer](https://github.com/Azure-Samples/aspire-semantic-kernel-creative-writer)
+
+See a local demo of the Creative Writer Agent in action:
+
+<p align="center">
+    <a href=".\src\AgentSKLabs-10-CreativeWriter">Go to Creative Writer local sample,</a>
+</p>
+
+
+
 
 ## Conclusions and resources
 
@@ -292,8 +469,7 @@ Those are just a few examples of how you can use Generative AI in your applicati
 
 > ⚠️ **Note**: If you encounter any issues, please, open an issue in the repository.
 
-- [Azure AI Agents - Instructions](./src/AzureAIAgentsmd)
-- [Azure AI Agents - File Search](./src/AzureAIAgents-04-FileSearch.md)
+- [Azure AI Agents - Instructions](./src/AzureAIAgents.md)
 
 ### Next Steps
 

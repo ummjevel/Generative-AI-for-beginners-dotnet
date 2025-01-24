@@ -1,4 +1,8 @@
-# Azure AI Agents
+<div align="center">
+    <h2>Lesson 4: Generative AI Samples</h2>
+    <h3> Azure AI Agents - Guide</h3>
+    <p><em>Use Azure in a Compact sample!</em></p>
+</div>
 
 ## Program.cs Functionality
 
