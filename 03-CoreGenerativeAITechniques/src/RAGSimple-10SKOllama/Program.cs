@@ -30,14 +30,15 @@ using Microsoft.KernelMemory.AI.Ollama;
 using Microsoft.SemanticKernel;
 
 var ollamaEndpoint = "http://localhost:11434";
-var modelIdChat = "deepseek-r1";
+var modelIdChat = "phi3.5";
 var modelIdEmbeddings = "all-minilm";
 
 // questions
-var questionEnglish = "What is Bruno's favourite super hero?";
-var questionSpanish = "Cual es el SuperHeroe favorito de Bruno?";
-var questionFrench = "Quel est le super-héros préféré de Bruno?";
-var question = questionEnglish;
+var questionEn = "What is Bruno's favourite super hero?";
+var questionSp = "Cual es el SuperHeroe favorito de Bruno?";
+var questionFr = "Quel est le super-héros préféré de Bruno?";
+var questionEn2 = "who watched venom 3?";
+var question = questionEn;
 
 // intro
 SpectreConsoleOutput.DisplayTitle(modelIdChat);
@@ -82,9 +83,9 @@ var memory = new KernelMemoryBuilder()
     .Build();
 
 await memory.ImportTextAsync("Gisela's favourite super hero is Batman");
-await memory.ImportTextAsync("The last super hero movie watched by Gisela was Guardians of the Galaxy Vol 3");
+await memory.ImportTextAsync("The last super hero movie watched by Gisela was Venom 3");
 await memory.ImportTextAsync("Bruno's favourite super hero is Invincible");
-await memory.ImportTextAsync("The last super hero movie watched by Bruno was Deadpool and Wolverine");
+await memory.ImportTextAsync("The last super hero movie watched by Bruno was Venom 3");
 await memory.ImportTextAsync("Bruno don't like the super hero movie: Eternals");
 
 var answer = memory.AskStreamingAsync(question);
