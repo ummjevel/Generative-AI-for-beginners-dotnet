@@ -285,11 +285,25 @@ See a local demo of the feature as File Search in action:
 </p>
 
 ## Chat with your Data
-### Coming Soon
+
+![Video thumbnail for Chat with your Data](./images/chat-with-your-data-video.png)
+
+
+Do you want to chat with your data? In this demo, we'll use the Chat with your Data application to generate a conversation with the user's data, using a simple interface to upload a file and extract insights from it. 
+
+![Image demonstrating the Chat with your Data application](./images/chat-with-your-data.png)
+
+
+> 💡**Pro Tip**: For more information on the Chat with your Data app, look at the repository to learn more: [Chat with your Data](https://github.com/Azure-Samples/netai-chat-with-your-data)
+
+
 
 ---
 
 ## Creative Writer Agent
+
+![Video thumbnail for Creative Writer Agent](./images/creative-writer-agent-video.png)
+
 Agents are a big topic in the current AI landscape, and to demonstrate their capabilities, we'll use the Creative Writer Agent, a tool that can generate creative and engaging text based on the user's input, helping to write researched, specific, and engaging content.
 
 ![Image demonstrating the Creative Writer Agent](./images/creative-writer-agent.png)
