@@ -165,4 +165,4 @@ In the next chapters, we'll explore these scenarios in detail, providing hands-o
 
 Next up, we'll get your development environment setup! So you'll be ready to dive into the world of generative AI with .NET!
 
-[👉 Set up your AI development environment](/02-SettingUp.NETDev/README.md)
+👉 [Set up your AI development environment](/02-SettingUp.NETDev/README.md)
