@@ -4,12 +4,12 @@
     <p><em>Learn the fundamentals of Generative AI and discover the .NET tooling ecosystem</em></p>
 </div>
 
-> 💡 **Quick Summary**: Refresh your generative AI knowledge, and understand how .NET can help you to develop and create new and better Generative AI applications.
-
+> 💡 **Quick Summary**: Refresh your generative AI knowledge, and understand how .NET can help you to develop and create new and better generative AI applications.
 
 ---
 
 **What you'll achieve:**
+
 - 🌟 Understand fundamental concepts of Generative AI and their applications
 - 🔍 Explore the .NET ecosystem for AI development including MEAI, Semantic Kernel, and Azure OpenAI
 - 🛠️ Set up and use essential AI development tools in Visual Studio and VS Code
@@ -21,7 +21,6 @@
 2. [AI Development Tools and Libraries](#ai-development-tools-and-libraries-for-net)
 3. [Building Real-World AI Solutions](#building-real-world-ai-solutions)
 
-
 ---
 
 ## Intro Video
@@ -32,10 +31,9 @@
 
 Hello! Welcome to the Generative AI for .NET, We're thrilled to have you join us on this exciting journey into the world of Generative AI, for this course does not matter if you are learning from scratch or if you are a seasoned .NET developer, we are here to help you quickly develop amazing real apps.
 
-In **Generative AI Fundamentals for .NET**, spanning six engaging chapters, we'll refresh fundamental concepts essential for AI development, discover tools like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and **GitHub Models**, set up and use essential AI development tools, quickly and easily, in **Codespaces**, and build practical AI solutions using modern **.NET 9**. 
- 
-Get ready to dive in and unlock new possibilities with Generative AI!
+In **Generative AI Fundamentals for .NET**, spanning six engaging chapters, we'll refresh fundamental concepts essential for AI development, discover tools like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and **GitHub Models**, set up and use essential AI development tools, quickly and easily, in **Codespaces**, and build practical AI solutions using modern **.NET 9**.
 
+Get ready to dive in and unlock new possibilities with Generative AI!
 
 ## Introduction to Generative AI Concepts
 
@@ -98,9 +96,9 @@ public interface IChatClient : IDisposable
 } 
 ```
 
-This interface defines a chat client that can complete chat prompts asynchronously, stream updates, and provide metadata. It also allows accessing services using a generic method, enabling developers to interact with AI models in a flexible and efficient way.  Plus, you can quickly integrate middleware, test and debug models, prompts, and more. 
+This interface defines a chat client that can complete chat prompts asynchronously, stream updates, and provide metadata. It also allows accessing services using a generic method, enabling developers to interact with AI models in a flexible and efficient way.  Plus, you can quickly integrate middleware, test and debug models, prompts, and more.
 
-> ⚠️ **Note 1**: For a quick start with MEAI, check out the blog post [here](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/). 
+> ⚠️ **Note 1**: For a quick start with MEAI, check out the blog post [here](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/).
 
 > ⚠️ **Note 2**: Learn more about Microsoft.Extensions.AI (MEAI) in our [MEAI documentation](https://learn.microsoft.com/en-us/dotnet/ai/ai-extensions)
 
@@ -112,8 +110,7 @@ Semantic Kernel is a lightweight SDK that enables developers to have a quick AI 
 
 Semantic Kernel supports Java, Python, and .NET, offering a plethora of connectors, functions and plugins for integration. Some of the key features of Semantic Kernel include:
 
-- **Kernel Core**: Provides the core functionality for the Semantic Kernel, including connectors, functions, and plugins, to interact with AI services and models. The kernel is the heart of the Semantic Kernel, being available to services and plugins, retrieving them when needed, monitoring Agents, and being an active middleware for your application. 
-
+- **Kernel Core**: Provides the core functionality for the Semantic Kernel, including connectors, functions, and plugins, to interact with AI services and models. The kernel is the heart of the Semantic Kernel, being available to services and plugins, retrieving them when needed, monitoring Agents, and being an active middleware for your application.
 
     For example, it can pick the best AI service for a specific task, build plus send the prompt to the service, and return the response to the application. Below, a diagram of the Kernel Core in action:
 
@@ -147,9 +144,6 @@ Prompty is composed of three main components, specification, tooling, and runtim
 
 Prompty is designed to be flexible and adaptable, allowing developers to work with any language, framework, or AI model. It supports multiple AI services, including LangChain, Semantic Kernel, PromptFlow, and Azure AI Studio, enabling developers to choose the best AI service for their projects.
 
-
-
-
 > ⚠️ **Note**: Learn more about Prompty in our [Prompty documentation](https://www.prompty.ai/)
 
 ### AI Toolkit Extension for Visual Studio Code
@@ -175,7 +169,6 @@ Ollama and ONNX enable running AI models locally without cloud dependencies. ONN
 For local applications, Small Language Models (SLMs) are more ideal, as most LLMS require a lot of resources, and are more suitable for bigger applications, and cloud-based applications. 
 
 > ⚠️ **Note**: Learn more about Ollama and ONNX in our [Local Windows AI documentation](https://learn.microsoft.com/en-us/windows/ai/models) 
-
 
 ## Building Real-World AI Solutions
 
@@ -216,8 +209,7 @@ Generative AI offers a world of possibilities for developers, enabling them to c
 
 In the next chapters, we'll explore these scenarios in detail, providing hands-on examples, code snippets, and best practices to help you build real-world AI solutions using .NET! 
 
-First, set up your development environment, install the necessary tools, and get ready to dive into the world of Generative AI with .NET! 
-
+First, set up your development environment, install the necessary tools, and get ready to dive into the world of Generative AI with .NET!
 
 <p align="center">
     <a href="../02-SettingUp.NETDev/readme.md">Go to Chapter 2</a>
