@@ -1,12 +1,10 @@
-# Generative AI Fundamentals for .NET
+# Getting Started with AI Development Tools
 
-## Lesson 1: Getting Started with AI Development Tools
-
-Learn the fundamentals of Generative AI and discover the .NET tooling ecosystem.
-
-> 💡 **Quick Summary**: Refresh your generative AI knowledge, and understand how .NET can help you to develop and create new and better generative AI applications.
+Refresh your generative AI knowledge and understand the .NET tooling available to help you to develop generative AI applications.
 
 ---
+
+[![Watch the video](../images/01-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERTkzBSAfKJEiLw2HLnzHnkBMEbpk17hniaVfr8lCm6how?e=gWOr33&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 #### What you'll learn in this lesson:
 
@@ -15,20 +13,16 @@ Learn the fundamentals of Generative AI and discover the .NET tooling ecosystem.
 
 #### Index
 
-1. [Introduction to generative AI Concepts](#introduction-to-generative-ai-concepts)	
+1. [A quick refresh on Generative AI concepts](#a-quick-refresh-on-generative-ai-concepts)
 1. [.NET AI Development tooling](#ai-development-tools-and-libraries-for-net)
 
 ---
 
-## Intro video
+## Lesson 1 - Generative AI Fundamentals for .NET
 
-[![Watch the video](../images/01-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERTkzBSAfKJEiLw2HLnzHnkBMEbpk17hniaVfr8lCm6how?e=gWOr33&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Before we dive in to some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
 
-## Welcome to lesson 1 - Generative AI Fundamentals for .NET
-
-Before we dive in to some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and **GitHub Models**.
-
-## A quick refresh on Generative AI concepts
+### A quick refresh on Generative AI concepts
 
 Generative AI is a type of artificial intelligence that creates new content, such as text, images, or code, based on patterns and relationships learned from data. Generative AI models can generate human-like responses, understand context, and sometimes even create content that seems human-like.
 
@@ -42,7 +36,7 @@ There are specific types of models that are optimized for different tasks. For e
 
 Of course, the responses from these models are not perfect all the time. You're probably heard about models "hallucinating" or generating incorrect information in an authoritative manner. But you can help guide the model to generate better responses by providing them with clear instructions and context. This is where **prompt engineering** comes in.
 
-### Prompt engineering review
+#### Prompt engineering review
 
 Prompt engineering is the practice of designing effective inputs to guide AI models toward desired outputs. It involves:
 
@@ -56,7 +50,7 @@ And it's important to note there are different types of prompts when developing 
 
 > ⚠️ **Note**: Learn more about prompt engineering in our [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals)
 
-### Tokens, embeddings, and agents - oh my!
+#### Tokens, embeddings, and agents - oh my!
 
 When working with generative AI models, you'll encounter terms like **tokens**, **embeddings**, and **agents**. Here's a quick overview of these concepts:
 
@@ -67,11 +61,11 @@ When working with generative AI models, you'll encounter terms like **tokens**, 
 
 When developing .NET AI applications, you'll work with tokens, embeddings, and agents to create chatbots, content generators, and other AI-powered applications. Understanding these concepts will help you build more effective and efficient AI applications.
 
-## AI Development Tools and Libraries for .NET
+### AI Development Tools and Libraries for .NET
 
 .NET offers a range of tooling for AI development. Lets take a minute to understand some of the tools and libraries available.
 
-### Microsoft.Extensions.AI (MEAI)
+#### Microsoft.Extensions.AI (MEAI)
 
 The Microsoft.Extensions.AI (MEAI) library provides unified abstractions and middleware to simplify the integration of AI services into .NET applications.
 
@@ -101,7 +95,7 @@ Using an unified API, MEAI allows developers to work with different AI services,
 >
 > 📖 **Docs**: Learn more about Microsoft.Extensions.AI (MEAI) in our [MEAI documentation](https://learn.microsoft.com/en-us/dotnet/ai/ai-extensions)
 
-### Semantic Kernel (SK)
+#### Semantic Kernel (SK)
 
 Semantic Kernel is an open-source SDK that enables developers to integrate generative AI language models into their .NET applications. It provides abstractions for AI services and memory stores allowing creation of plugins that can be automatically orchestrated by AI. It even uses the OpenAPI standard enabling developers to create AI agents to interact with external APIs.
 
@@ -131,7 +125,7 @@ In Semantic Kernel, a full loop would look like the diagram below:
 
 > 📖 **Docs**: Learn more about Semantic Kernel in our [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 
-### AI Toolkit Extension for Visual Studio Code
+#### AI Toolkit Extension for Visual Studio Code
 
 For our course, we are going to use GitHub Models and Codespaces, and that means we can use the AI Toolkit Extension for VS Code. This extension allows you to interact with AI models, test prompts, fine-tune and deploy models, running from your local machine or from Codespaces. To test the AI Toolkit Extension, you can install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio), and then, you can start testing prompts, and models, and even test them your local machine.
 
@@ -147,7 +141,7 @@ For our course, we are going to use GitHub Models and Codespaces, and that means
 
 > 📖 **Docs**: Learn more about the AI Toolkit Extension in our [AI Toolkit Extension documentation](https://learn.microsoft.com/en-us/windows/ai/toolkit/)
 
-### Ollama and ONNX for local models
+#### Ollama and ONNX for local models
 
 Ollama and ONNX enable running AI models locally without cloud dependencies. ONNX provides an open format for machine learning models, ensuring interoperability and allowing .NET applications to utilize local AI models efficiently. Ollama is a lightweight SDK that simplifies the integration of ONNX models, enabling developers to run AI models locally without cloud dependencies.
 
@@ -159,7 +153,7 @@ For local applications, Small Language Models (SLMs) are more ideal, as most LLM
 
 Generative AI offers a world of possibilities for developers, enabling them to create innovative applications that generate content, understand context, and provide human-like responses. The .NET ecosystem provides a range of tools and libraries to simplify AI development, making it easier to integrate AI capabilities into .NET applications.
 
-### Next Steps
+## Next Steps
 
 In the next chapters, we'll explore these scenarios in detail, providing hands-on examples, code snippets, and best practices to help you build real-world AI solutions using .NET!
 
