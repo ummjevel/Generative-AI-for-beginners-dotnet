@@ -65,6 +65,7 @@ To be secure, let's add the API key you just created to your Codespace's secrets
 Let's create a GitHub Codespace to develop with for the rest of this course.
 
 1. Open this repository's main page in a new window by [right-clicking here](https://github.com/microsoft/Generative-AI-for-beginners-dotnet) and selecting **Open in new window** from the context menu
+1. Fork this repo into your GitHub account by clicking the **Fork** button in the top right corner of the page
 1. Click the **Code** dropdown button and then select the **Codespaces** tab
 1. Select the **...** option (the three dots) and choose **New with options...**
 
@@ -74,7 +75,7 @@ Let's create a GitHub Codespace to develop with for the rest of this course.
 
 From the **Dev container configuration** dropdown, select one of the following options:
 
-**Option 1: C# (.NET)** : This is the option you should use if you plan to use GitHub Models and is our recommended way to complete this course. It has all the core .NET development tools needed for the rest of the course and a fast startup time
+**Option 1: C# (.NET)** : This is the option you should use if you plan to use GitHub Models or Azure OpenAI. It has all the core .NET development tools needed for the rest of the course and a fast startup time
 
 **Option 2: C# (.NET) - Ollama**: Ollama allows you to run the demos without needing to connect to GitHub Models or Azure OpenAI. It includes all the core .NET development in addition to Ollama, but has a slower start-up time, five minutes on average. [Follow this guide](getting-started-ollama.md) if you want to use Ollama
 
@@ -159,7 +160,7 @@ In this lesson, you learned how to set up your development environment for the r
 - [How to Deploy Models in Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)
 - [Azure.AI.OpenAI NuGet Package](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
-### Next Steps
+## Next Steps
 
 Next, we'll explore how to create your first AI application! 🚀
 

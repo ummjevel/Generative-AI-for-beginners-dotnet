@@ -89,6 +89,7 @@ Before we do anything else, we need to configure essential security credentials 
 Let's create a GitHub Codespace to use for the rest of this course.
 
 1. Open this repository's main page in a new window by [right-clicking here](https://github.com/microsoft/Generative-AI-for-beginners-dotnet) and selecting **Open in new window** from the context menu
+1. Fork this repo into your GitHub account by clicking the **Fork** button in the top right corner of the page
 1. Click the **Code** dropdown button and then select the **Codespaces** tab
 1. Select the **...** option (the three dots) and choose **New with options...**
 
@@ -143,7 +144,7 @@ In this lesson, you learned how to set up your development environment for the r
 - [GitHub Codespaces Documentation](https://docs.github.com/en/codespaces)
 - [GitHub Models Documentation](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
-### Next Steps
+## Next Steps
 
 Next, we'll explore how to create your first AI application! 🚀
 
