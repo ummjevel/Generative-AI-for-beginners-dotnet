@@ -1,77 +1,58 @@
+# Setting Up the Development Environment for This Course
 
-<div align="center">
-    <h1>Generative AI Fundamentals for .NET</h1>
-    <h2>Lesson 2: Setting Up the Environment</h2>
-    <p><em>Transform GitHub Codespaces into a powerful .NET development machine</em></p>
-</div>
+This lesson will guide you through setting up your development environment for this course. To ensure your success we've prepared a devcontainer configuration that will provide all the tooling you need to complete the course. You can run the devcontainer in GitHub Codespaces (recommended) or locally on your machine. And we also demonstrate how to set up your GitHub access tokens to interact with GitHub Models.
 
-> 💡 **Quick Summary**: Follow this comprehensive guide to deploy your ideal .NET + AI development environment. Whether you're a seasoned developer or just starting out, we'll help you build a robust setup for creating amazing applications.
+If you rather not use GitHub Models to interact with LLMs, we have you covered there too with guides to setup Azure OpenAI and Ollama.
 
 ---
-
-**What you'll achieve:**
-- ⚡ Lightning-fast development environment with GitHub Codepaces
-- 🛠️ Industry-standard tools configuration with .devcontainer
-- 🎯 Everything ready for immediate coding
-
-Let's dive in and set up your development environment! 🏃‍♂️
-
-**Index**
-
-1. [Lesson Intro video](#intro-video)
-1. [Understanding GitHub Codespaces](#understanding-github-codespaces)
-1. [Pre-Flight Check: Setting up GitHub Access Tokens](#pre-flight-check-setting-up-github-access-tokens)
-1. [Taking Off with AI 🚀](#taking-off-with-ai-)
-1. [Running the Solution in Your Codespace](#running-the-solution-in-your-codespace)
-1. [Conclusions and Resources](#conclusions-and-resources)
-
----
-
-## Intro Video
 
 [![Watch the video](../images/02-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERTkzBSAfKJEiLw2HLnzHnkBMEbpk17hniaVfr8lCm6how?e=gWOr33&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-## Understanding GitHub Codespaces and Models
+#### What you'll learn in this lesson:
 
-GitHub is an Platform for Developers, with world-leading tooling, integration, and AI Capabilities, for this course, we are going to use GitHub Codespaces and GitHub Models.
+- ⚡ How to setup a development environment with GitHub Codepaces
+- 🤖 Configure your development environment to access LLMs via GitHub Models, Azure OpenAI, or Ollama
+- 🛠️ Industry-standard tools configuration with .devcontainer
+- 🎯 Finally, everything ready to complete the rest of the course
 
-GitHub Codespaces is a cloud-powered development environment that enables developers to code from anywhere. Allowing you to seamlessly integrates with GitHub repositories, providing an effortless way to develop, commit, and deploy code.
+Let's dive in and set up your development environment! 🏃‍♂️
 
-GitHub Models is an easy alternative to deploy, integrate, and frictionless way to add Generative Artificial Intelligence into your projects. With multiple families of models, like GPT from OpenAI and Phi Family from Microsoft Research, allowing for quick prototyping for projects in the GitHub ecosystem.
+#### Index
 
-![Codespaces Image](./images/hero.webp)
-
-### Infrastructure and Performance
-
-At its core, each codespace operates on a dedicated virtual machine, ensuring isolated and reproducible development environments. These environments are engineered for rapid bootup times and can be extensively customized through devcontainer configurations, allowing developers to maintain their preferred tools and settings.
-
-The platform operates on a transparent pricing model based on compute and storage consumption. For developers using GitHub Free accounts, the service includes [120 core-hours monthly and 15GB of storage](https://github.blog/changelog/2022-11-09-codespaces-for-free-and-pro-accounts/) at no cost. Premium tiers offer expanded resources to match growing development needs.
-
-![Image Showing Codespaces options for VMs](./images/features-river-breakout.webp)
-
-### Configure any environment with .devcontainer
-
-The **.devcontainer configuration** in GitHub Codespaces acts as your environment's blueprint, defining everything from the base Docker image to Visual Studio Code extensions and settings. This allows that every developer working on your project has identical tools, dependencies, and configurations, effectively eliminating the "it works on my machine" syndrome. Through simple JSON configuration files, you can specify your preferred development environment, including specific versions of .NET, runtime dependencies, and essential VS Code extensions.
-
-A .devcontainer setup involves defining a `devcontainer.json` file and, optionally, a Dockerfile. The configuration file supports a wide range of customization options, from port forwarding rules to post-creation commands, enabling you to automate environment setup tasks and maintain consistency across your development team. This approach not only streamlines the development process but also ensures that your environment remains reproducible and version-controlled alongside your codebase.
-
-![Image demonstrating Devcontainers](./images/configure-dev-container.png)
-
-> 💡 **Pro Tip**: Configure your devcontainer with your most-used tools and extensions to create a consistent development experience across all your projects. [Learn more about devcontainers here!](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-
-### Learn and Test AI Models with GitHub Models
-
-**GitHub Models** provides an intuitive way to experiment with various AI models directly within your development environment. This feature allows developers to test and interact with different models, understanding their capabilities and limitations before implementation. Through a simple interface, you can explore model responses, evaluate performance, and determine the best fit for your application requirements. Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance, making them ideal for development and testing phases.
-
-![Image for GitHub Models page, demonstrating multiple Generative Ai models](./images/github-models-webapge.png)
+1. [Which AI service should I use for this course?](#which-ai-service-should-i-use-for-this-course)
+1. [GitHub Models overview](#learn-and-test-ai-models-with-github-models)
+1. [Pre-Flight Check: Setting up GitHub Access Tokens](#pre-flight-check-setting-up-github-access-tokens)
+1. [Creating a GitHub Codespace](#creating-a-github-codespace)
+1. [Testing the Codespace](#verifying-your-codespace-is-running-correctly-with-github-models)
+1. [Summary](#summary)
 
 ---
 
-## Pre-Flight Check: Setting Up GitHub Access Tokens
+## Which AI service should I use for this course?
 
-Before diving into generative AI development, we need to configure essential security credentials that will enable our Codespace to interact with GitHub Models and execute our applications securely.
+We provide instructions for setting up your development environment with GitHub Models, Azure OpenAI, and Ollama. You can choose the one that best fits your needs. We recommend using GitHub Models for this course, but you can use any of the three services.
 
-### Creating a Personal Access Token
+Here's a quick rundown of the services:
+
+- **GitHub Models**: A free service to get started with that allows you to test and interact with various AI models directly within your development environment. It's easy to use from Codespaces and a great way to experiment with different models and understand their capabilities before implementation.
+- **Azure OpenAI**: A paid service that provides access to a wide range of AI models. It includes all of the benefits that you'd come to expect from Azure include robust security and scalability. This is a great option for this course if you already have access to an Azure OpenAI subscription.
+- **Ollama**: Ollama allows you to run AI models locally on your machine or within a Codespace or devcontainer for free. It's a great option if you prefer to run the models locally, but it is slower than the cloud-based options.
+
+👉 GitHub Models right for you? Follow the rest of this document.
+👉 Azure OpenAI have your eye? [This is the document for you](getting-started-azure-openai.md).
+👉 Ollama your choice? [This guide has the info you need](getting-started-ollama.md).
+
+## Learn and test AI models with GitHub Models
+
+**GitHub Models** provides an intuitive way to experiment with various AI models directly within your development environment. This feature allows developers to test and interact with different models, understanding their capabilities and limitations before implementation. Through a simple interface, you can explore model responses, evaluate performance, and determine the best fit for your application requirements. Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance, making them ideal for development and testing phases. Best of all, there is a free tier to start your exploration without any cost.
+
+![Image for GitHub Models page, demonstrating multiple generative AI models](./images/github-models-webapge.png)
+
+## Pre-flight check: Setting up GitHub Access Tokens
+
+Before we do anything else, we need to configure essential security credentials that will enable our Codespace to interact with GitHub Models and execute our applications securely.
+
+### Creating a Personal Access Token for GitHub Model access
 
 1. Navigate to GitHub Settings:
 
@@ -80,121 +61,91 @@ Before diving into generative AI development, we need to configure essential sec
 
     ![GitHub Settings](./images/settings-github.png)
 
-2. Access Developer Settings:
+1. Access Developer Settings:
 
     - Scroll down the left sidebar
     - Click on **Developer settings** (usually at the bottom)
 
     ![Developer Settings](./images/developer-settings-github.png)
 
-3. Generate a New Token:
+1. Generate a New Token:
 
     - Select **Personal access tokens** → **Tokens (classic)**
 
         ![Adding the Tokens(classic)](./images/tokens-classic-github.png)
 
-    - Click **Generate new token (classic)**
+    - In the dropdown in the middle of the page, click **Generate new token (classic)**
 
         ![Create your Token](./images/token-generate-github.png)
 
-    - Under "Note", provide a descriptive name (e.g., "AI-Development-Token")
+    - Under "Note", provide a descriptive name (e.g., `GenAI-DotNet-Course-Token`)
     - Set an expiration date (recommended: 7 days for security best practices)
     - There is no need adding any permissions to this token.
 
 > 💡 **Security Tip**: Always use the minimum required scope and shortest practical expiration time for your access tokens. This follows the principle of least privilege and helps maintain your account's tokens safe.
 
-If desired, it is possible to use Azure OpenAi for the demos, in this case, follow the instruction in the guide below:
+## Creating a GitHub Codespace
 
-<p align="center">
-    <a href="../02-SettingUp.NETDev/usedemoswithAzure.md">Use Azure OpenAi Demos - Guide</a>
-</p>
+Let's create a GitHub Codespace to use for the rest of this course.
 
-## Taking Off with AI 🚀
-
-Let's dive into practical implementations with three powerful AI demonstrations that showcase different approaches to AI integration.
-
-### Demo Overview
-
-1. **AI API Answer with Phi 3.5** 
-    - Experience Microsoft's Phi 3.5 language model
-    - See real-time AI responses in action and the API integration patterns
-
-<p align="center">
-    <a href="../02-SettingUp.NETDev/gettingstarted.md">Experiment with Phi-3.5 - Guide</a>
-</p>
-
-
-
-2. **Semantic Kernel Implementation**
-    - Learn Microsoft's powerful AI orchestration framework
-    - Explore complex AI patterns and workflows in the next lessons
-
-3. **Local Llama Integration**
-    - Experience edge computing with AI running in your Codespace
-    - Understand local vs. cloud AI tradeoffs
-
-<p align="center">
-    <a href="../02-SettingUp.NETDev/gettingstartedollama.md">Experiment with Ollama - Guide</a>
-</p>
-
-### Setting Up Your Development Environment
-
-Let's create your AI-powered workspace using GitHub Codespaces:
-
-1. Navigate to the repository's main page
-2. Click the "Code" dropdown button
-3. Access "Codespaces"
-4. Select "..." (three dots) and choose "New with options"
+1. Open this repository's main page in a new window by [right-clicking here](https://github.com/microsoft/Generative-AI-for-beginners-dotnet) and selecting **Open in new window** from the context menu
+1. Fork this repo into your GitHub account by clicking the **Fork** button in the top right corner of the page
+1. Click the **Code** dropdown button and then select the **Codespaces** tab
+1. Select the **...** option (the three dots) and choose **New with options...**
 
 ![Creating a Codespace with custom options](./images/creating-codespace.png)
 
-### Choosing Your Development Container
+### Choosing Your development container
 
-Select from two optimized configurations:
+From the **Dev container configuration** dropdown, select one of the following options:
 
-**Option 1: Standard .NET Environment** : With a Faster startup time and with the core .NET development tools. This environment does not include Ollama capabilities.
+**Option 1: C# (.NET)** : This is the option you should use if you plan to use GitHub Models and is our recommended way to complete this course. It has all the core .NET development tools needed for the rest of the course and a fast startup time
 
-**Option 2: .NET with Ollama**: It has a slowet start-up time, five minutes on average, however, you will be able to run all the demos and experiment with Ollama.
+**Option 2: C# (.NET) - Ollama**: Ollama allows you to run the demos without needing to connect to GitHub Models or Azure OpenAI. It includes all the core .NET development in addition to Ollama, but has a slower start-up time, five minutes on average. [Follow this guide](getting-started-ollama.md) if you want to use Ollama
+
+You can leave the rest of the settings as they are. Click the **Create codespace** button to start the Codespace creation process.
 
 ![Selecting your development container configuration](./images/select-container-codespace.png)
 
-> 💡 **Pro Tip**: Choose the Ollama configuration if you plan to experiment with local model execution.
+## Verifying your Codespace is running correctly with GitHub Models
 
-## Running the Solution in Your Codespace
+Once your Codespace is fully loaded and configured, lets run a sample app to verify everything is working correctly:
 
-Once your Codespace is fully loaded and configured, follow these steps to execute the demo applications:
+1. Open the terminal. You can open a terminal window by typing **Ctrl+\`** (backtick) on Windows or **Cmd+`** on macOS.
 
-1. **Access the Solution Explorer**
+1. Switch to the proper directory by running the following command:
 
-    - Locate the Solution Explorer in the left sidebar
-    - If collapsed, click the Explorer icon (usually the top icon)
-    - The solution structure should be visible, containing all projects
+    ```bash
+    cd 02-SettingUp.NETDev\src\BasicChat-01MEAI
+    ```
 
-     ![Solution Explorer in Codespaces](./images/solution-explorer-codespaces.png)
+1. Then run the application with the following command:
 
-2. **Launch the Debug Session**
+    ```bash
+    dotnet run
+    ```
 
-    - Right-click on the Solution node to be run, in the Explorer
-    - Navigate to "Debug" in the context menu
-    - Select "Start New Instance"
+1. It may take a couple of seconds, but eventually the application should output a message similar to the following:
 
-     ![Initiating Debug Mode](./images/run-solution-codespaces.png)
+    ```bash
+    AI, or artificial intelligence, refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It is a broad field of computer science that focuses on creating systems and algorithms capable of performing tasks that typically require human intelligence. These tasks include problem-solving,
 
-> ⚠️ **Note**: If you encounter any build errors, ensure all required dependencies are properly restored by running `dotnet restore` in the terminal.
+    ...
+    ```
 
-## Conclusions and resources
+> ⚠️ **Note**: Something not working? [Open an issue](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new?template=Blank+issue) and we'll help you out.
+
+## Summary
+
+In this lesson, you learned how to set up your development environment for the rest of the course. You created a GitHub Codespace and configured it to use GitHub Models, Azure OpenAI, or Ollama. You also learned how to create a personal access token for GitHub Models and how to run a sample application to verify everything is working correctly.
 
 ### Additional Resources
-
-> ⚠️ **Note**: If you encounter any issues, open an issue in the repository.
 
 - [GitHub Codespaces Documentation](https://docs.github.com/en/codespaces)
 - [GitHub Models Documentation](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
-### Next Steps
+## Next Steps
 
-Next, we'll explore how to create your first AI application using these tools. 
+Next, we'll explore how to create your first AI application! 🚀
 
-<p align="center">
-    <a href="../03-CoreGenerativeAITechniques/readme.md">Go to Chapter 3</a>
-</p>
+👉 [Core Generative AI Techniques](../03-CoreGenerativeAITechniques/readme.md)
