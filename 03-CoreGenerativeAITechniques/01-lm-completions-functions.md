@@ -1,19 +1,14 @@
-<div align="center">
-    <h1>Generative AI Fundamentals for .NET</h1>
-    <h2>Lesson 3.1: Language Models, Chat, and Functions</h2>
-    <p><em>Understand how to use the basics of Language Models in .NET</em></p>
-</div>
+# Chat App Basics
+
+In this lesson, we will explore the basics of building chat applications using Language Model Completions and Functions in .NET. We will also explore how to use Semantic Kernel and Microsoft Extensions AI (MEAI) to create chatbots and use Semantic Kernel to create plugins, or functionality that's called by the chatbot based on the user's input.
 
 ---
 
+## Language model (LM) completions / chat
 
-## LM Completions / Chat
+**INSERT: 5 min video .NET explanation, links to main GenAI and content**
 
-(5 min video .NET explanation, links to main GenAI and content)
-
-![Language Model Completion](../03-CoreGenerativeAITechniques/images/Chat.png)  
-
-As we saw in Chapter One, Language Models are a type of AI model that can generate text based on the input it receives. 
+As we saw in Chapter One, Language Models are a type of AI model that can generate text based on the input it receives.
 
 This input can be a **prompt**, a **question**, or a **sentence**, and the model will generate a response based on the patterns it has learned from the data it was trained on.
 
