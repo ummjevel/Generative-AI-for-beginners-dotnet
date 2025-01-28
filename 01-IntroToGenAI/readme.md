@@ -1,6 +1,6 @@
-# Getting Started with AI Development Tools
+# Lesson 1: Getting Started with AI Development Tools
 
-Refresh your generative AI knowledge and understand the .NET tooling available to help you to develop generative AI applications.
+*Refresh your generative AI knowledge and understand the .NET tooling available to help you to develop generative AI applications.*
 
 ---
 
@@ -18,7 +18,7 @@ Refresh your generative AI knowledge and understand the .NET tooling available t
 
 ---
 
-## Lesson 1 - Generative AI Fundamentals for .NET
+## Generative AI Fundamentals for .NET
 
 Before we dive in to some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
 
@@ -159,4 +159,4 @@ In the next chapters, we'll explore these scenarios in detail, providing hands-o
 
 Next up, we'll get your development environment setup! So you'll be ready to dive into the world of generative AI with .NET!
 
-👉 [Set up your AI development environment](/02-SettingUp.NETDev/README.md)
+[Set up your AI development environment](/02-SettingUp.NETDev/README.md)

@@ -1,8 +1,8 @@
-# Setting Up the Development Environment for This Course
+# Lesson 2: Setting Up the Development Environment for This Course
 
-This lesson will guide you through setting up your development environment for this course. To ensure your success we've prepared a devcontainer configuration that will provide all the tooling you need to complete the course. You can run the devcontainer in GitHub Codespaces (recommended) or locally on your machine. And we also demonstrate how to set up your GitHub access tokens to interact with GitHub Models.
+*This lesson will guide you through setting up your development environment for this course. To ensure your success we've prepared a devcontainer configuration that will provide all the tooling you need to complete the course. You can run the devcontainer in GitHub Codespaces (recommended) or locally on your machine. And we also demonstrate how to set up your GitHub access tokens to interact with GitHub Models.*
 
-If you rather not use GitHub Models to interact with LLMs, we have you covered there too with guides to setup Azure OpenAI and Ollama.
+We have you covered with guides to setup Azure OpenAI and Ollama, if desired.
 
 ---
 
@@ -38,9 +38,9 @@ Here's a quick rundown of the services:
 - **Azure OpenAI**: A paid service that provides access to a wide range of AI models. It includes all of the benefits that you'd come to expect from Azure include robust security and scalability. This is a great option for this course if you already have access to an Azure OpenAI subscription.
 - **Ollama**: Ollama allows you to run AI models locally on your machine or within a Codespace or devcontainer for free. It's a great option if you prefer to run the models locally, but it is slower than the cloud-based options.
 
-👉 GitHub Models right for you? Follow the rest of this document.
-👉 Azure OpenAI have your eye? [This is the document for you](getting-started-azure-openai.md).
-👉 Ollama your choice? [This guide has the info you need](getting-started-ollama.md).
+> If **GitHub Models** is your choice, follow the rest of this document to set up your development environment with GitHub Models.
+> - **Azure OpenAI** have your eye? [This is the document for you](getting-started-azure-openai.md).
+> - **Ollama** your choice? [This guide has the info you need](getting-started-ollama.md).
 
 ## Learn and test AI models with GitHub Models
 
@@ -141,6 +141,9 @@ In this lesson, you learned how to set up your development environment for the r
 
 ### Additional Resources
 
+- Test this guide with other LLMs orquestrators!
+    - [Azure OpenAI](getting-started-azure-openai.md)
+    - [Ollama](getting-started-ollama.md)
 - [GitHub Codespaces Documentation](https://docs.github.com/en/codespaces)
 - [GitHub Models Documentation](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
@@ -148,4 +151,4 @@ In this lesson, you learned how to set up your development environment for the r
 
 Next, we'll explore how to create your first AI application! 🚀
 
-👉 [Core Generative AI Techniques](../03-CoreGenerativeAITechniques/readme.md)
+[Core Generative AI Techniques](../03-CoreGenerativeAITechniques/readme.md)
