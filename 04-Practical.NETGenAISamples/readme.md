@@ -15,7 +15,10 @@
 
 **Index**
 
-1. [eShopLite Demos](#intro-video)
+1. [Intro Video](#intro-video)
+1. [eShopLite Demos](#eshoplite-demos)
+    - [eShopLite with Semantic Search](#eshoplite-with-semantic-search)
+    - [eShopLite with Realtime Analysis](#eshoplite-with-realtime-analysis)
 1. [Chat with your Data](#understanding-github-codespaces)
 1. [Creative Writer](#pre-flight-check-setting-up-github-access-tokens)
 1. [Conclusions and Resources](#conclusions-and-resources)
@@ -39,8 +42,6 @@ For our first two demos, we'll explore the eShopLite project, a simple e-commerc
 The first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results. 
 
 ### eShopLite with Semantic Search
-
-![Video thumbnail for eShopLite with Semantic Search](./images/eshoplite-semantic-search.png)
 
 In eShopLite with Semantic Search, we use the Semantic Kernel to enhance the search capabilities of the e-commerce application. Semantic Kernel auxiliate us to create a more robust search engine that can understand the context of the user's queries and provide more accurate results. For example, if a user searches for "do you have something for cooking", the search engine can understand that the user is looking for kitchenware and show the most relevant products, in context of our sample, it returns Camping Cookware. 
 
@@ -202,7 +203,7 @@ try
 }
 ```
 
-With the code above, we  generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information. Help the user find the products they need more easily, leading to a better shopping experience and increased sales. Moreover, as generative AI evolves, we need some telemetry and monitoring to understand the user's behavior and improve the search engine, this is where Azure Application Insights and .NET Aspire come in.
+With the code above, we generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information. Helping the user find the products they need more easily, leading to a better shopping experience and increased sales. Moreover, as generative AI evolves, we need some telemetry and monitoring to understand the user's behavior and improve the search engine, this is where Azure Application Insights and .NET Aspire come in.
 
 ![Image demonstrating the .NET Aspire tracing capabilities](./images/aspire-tracing-eshoplite.png)
 
@@ -215,8 +216,6 @@ Application Insights provides a comprehensive set of telemetry data, helping us 
 > 💡 **Pro Tip**: For more information on eShopLite with Semantic Search, look at the repository to learn more: https://github.com/Azure-Samples/eShopLite-SemanticSearch/
 
 ### eShopLite with Realtime Analysis
-
-![Video thumbnail for eShopLite with Realtime Analysis](./images/eshoplite-realtime.png)
 
 In eShopLite with Realtime Analysis, we use the Realtime audio capabilities of GPT-4o to analyze the conversations between the customer and the chatbot, providing a more personalized and engaging experience. For example, if a customer asks for a product recommendation, the chatbot can analyze the customer's request in real-time and provide a more accurate and relevant response.
 
@@ -286,9 +285,6 @@ See a local demo of the feature as File Search in action:
 
 ## Chat with your Data
 
-![Video thumbnail for Chat with your Data](./images/chat-with-your-data-video.png)
-
-
 Do you want to chat with your data? In this demo, we'll use the Chat with your Data application to generate a conversation with the user's data, using a simple interface to upload a file and extract insights from it. 
 
 ![Image demonstrating the Chat with your Data application](./images/chat-with-your-data.png)
@@ -302,13 +298,18 @@ Do you want to chat with your data? In this demo, we'll use the Chat with your D
 
 ## Creative Writer Agent
 
-![Video thumbnail for Creative Writer Agent](./images/creative-writer-agent-video.png)
-
 Agents are a big topic in the current AI landscape, and to demonstrate their capabilities, we'll use the Creative Writer Agent, a tool that can generate creative and engaging text based on the user's input, helping to write researched, specific, and engaging content.
 
 ![Image demonstrating the Creative Writer Agent](./images/creative-writer-agent.png)
 
-This AI application is composed of four main components: Researcher, Marketing, Writer, and Editor. The Researcher component is responsible for understanding context, gathering information with a Bing search, and then summarizing the information. The Marketing component is responsible for understanding the user's intent, formulate queries, and retrieve information from the Vector DB. The Writer component is responsible for gathering the information from the other components and produce the article, while the Editor component is responsible for reviewing the article, providing feedback, it decides if the article is ready to be published or not. All of this behavior is orchestrated by Semantic Kernel, Microsoft AI Extension, and .NET Aspire.
+This solution centers on four dedicated modules that combine to generate high-quality content:
+
+- Researcher: Leverages Bing search to gather context, topics, and data, then concisely summarizes it.
+- Marketing: Interprets user intent, constructs relevant questions, and taps into the Vector DB for precise results.
+- Writer: Synthesizes findings from Researcher and Marketing, producing a cohesive writing of the article.
+- Editor: Assesses the draft, offers corrections, and decides whether it’s publication-ready.
+
+The workflow integrates relevant data, effective messaging, and review, being orchestrated by Semantic Kernel, Microsoft AI Extension, and .NET Aspire.
 
 ![Image demonstrating the Creative Writer Agent architecture](./images/creative-writer-agent-architecture.png)
 

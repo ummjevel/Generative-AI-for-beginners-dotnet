@@ -1,6 +1,6 @@
 # Generative AI for Beginners .NET - A Course
 
-### Six Lessons teaching *what* you need to build **Generative AI applications in .NET**
+### Practical lessons teaching you how to build Generative AI applications in .NET
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/Generative-AI-For-Beginners-Dotnet.svg)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/Generative-AI-For-Beginners-Dotnet.svg)](https://GitHub.com/microsoft/Generative-AI-For-Beginners-Dotnet/graphs/contributors/)
@@ -12,9 +12,9 @@
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Fork)](https://GitHub.com/microsoft/Generative-AI-For-Beginner-Dotnets/network/)
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://GitHub.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)
 
-[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4?WT.mc_id=aiml-137032-kinfeylo)
+[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 
-Welcome to **Generative AI for Beginners .NET** (aka **GenAINET**), the hands-on course for .NET developers diving into the world of Generative AI! 
+Welcome to **Generative AI for Beginners .NET**, the hands-on course for .NET developers diving into the world of Generative AI!
 
 This isn’t your typical “here’s some theory, good luck” course. This repository is all about **real-world applications** and **live coding** to empower .NET developers to take full advantage of Generative AI.
 
@@ -28,7 +28,7 @@ Generative AI is transforming software development, and .NET is no exception. Th
 
 - Short 5-10 minute videos for each lesson.
 - Fully functional .NET code samples you can run and explore.
-- Free integration with tools like **GitHub Codespaces** and **GitHub Models** for seamless setup and fast time-to-code.
+- Integration with tools like **GitHub Codespaces** and **GitHub Models** for seamless setup and fast time-to-code. But if you want to run the samples locally with your own models, you can totally do that too.
 
 You'll learn how to implement Generative AI into .NET projects, from basic text generation to building full-fledged solutions using **GitHub Models**, **Azure OpenAI Services** and **local models with Ollama**.
 
@@ -37,7 +37,7 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 - **Short Video**: A quick overview of the lesson (5-10 minutes).
 - **Complete Code Samples**: Fully functional and ready to run.
 - **Step-by-Step Guidance**: Simple instructions to help you learn and implement the concepts.
-- **Deep Dive References**: Links to theoretical explanations in [Generative AI for Beginners - A Course](https://github.com/microsoft/generative-ai-for-beginners) when needed.
+- **Deep Dive References**: This course focuses on the practical implementation of GenAI, to get deeper into the theoretical we also provide links to explanations in [Generative AI for Beginners - A Course](https://github.com/microsoft/generative-ai-for-beginners) when needed.
 
 ## 🗃️ Lessons
 
@@ -50,29 +50,27 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 | 05  | [**Responsible Use of Generative AI in .NET Apps**](./05-ResponsibleGenAI/readme.md) | <ul><li>Ethical considerations, bias mitigation, and secure implementations.</li></ul> | [![Watch the video](./images/05-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERTkzBSAfKJEiLw2HLnzHnkBMEbpk17hniaVfr8lCm6how?e=gWOr33&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | [Learn More](https://aka.ms/genainet) |
 
 
-
 ## 🛠️ What You Need
 
 To get started, you'll need:
 
 1. A **GitHub account** (free is fine!) to [fork this entire repo](https://github.com/microsoft/generative-ai-for-beginners-dotnet/fork) to your own GitHub account.
 
-2. **GitHub Codespaces enabled** for instant coding environments. You can enable GitHub Codespaces in your repository settings. Learn more about GitHub Codespaces [here](https://docs.github.com/en/codespaces).
+1. **GitHub Codespaces enabled** for instant coding environments. You can enable GitHub Codespaces in your repository settings. Learn more about GitHub Codespaces [here](https://docs.github.com/en/codespaces).
 
-3. A basic understanding of **.NET development**. Learn more about .NET [here](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet).
+1. A basic understanding of **.NET development**. Learn more about .NET [here](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet).
 
+And that's it.
 
-To start coding right away, you'll need:
+We've designed this course to be as low-friction as possible. We make use of the following to help you get started quickly:
 
-1. **Run in GitHub Codespaces**: With one click, you'll get a pre-configured environment to test and explore the lessons.
-2. **Leverage GitHub Models**: Try out AI-powered demos hosted directly within this repo, we explain more in the lessons, as we go. *(If you want to learn more about GitHub Models, click [here](https://docs.github.com/github-models))*
+- **Run in GitHub Codespaces**: With one click, you'll get a pre-configured environment to test and explore the lessons.
+- **Leverage GitHub Models**: Try out AI-powered demos hosted directly within this repo, we explain more in the lessons, as we go. *(If you want to learn more about GitHub Models, click [here](https://docs.github.com/github-models))*
 
-When you're ready to expand:
+Then when you're ready to expand we also have guides for:
 
-- Upgrade to **Azure OpenAI Services** for scalable and enterprise-ready solutions.
-- Use **Ollama** to run models locally on your hardware for enhanced privacy and control.
-
-Guides for transitioning to Azure or Ollama are included in the repository.
+- Upgrading to **Azure OpenAI Services** for scalable and enterprise-ready solutions.
+- Using **Ollama** to run models locally on your hardware for enhanced privacy and control.
 
 ## 🤝 Want to Help?
 
@@ -90,18 +88,18 @@ Check the [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to get invo
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
 ## 🌐 Other Courses
 
-Our team produces other courses! Check out:
+We have a lot of other content to help your learning journey. Check out:
 
-- [ML for Beginners](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-- [Data Science for Beginners](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-- [AI for Beginners](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-- [**NEW** Cybersecurity for Beginners](https://github.com/microsoft/Security-101??WT.mc_id=academic-96948-sayoung)
-- [Web Dev for Beginners](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-- [IoT for Beginners](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-- [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
-- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
+- [Mastering GitHub Copilot for AI Paired Programming](https://aka.ms/GitHubCopilotAI)
+- [Backend Web Development with .NET for Beginners](https://aka.ms/genainet/backendnetbeginners)
+- [Frontend Web Development with .NET for Beginners](https://aka.ms/genainet/frontendnetbeginners)
+- [Build Distributed Apps with .NET Aspire](https://aka.ms/genainet/distaspirebeginners)
+- [ML for Beginners](https://aka.ms/ml-beginners)
+- [Data Science for Beginners](https://aka.ms/datascience-beginners)
+- [Artificial Intelligence for Beginners](https://aka.ms/ai-beginners)
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101?)
 
-Start coding and build the future with Generative AI and .NET! 🚀
+[Let's start learning Generative AI and .NET!](02-SettingUp.NETDev/readme.md) 🚀
