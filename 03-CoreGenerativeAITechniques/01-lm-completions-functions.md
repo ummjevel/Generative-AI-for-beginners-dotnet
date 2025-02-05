@@ -1,20 +1,20 @@
 # Chat App Basics
 
-In this lesson, we will explore the basics of building chat applications using Language Model Completions and Functions in .NET. We will also explore how to use Semantic Kernel and Microsoft Extensions AI (MEAI) to create chatbots and use Semantic Kernel to create plugins, or functionality that's called by the chatbot based on the user's input.
+In this lesson, we will explore the basics of building chat applications using language model completions and functions in .NET. We will also explore how to use Semantic Kernel and Microsoft Extensions AI (MEAI) to create chatbots. And use Semantic Kernel to create plugins, or functionality that's called by the chatbot based on the user's input.
 
 ---
 
-## Language model (LM) completions / chat
+## Text completions and chat
 
 **INSERT: 5 min video .NET explanation, links to main GenAI and content**
 
-As we saw in Chapter One, Language Models are a type of AI model that can generate text based on the input it receives.
+Language models are a type of AI model that can generate text based on the input it receives.
 
 This input can be a **prompt**, a **question**, or a **sentence**, and the model will generate a response based on the patterns it has learned from the data it was trained on.
 
 Using Generative AI models helps to generate text that is coherent and contextually relevant. Hosting multiple models and auxiliating the system to be capable of open domain conversations.
 
-This includes how to create the system message, how to interact with the user, and how to generate the response. The system message is the message that the system sends to the user to start the conversation. Being key for your User Experience, it should be clear and concise, and it should set the tone for the conversation. 
+This includes how to create the system message, how to interact with the user, and how to generate the response. The system message is the message that the system sends to the user to start the conversation. Being key for your User Experience, it should be clear and concise, and it should set the tone for the conversation.
 
 > 💡 **Pro Tip**: Learn more about Language Models Completion and flow control in [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners/tree/main/07-building-chat-applications/)
 
@@ -25,7 +25,6 @@ Tools, like those we presented in the first chapter, can be used in a multitude 
 The next picture will show the steps we follow in the creation of a chatbot using Semantic Kernel:
 
 ![Semantic Kernel](../03-CoreGenerativeAITechniques/images/skmaps.png)
-
 
 Look at the following code snippet to implement a simple chatbot using Semantic Kernel and Azure OpenAI chat completion:
 
