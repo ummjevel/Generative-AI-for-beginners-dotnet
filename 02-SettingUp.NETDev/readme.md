@@ -35,8 +35,8 @@ We provide instructions for setting up your development environment with GitHub 
 Here's a quick rundown of the services:
 
 - **GitHub Models**: A free service to get started with that allows you to test and interact with various AI models directly within your development environment. It's easy to use from Codespaces and a great way to experiment with different models and understand their capabilities before implementation.
-- **Azure OpenAI**: A paid service that provides access to a wide range of AI models. It includes all of the benefits that you'd come to expect from Azure include robust security and scalability. This is a great option for this course if you already have access to an Azure OpenAI subscription.
-- **Ollama**: Ollama allows you to run AI models locally on your machine or within a Codespace or devcontainer for free. It's a great option if you prefer to run the models locally, but it is slower than the cloud-based options.
+- **Azure OpenAI**: A paid service that provides access to a wide range of AI models. It includes all of the benefits that you'd come to expect from Azure include robust security and scalability. This is a great option for this course if you already have access to an Azure subscription.
+- **Ollama**: Ollama allows you to run AI models locally on your machine or within a Codespace or devcontainer for free. It's a great option if you prefer to run the models locally, but it requires more hardware resources and can be slower than the cloud-based options.
 
 > If **GitHub Models** is your choice, follow the rest of this document to set up your development environment with GitHub Models.
 > - **Azure OpenAI** have your eye? [This is the document for you](getting-started-azure-openai.md).
@@ -54,14 +54,14 @@ Before we do anything else, we need to configure essential security credentials 
 
 ### Creating a Personal Access Token for GitHub Model access
 
-1. Navigate to GitHub Settings:
+1. Navigate to [GitHub Settings](https://github.com/settings/profile):
 
     - Click your profile picture in the top-right corner
     - Select **Settings** from the dropdown menu
 
     ![GitHub Settings](./images/settings-github.png)
 
-1. Access Developer Settings:
+1. Access [Developer Settings](https://github.com/settings/apps):
 
     - Scroll down the left sidebar
     - Click on **Developer settings** (usually at the bottom)
