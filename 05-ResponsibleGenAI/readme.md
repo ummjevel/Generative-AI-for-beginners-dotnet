@@ -1,13 +1,13 @@
-![lesson banner](./images/03-lesson-banner.png)
 
-<div align="center">
-    <h1>Generative AI Fundamentals for .NET</h1>
-    <h2>Lesson 5: Responsible Use of Generative AI in .NET Apps</h2>
-    <p><em>Learning how to develop AI responsibly</em></p>
-</div>
+# Generative AI Fundamentals for .NET
+
+## Lesson 5: Responsible Use of Generative AI in .NET Apps
+
+*Learning how to develop AI responsibly*
 
 > 💡 **Quick Summary**: Generative AI offers powerful capabilities, but it is crucial to ensure these implementations are ethical, unbiased, and secure. This lesson explores how to incorporate responsible AI principles into .NET applications effectively.
 
+![lesson banner](./images/05-videocover.jpg)
 
 ---
 
@@ -106,11 +106,9 @@ Leverage the following tools to implement responsible AI practices:
 - [Microsoft Learn - Responsible AI](https://learn.microsoft.com/training/modules/embrace-responsible-ai-principles-practices/): Explore responsible AI practices.
 
 - [Microsoft Responsible AI](https://www.microsoft.com/ai/responsible-ai): Learn how Microsoft does responsible AI practices.
-### Next Steps
 
-See real scenarios for Generative AI with scalable applications in the next chapter.
+### Thank you!
 
-<p align="center">
-    <a href="../06-Real-WorldScenarios/readme.md">Go to Chapter 6</a>
-</p>
+Thank you for completing this course on Generative AI .NET! Please, continue checking as we add more lessons.
 
+For more insights on AI development and best practices, check out the [.NET Blog](https://devblogs.microsoft.com/dotnet/).
