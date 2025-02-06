@@ -159,4 +159,4 @@ In this lesson, we learned how to use text completions, start and manage a chat 
 
 In the next lesson you'll see how to start chatting with data and build what's known as a Retrieval Augmented Generation (RAG) model chatbot - and work with vision and audio in an AI application!
 
-[Let's build a RAG app!](./02-rag-vision-audio.md)
+[Let's build a RAG app!](./02-retrieval-augmented-generation.md)

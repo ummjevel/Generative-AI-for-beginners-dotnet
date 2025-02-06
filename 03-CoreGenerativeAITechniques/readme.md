@@ -15,9 +15,10 @@ In this lession you'll learn some practical skills for building AI-enabled .NET 
 
 For this lesson, we will subdivide the content into the following sections:
 
-- [Chat, LLM completions, and function calling](01-lm-completions-functions.md)
-- [Retrieval-Augmented Generation (RAG), vision applications and audio](02-rag-vision-audio.md)
-- [Agents](03-agents.md)
+- [Chat, LLM completions, and function calling](./01-lm-completions-functions.md)
+- [Retrieval-Augmented Generation (RAG)](./02-retrieval-augmented-generation.md)
+- [Vision and audio AI applications](./03-vision-audio.md)
+- [Agents](04-agents.md)
 
 Starting with Langauge Model completions and Chat applications and function implementations with language models in .NET.
 
