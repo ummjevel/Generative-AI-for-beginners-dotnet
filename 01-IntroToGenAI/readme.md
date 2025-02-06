@@ -73,15 +73,15 @@ By providing a consistent API, MEAI enables developers to interact with differen
 
 For example, here's the interface you would use to create a chat client with MEAI regardless of the AI service you're using:
 
-    ```csharp
-    public interface IChatClient : IDisposable 
-    { 
-        Task<ChatCompletion> CompleteAsync(...); 
-        IAsyncEnumerable<StreamingChatCompletionUpdate> CompleteStreamingAsync(...); 
-        ChatClientMetadata Metadata { get; } 
-        TService? GetService<TService>(object? key = null) where TService : class; 
-    }
-    ```
+```csharp
+public interface IChatClient : IDisposable 
+{ 
+    Task<ChatCompletion> CompleteAsync(...); 
+    IAsyncEnumerable<StreamingChatCompletionUpdate> CompleteStreamingAsync(...); 
+    ChatClientMetadata Metadata { get; } 
+    TService? GetService<TService>(object? key = null) where TService : class; 
+}
+```
 
 This way when using MEAI to build a chat application, you'll develop against the same API surface to get a chat completion or stream the completion, get metadata, or access the underlying AI service. This makes it easier to switch out AI services or add new ones as needed.
 
@@ -93,15 +93,15 @@ Using an unified API, MEAI allows developers to work with different AI services,
 
 > 🏎️ **Quick start**: For a quick start with MEAI, [check out the blog post](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/).
 >
-> 📖 **Docs**: Learn more about Microsoft.Extensions.AI (MEAI) in our [MEAI documentation](https://learn.microsoft.com/en-us/dotnet/ai/ai-extensions)
+> 📖 **Docs**: Learn more about Microsoft.Extensions.AI (MEAI) in our [MEAI documentation](https://learn.microsoft.com/dotnet/ai/ai-extensions)
 
 #### Semantic Kernel (SK)
 
-Semantic Kernel is an open-source SDK that enables developers to integrate generative AI language models into their .NET applications. It provides abstractions for AI services and memory stores allowing creation of plugins that can be automatically orchestrated by AI. It even uses the OpenAPI standard enabling developers to create AI agents to interact with external APIs.
+Semantic Kernel is an open-source SDK that enables developers to integrate generative AI language models into their .NET applications. It provides abstractions for AI services and memory (vector) stores allowing creation of plugins that can be automatically orchestrated by AI. It even uses the OpenAPI standard enabling developers to create AI agents to interact with external APIs.
 
 ![*Figure: Semantic Kernel (SK) SDK.*](./images/semantic-kernel.png)
 
-Semantic Kernel supports Java, Python, and .NET, offering a plethora of connectors, functions and plugins for integration. Some of the key features of Semantic Kernel include:
+Semantic Kernel supports .NET, as well as other languages such as Java and Python, offering a plethora of connectors, functions and plugins for integration. Some of the key features of Semantic Kernel include:
 
 - **Kernel Core**: Provides the core functionality for the Semantic Kernel, including connectors, functions, and plugins, to interact with AI services and models. The kernel is the heart of the Semantic Kernel, being available to services and plugins, retrieving them when needed, monitoring Agents, and being an active middleware for your application.
 
@@ -117,17 +117,17 @@ Semantic Kernel supports Java, Python, and .NET, offering a plethora of connecto
 
 - **Prompt Templating**: Provides tools for prompt engineering, including prompt design, testing, and optimization, to enhance AI model performance and accuracy. Allowing developers to create and test prompts, and optimize them for specific tasks.
 
-- **Filters**: Auxiliates to take custom actions on the data, during the chat completion, for example, filtering out unwanted data, or adding custom data to the response.
+- **Filters**: Controls around when and how functions are run to improve security and responsible AI practices.
 
 In Semantic Kernel, a full loop would look like the diagram below:
 
 ![*Figure: Semantic Kernel (SK) full loop.*](./images/semantic-kernel-full-loop.png)
 
-> 📖 **Docs**: Learn more about Semantic Kernel in our [Semantic Kernel documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
+> 📖 **Docs**: Learn more about Semantic Kernel in our [Semantic Kernel documentation](https://learn.microsoft.com/semantic-kernel/overview/)
 
 #### AI Toolkit Extension for Visual Studio Code
 
-For our course, we are going to use GitHub Models and Codespaces, and that means we can use the AI Toolkit Extension for VS Code. This extension allows you to interact with AI models, test prompts, fine-tune and deploy models, running from your local machine or from Codespaces. To test the AI Toolkit Extension, you can install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio), and then, you can start testing prompts, and models, and even test them your local machine.
+For our course, we are going to use GitHub Models and Codespaces, and that means we can use the AI Toolkit Extension for VS Code. This extension allows you to interact with AI models, test prompts, fine-tune and deploy models, running from your local machine or from Codespaces. To use the AI Toolkit Extension, you can install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio), and then, you can start testing prompts, and models, from your local VS Code.
 
 ![*Figure: AI Toolkit Extension for Visual Studio Code.*](./images/ai-toolkit-extension.png)
 
@@ -139,15 +139,15 @@ For our course, we are going to use GitHub Models and Codespaces, and that means
 | Linux       | Yes            | Phi-3-mini-4k-cuda-int4-onnx | 2.30 |
 | Windows, Mac, Linux | No | Phi-3-mini-4k-cpu-int4-rtn-block-32-acc-level-4-onnx | 2.72 |
 
-> 📖 **Docs**: Learn more about the AI Toolkit Extension in our [AI Toolkit Extension documentation](https://learn.microsoft.com/en-us/windows/ai/toolkit/)
+> 📖 **Docs**: Learn more about the AI Toolkit Extension in our [AI Toolkit Extension documentation](https://learn.microsoft.com/windows/ai/toolkit/)
 
 #### Ollama and ONNX for local models
 
 Ollama and ONNX enable running AI models locally without cloud dependencies. ONNX provides an open format for machine learning models, ensuring interoperability and allowing .NET applications to utilize local AI models efficiently. Ollama is a lightweight SDK that simplifies the integration of ONNX models, enabling developers to run AI models locally without cloud dependencies.
 
-For local applications, Small Language Models (SLMs) are more ideal, as most LLMS require a lot of resources, and are more suitable for bigger applications, and cloud-based applications.
+For local applications, Small Language Models (SLMs) are more ideal, as most LLMs require a lot of resources, and are more suitable for bigger applications, and cloud-based applications.
 
-> 📖 **Docs**: Learn more about Ollama and ONNX in our [Local Windows AI documentation](https://learn.microsoft.com/en-us/windows/ai/models) 
+> 📖 **Docs**: Learn more about Ollama and ONNX in our [Local Windows AI documentation](https://learn.microsoft.com/windows/ai/models) 
 
 ## Conclusion
 
