@@ -6,8 +6,6 @@
 
 ---
 
-[![Watch the video](../images/02-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERTkzBSAfKJEiLw2HLnzHnkBMEbpk17hniaVfr8lCm6how?e=gWOr33&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-
 #### What you'll learn in this lesson:
 
 - ⚡ How to setup a development environment with GitHub Codepaces
@@ -103,7 +101,9 @@ From the **Dev container configuration** dropdown, select one of the following o
 
 **Option 2: C# (.NET) - Ollama**: Ollama allows you to run the demos without needing to connect to GitHub Models or Azure OpenAI. It includes all the core .NET development in addition to Ollama, but has a slower start-up time, five minutes on average. [Follow this guide](getting-started-ollama.md) if you want to use Ollama
 
-You can leave the rest of the settings as they are. Click the **Create codespace** button to start the Codespace creation process.
+> 💡**Tip** : When creating your codespace, please, use the region closest to you if you have the option in the menu. Using a region far away, can cause errors in the creation.
+
+Click the **Create codespace** button to start the Codespace creation process.
 
 ![Selecting your development container configuration](./images/select-container-codespace.png)
 
