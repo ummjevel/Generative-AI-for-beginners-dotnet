@@ -28,6 +28,8 @@ Let's dive in and set up your development environment! 🏃‍♂️
 
 ## Which AI service should I use for this course?
 
+**INSERT: CHAT EXPLANATION VIDEO HERE**
+
 We provide instructions for setting up your development environment with GitHub Models, Azure OpenAI, and Ollama. You can choose the one that best fits your needs. We recommend using GitHub Models for this course, but you can use any of the three services.
 
 Here's a quick rundown of the services:
