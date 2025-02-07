@@ -501,7 +501,7 @@ In .NET Aspire, we notice how the components are orchestrated to create a seamle
 
 ![Image demonstrating the .NET Aspire telemetry capabilities](./images/aspire-telemetry-creative-writer.png)
 
-> 💡**Pro Tip**: For more information on the Creative Writer Agent, look at the repository to learn more: [Contoso Creative Writer](https://github.com/Azure-Samples/aspire-semantic-kernel-creative-writer)
+> 💡**Pro Tip**: For more information on the Creative Writer Agent, look at the repository to learn more: [Contoso Creative Writer](https://aka.ms/netaicreativewriter)
 
 
 ## Conclusions and resources
