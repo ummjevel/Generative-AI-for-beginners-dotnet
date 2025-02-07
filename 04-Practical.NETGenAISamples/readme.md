@@ -1,8 +1,6 @@
-<div align="center">
-    <h1>Generative AI Fundamentals for .NET</h1>
-    <h2>Lesson 4: Generative AI Samples</h2>
-    <p><em>Get inspired to create with MSFT's Generative AI Samples</em></p>
-</div>
+## Lesson 4: Generative AI Samples
+
+*Get inspired to create with MSFT's Generative AI Samples*
 
 > 💡 **Quick Summary**: Understand how Generative AI works with Microsoft Samples, get inspirated, and understand the best scenarios to apply it into new applications.
 
@@ -27,11 +25,9 @@
 
 ## Intro Video
 
-[![Watch the video](../images/04-videocover.jpg)](https://microsoft-my.sharepoint.com/:v:/p/brunocapuano/ERHGiBsTtVJBtN9VevaxdnwB6dfV_GCdFXbZL9D-GnEkew?e=Y4oAjD&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**INSERT: CHAT EXPLANATION VIDEO HERE**
 
-In our first video, Bruno Capuano introduces some of the practical scenarios for .NET Generative AI! 
-On the first demo, we use Ollama to create an application to generate descriptions for images quickly using Llama 3.2 Vision model running locally, later, four demos that showcase the power of Semantic Kernel, Language Models, and the .NET AI Extension.
-
+Generative AI is a powerful technology that has multiple possibilities for applications, from e-commerce to content creation. To demonstrate how Generative AI can be used in real-world scenarios, we'll explore some of the Microsoft samples that showcase the capabilities of Generative AI and how it can be integrated. 
 
 ## eShopLite Demos
 
@@ -39,11 +35,15 @@ On the first demo, we use Ollama to create an application to generate descriptio
 
 For our first two demos, we'll explore the eShopLite project, a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, Customer Support, and Realtime Audio Analysis. 
 
+These demos use [Azure OpenAi](https://azure.microsoft.com/en-us/products/ai-services/openai-service) and [Azure Ai Foundry Models](https://ai.azure.com/) to do their inferences for the applications. Please, check more details on their repositories.
+
 The first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results. 
 
 ### eShopLite with Semantic Search
 
-In eShopLite with Semantic Search, we use the Semantic Kernel to enhance the search capabilities of the e-commerce application. Semantic Kernel auxiliate us to create a more robust search engine that can understand the context of the user's queries and provide more accurate results. For example, if a user searches for "do you have something for cooking", the search engine can understand that the user is looking for kitchenware and show the most relevant products, in context of our sample, it returns Camping Cookware. 
+In eShopLite with Semantic Search, we use the Semantic Kernel to enhance the search capabilities of the e-commerce application. Semantic Kernel auxiliate us to create a more robust search engine that can understand the context of the user's queries and provide more accurate results. 
+
+For example, if a user searches for "do you have something for cooking", the search engine can understand that the user is looking for kitchenware and show the most relevant products, in context of our sample, it returns Camping Cookware. 
 
 ![Image demonstrating the search capabilities in eShopLite](./images/search-eshoplite.png)
 
@@ -145,7 +145,18 @@ var recordId = await _productsCollection.UpsertAsync(productVector);
 _logger.LogInformation("Product added to memory: {Product} with recordId: {RecordId}", product.Name, recordId);
 ``` 
 
-The code above demonstrates how to iterate over the products and add them to the memory, create a new product vector, generate the embedding for the product information, convert the embedding result to a float array, and assign it to the product vector. The product is then added to the memory, repeating the process for each product in the collection. After that, when the user searches for a product, we can compare the user's query with the product vectors and return the most relevant products.
+
+The code above demonstrates how to iterate over the products and add them to the memory. 
+
+After we create a new product vector, we use it to generate embedding for the product information, convert the embedding result to a float array, and assign it to the product vector. 
+
+Look at `_productsCollection`, it is a reference to the container where the products are stored, using a CosmosDB call to get the response for the recordId. For in this case, for logging.
+
+The product is then added to the memory, repeating the process for each product in the collection. 
+
+After that, when the user searches for a product, we can compare the user's query with the product vectors and return the most relevant products.
+
+
 
 ```csharp
 try
@@ -203,7 +214,11 @@ try
 }
 ```
 
-With the code above, we generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information. Helping the user find the products they need more easily, leading to a better shopping experience and increased sales. Moreover, as generative AI evolves, we need some telemetry and monitoring to understand the user's behavior and improve the search engine, this is where Azure Application Insights and .NET Aspire come in.
+With the code above, we generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information. 
+
+Helping the user find the products they need more easily, leading to a better shopping experience and increased sales. 
+
+Moreover, as generative AI evolves, we need some telemetry and monitoring to understand the user's behavior and improve the search engine, this is where Azure Application Insights and .NET Aspire come in.
 
 ![Image demonstrating the .NET Aspire tracing capabilities](./images/aspire-tracing-eshoplite.png)
 
@@ -211,9 +226,13 @@ With the code above, we generate the embedding for the search query, search the 
 
 ![Image demonstrating the Azure Application Insights in eShopLite](./images/app-insights-eshoplite.png)
 
+As Telemetry is essential to understand the user's behavior and improve services, we introduce Azure Application Insights to monitor the application's performance and user interactions.
+
 Application Insights provides a comprehensive set of telemetry data, helping us to understand how our services are performing, and how users are interacting with the application and cloud usage.
 
-> 💡 **Pro Tip**: For more information on eShopLite with Semantic Search, look at the repository to learn more: https://github.com/Azure-Samples/eShopLite-SemanticSearch/
+In the image, we can see the Application Insights dashboard, providing how the services are performing, for example, the calls for our Database, number of requests, and the response time.
+
+> 💡 **Pro Tip**: For more information on eShopLite with Semantic Search, look at the repository to learn more: https://aka.ms/netaieshoplitesemanticsearch
 
 ### eShopLite with Realtime Analysis
 
@@ -221,7 +240,7 @@ In eShopLite with Realtime Analysis, we use the Realtime audio capabilities of G
 
 ![Image demonstrating the Realtime Analysis in eShopLite](./images/realtime-analysis-eshoplite.gif)
 
-To implement this feature, we need to implement new features to create the endpoints for the Realtime Analysis, it can be found on the `StoreRealtime\ConversationManager.cs` implementation.
+To implement this feature, we need to implement new features to create the endpoints for the Realtime Analysis, it can be found on the `StoreRealtime\ConversationManager.cs` implementation for Realtime Analysis.
 
 
 ```csharp
@@ -240,6 +259,11 @@ public async Task RunAsync(
         The current date is {DateTime.Now.ToLongDateString()}
         """;
 
+```
+First, we define the initial prompt for the assistant, providing the user with instructions on how to interact with the chatbot. Remember to use prompts that are clear and concise, prompt engineering is essential to get accurate results from the AI models.
+
+``` csharp
+
     // Notify the user that the connection is being established
     await addMessageAsync("Connecting...");
     // Send an initial greeting message
@@ -251,6 +275,14 @@ public async Task RunAsync(
 
     // Add the AI functions to a list of tools
     List<AIFunction> tools = new List<AIFunction> { contosoSemanticSearchTool, contosoSearchByProductNameTool };
+
+```
+
+We then notify the user that the chat is ready to start and send an initial greeting message. Then, AI functions to search products, semantic search, and search by product name are created and added to a list of tools. Which could be used to provide the user with relevant information on their queries.
+
+
+
+``` csharp
 
     // Configure the conversation session options
     var sessionOptions = new ConversationSessionOptions()
@@ -275,22 +307,26 @@ public async Task RunAsync(
 }
 ```
 
->  💡 **Pro Tip**: For more information on eShopLite with Realtime Audio, look at the repository to learn more: https://github.com/Azure-Samples/eShopLite-RealtimeAudio
+The conversation session options are configured, including the instructions, voice, and input transcription options. Using the `Whisper-1` model for the input transcription.
 
-See a local demo of the feature as File Search in action:
+Each tool is added to the session options, and the conversation session is started with the configured options. Those can be changed to fit the user's needs.
 
-<p align="center">
-    <a href=".\src\AgentsKLabs-04-FileSearch">Go to the File Search sample</a>
-</p>
+
+>  💡 **Pro Tip**: For more information on eShopLite with Realtime Audio, look at the repository to learn more: https://aka.ms/netaieshopliterealtimechat
+
+---
 
 ## Chat with your Data
 
-Do you want to chat with your data? In this demo, we'll use the Chat with your Data application to generate a conversation with the user's data, using a simple interface to upload a file and extract insights from it. 
+Chatting with your Data is a classic example of how Generative AI is used in real-world applications. This application allows users to interact with their data in a conversational way, making it easier to understand complex datasets and extract valuable insights.
+
+It deploys a Chat Application, a Document Manager, and an Aspire Dashboard to provide a seamless experience in the application. Check the application in the GitHub repository.
+
 
 ![Image demonstrating the Chat with your Data application](./images/chat-with-your-data.png)
 
 
-> 💡**Pro Tip**: For more information on the Chat with your Data app, look at the repository to learn more: [Chat with your Data](https://github.com/Azure-Samples/netai-chat-with-your-data)
+> 💡**Pro Tip**: For more information on the Chat with your Data app, look at the repository to learn more: [Chat with your Data](https://aka.ms/netaichatwithyourdata)
 
 
 
@@ -333,7 +369,7 @@ await foreach (var delta in session.ProcessStreamingRequest(createWriterRequest)
 }
 ```
 
-The type `CreateWriterRequest` needs to have three properties: `Research`, `Products`, and `Writing`. After that, it calls the `CreateSessionAsync` method, which looks like this:
+The type `CreateWriterRequest` needs to have three properties: `Research`, `Products`, and `Writing`. After getting them setted by processing the request, it calls the `CreateSessionAsync` method, which looks like this:
 
 ```csharp
 internal async Task<CreativeWriterSession> CreateSessionAsync(HttpResponse response)
@@ -467,14 +503,6 @@ In .NET Aspire, we notice how the components are orchestrated to create a seamle
 
 > 💡**Pro Tip**: For more information on the Creative Writer Agent, look at the repository to learn more: [Contoso Creative Writer](https://github.com/Azure-Samples/aspire-semantic-kernel-creative-writer)
 
-See a local demo of the Creative Writer Agent in action:
-
-<p align="center">
-    <a href=".\src\AgentSKLabs-10-CreativeWriter">Go to Creative Writer local sample,</a>
-</p>
-
-
-
 
 ## Conclusions and resources
 
@@ -484,13 +512,11 @@ Those are just a few examples of how you can use Generative AI in your applicati
 
 > ⚠️ **Note**: If you encounter any issues, please, open an issue in the repository.
 
-- [Azure AI Agents - Instructions](./src/AzureAIAgents.md)
+- [eShopLite with DeepSeek](https://aka.ms/netaieshoplitedeepseekr1)
+- [eShopLite with Azure AI Search](https://aka.ms/netaieshoplitesemanticsearchazureaisearch)
 
 ### Next Steps
 
 Learn about responsible AI practices and how to ensure that your AI models are ethical and have a positive impact!
 
-<p align="center">
-    <a href="../05-ResponsibleGenAI/readme.md">Go to Chapter 5</a>
-</p>
-
+[Go to the next lesson](../05-ResponsibleAI/readme.md)
