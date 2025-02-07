@@ -72,7 +72,9 @@ Ok - so we're going to put the model through it's paces and ask it if it can tel
 
 Here's a point I want to drive home. We're conversing with a language model, or more appropriately a multi-modal model that can handle text as well as image (and audio) interactions. And we're carrying on the conversation with the model as normal. Sure it's a different type of object we're sending to the model, `AIContent` instead of a `string`, but the workflow is the same.
 
-## Audio AI with MEAI
+## Audio AI
+
+**INSERT: LESSON 3 AUDIO VIDEO HERE**
 
 Real-time audio techniques allow your apps to generate audio and transcribe it in real-time. This can be useful for a wide range of applications, such as voice recognition, speech synthesis, and audio manipulation.
 
