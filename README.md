@@ -102,6 +102,7 @@ We have a lot of other content to help your learning journey. Check out:
 - [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
 - [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
 - [AI for Beginners](https://aka.ms/ai-beginners)
+- [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners)
 - [Data Science for Beginners](https://aka.ms/datascience-beginners)
 - [ML for Beginners](https://aka.ms/ml-beginners)
 - [Cybersecurity for Beginners](https://github.com/microsoft/Security-101) 
