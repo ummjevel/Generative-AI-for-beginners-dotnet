@@ -2,6 +2,7 @@
 using Azure.AI.Inference;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
+using System.Text;
 
 var githubToken = Environment.GetEnvironmentVariable("GITHUB_TOKEN");
 if(string.IsNullOrEmpty(githubToken))
@@ -26,5 +27,5 @@ prompt.AppendLine("I found this product based on the other reviews. It worked fo
 // send the prompt to the model and wait for the text completion
 var response = await client.CompleteAsync(prompt.ToString());
 
-// display the repsonse
+// display the response
 Console.WriteLine(response.Message);
