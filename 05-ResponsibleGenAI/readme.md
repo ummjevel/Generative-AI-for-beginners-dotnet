@@ -16,9 +16,9 @@ When developing generative AI solutions, adhere to the following principles:
 
 For more detailed information diving into each of those principles, check out this [Using Generative AI Responsibly lesson](https://github.com/microsoft/generative-ai-for-beginners/tree/main/03-using-generative-ai-responsibly).
 
-## Why should you prioritize responsible AI
+## Why should you prioritize responsible AI?
 
-Prioritizing responsible AI practices ensure trust, compliance, and better outcomes. Here are key reasons:
+Prioritizing responsible AI practices ensures trust, compliance, and better outcomes. Here are key reasons:
 
 - **Hallucinations**: Generative AI systems can produce outputs that are factually incorrect or contextually irrelevant, known as hallucinations. These inaccuracies can undermine user trust and application reliability. Developers should use validation techniques, knowledge-grounding methods, and content constraints to address this challenge.
 

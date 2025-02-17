@@ -11,7 +11,7 @@ This lesson will guide you through setting up your development environment for t
 - ⚡ How to setup a development environment with GitHub Codepaces
 - 🤖 Configure your development environment to access LLMs via GitHub Models, Azure OpenAI, or Ollama
 - 🛠️ Industry-standard tools configuration with .devcontainer
-- 🎯 Finally, everything ready to complete the rest of the course
+- 🎯 Finally, everything is ready to complete the rest of the course
 
 Let's dive in and set up your development environment! 🏃‍♂️
 
@@ -102,7 +102,7 @@ Click the **Create codespace** button to start the Codespace creation process.
 
 ## Verifying your Codespace is running correctly with GitHub Models
 
-Once your Codespace is fully loaded and configured, lets run a sample app to verify everything is working correctly:
+Once your Codespace is fully loaded and configured, let's run a sample app to verify everything is working correctly:
 
 1. Open the terminal. You can open a terminal window by typing **Ctrl+\`** (backtick) on Windows or **Cmd+`** on macOS.
 

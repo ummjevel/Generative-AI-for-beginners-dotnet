@@ -32,7 +32,7 @@ For our first two demos, we'll explore the eShopLite project, a simple e-commerc
 
 These demos use [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service) and [Azure Ai Foundry Models](https://ai.azure.com/) to do their inferences (or the generative AI portion) for the applications.
 
-The first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results. 
+In the first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results. 
 
 ### eShopLite with semantic search
 

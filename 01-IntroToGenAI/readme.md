@@ -15,7 +15,7 @@ _⬆️Click the image to watch the video⬆️_
 
 ## Generative AI Fundamentals for .NET
 
-Before we dive in to some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
+Before we dive into some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
 
 ### A quick refresh on Generative AI concepts
 
@@ -29,7 +29,7 @@ As you develop your .NET AI applications, you'll work with **generative AI model
 
 There are specific types of models that are optimized for different tasks. For example, **Small Language Models (SLMs)** are ideal for text generation, while **Large Language Models (LLMs)** are more suitable for complex tasks like code generation or image analysis. And from there different companies and groups develop models, like Microsoft, OpenAI, or Anthropic. The specific one you use will depend on your use case and the capabilities you need.
 
-Of course, the responses from these models are not perfect all the time. You're probably heard about models "hallucinating" or generating incorrect information in an authoritative manner. But you can help guide the model to generate better responses by providing them with clear instructions and context. This is where **prompt engineering** comes in.
+Of course, the responses from these models are not perfect all the time. You've probably heard about models "hallucinating" or generating incorrect information in an authoritative manner. But you can help guide the model to generate better responses by providing them with clear instructions and context. This is where **prompt engineering** comes in.
 
 #### Prompt engineering review
 
@@ -41,7 +41,7 @@ Prompt engineering is the practice of designing effective inputs to guide AI mod
 
 Some best practices for prompt engineering include, prompt design, clear instructions, task breakdown, one shot and few shot learning, and prompt tuning. Plus, trying and testing different prompts to see what works best for your specific use case.
 
-And it's important to note there are different types of prompts when developing applications. For example, you'll be responsbile for setting **system prompts** that set the base rules and context for the model's response. The data the user of your application feeds into the model are known as **user prompts**. And **assistant prompts** are the responses the model generates based on the system and user prompts.
+And it's important to note there are different types of prompts when developing applications. For example, you'll be responsible for setting **system prompts** that set the base rules and context for the model's response. The data the user of your application feeds into the model are known as **user prompts**. And **assistant prompts** are the responses the model generates based on the system and user prompts.
 
 > 🧑‍🏫 **Learn more**: Learn more about prompt engineering in [Prompt Engineering chapter of GenAI for Beginners course](https://github.com/microsoft/generative-ai-for-beginners/tree/main/04-prompt-engineering-fundamentals)
 
@@ -58,7 +58,7 @@ When developing .NET AI applications, you'll work with tokens, embeddings, and a
 
 ### AI Development Tools and Libraries for .NET
 
-.NET offers a range of tooling for AI development. Lets take a minute to understand some of the tools and libraries available.
+.NET offers a range of tooling for AI development. Let's take a minute to understand some of the tools and libraries available.
 
 #### Microsoft.Extensions.AI (MEAI)
 
