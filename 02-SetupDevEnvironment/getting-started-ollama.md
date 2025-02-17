@@ -1,4 +1,4 @@
-# Setting Up the Development Envionment with Ollama
+# Setting Up the Development Environment with Ollama
 
 If you want to use Ollama to run local models for this course, follow the steps in this guide.
 
@@ -32,7 +32,7 @@ You can leave the rest of the settings as they are. Click the **Create codespace
 
 ## Verifying your Codespace is running correctly with Ollama
 
-Once your Codespace is fully loaded and configured, lets run a sample app to verify everything is working correctly:
+Once your Codespace is fully loaded and configured, let's run a sample app to verify everything is working correctly:
 
 1. Open the terminal. You can open a terminal window by typing **Ctrl+\`** (backtick) on Windows or **Cmd+`** on macOS.
 
@@ -65,15 +65,15 @@ Once your Codespace is fully loaded and configured, lets run a sample app to ver
 
 One of the cool things about Ollama is that it's easy to change models. The current app uses the "**llama3.2**" model. Let’s switch it up and try the "**phi3.5**" model instead.
 
-1. Download the Phi3.5 model running the comamnd from the terminal:
+1. Download the Phi3.5 model running the command from the terminal:
 
     ```bash
     ollama pull phi3.5
     ```
 
-    You can learn mode about the [Phi3.5](https://ollama.com/library/phi3.5) and other available models in the [Ollama library](https://ollama.com/library/).
+    You can learn more about the [Phi3.5](https://ollama.com/library/phi3.5) and other available models in the [Ollama library](https://ollama.com/library/).
 
-1. Edit the initialization of the chat client in `Program.cs` to use the new model::
+1. Edit the initialization of the chat client in `Program.cs` to use the new model:
 
     ```csharp
     IChatClient client = new OllamaChatClient(new Uri("http://localhost:11434/"), "phi3.5");
