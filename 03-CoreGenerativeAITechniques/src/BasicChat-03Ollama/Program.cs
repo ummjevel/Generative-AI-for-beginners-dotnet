@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.AI;
+using System.Text;
 
 IChatClient client =
     new OllamaChatClient(new Uri("http://localhost:11434/"), "llama3.2-vision");
