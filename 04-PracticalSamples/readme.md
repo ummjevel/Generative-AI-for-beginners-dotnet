@@ -29,7 +29,7 @@ _⬆️Click the image to watch the video⬆️_
 
 ## eShopLite Demos
 
-For our first demos, we'll explore the **eShopLite** project, a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, customer support, and real-time audio analysis.
+For our first demos, we'll explore the **eShopLite** projects. **eShopLite** is a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, customer support, and real-time audio analysis.
 
 These demos use [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service) and [Azure AI Foundry Models](https://ai.azure.com/) to do their inferences (or the generative AI portion) for the applications.
 
