@@ -13,7 +13,7 @@ Retrieval Augmented Generation (RAG) is a technique used to augment the response
 There are 2 main phases in a RAG architecture: **Retrieval** and **Generation**.
 
 - **Retrieval**: When the user poses a prompt, the system employs a retrieval mechanism of some sort to gather information from an external knowledge store. The knowledge store could be a vector database or a document, amongst other things.
-- **Generation**: The retrieved information is then used to augment the user's prompt. This AI model processes both the retrieved info and the user's prompt to product an enriched response.
+- **Generation**: The retrieved information is then used to augment the user's prompt. This AI model processes both the retrieved info and the user's prompt to produce an enriched response.
 
 ## Benefits of RAG
 
