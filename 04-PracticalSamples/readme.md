@@ -14,8 +14,9 @@ See all the concepts you've learned in action in these real-world and practical 
   - [What you'll achieve](#what-youll-achieve)
   - [Included samples](#included-samples)
   - [eShopLite Demos](#eshoplite-demos)
-    - [eShopLite with semantic search](#eshoplite-with-semantic-search)
-    - [eShopLite with realtime analysis](#eshoplite-with-realtime-analysis)
+    - [eShopLite with semantic search - In Memory](#eshoplite-with-semantic-search)
+    - [eShopLite with semantic search - Azure AI Search](#eshoplite-with-semantic-search-using-azure-ai-search)
+    - [eShopLite with realtime audio](#eshoplite-with-realtime-audio)
   - [Creative Writer Agent](#creative-writer-agent)
   - [Summary](#summary)
     - [Additional resources](#additional-resources)
@@ -28,11 +29,11 @@ _⬆️Click the image to watch the video⬆️_
 
 ## eShopLite Demos
 
-For our first two demos, we'll explore the eShopLite project, a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, customer support, and real-time audio analysis. 
+For our first demos, we'll explore the **eShopLite** project, a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, customer support, and real-time audio analysis.
 
-These demos use [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service) and [Azure Ai Foundry Models](https://ai.azure.com/) to do their inferences (or the generative AI portion) for the applications.
+These demos use [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service) and [Azure AI Foundry Models](https://ai.azure.com/) to do their inferences (or the generative AI portion) for the applications.
 
-In the first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results. 
+In the first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results.
 
 ### eShopLite with semantic search
 
@@ -121,7 +122,7 @@ builder.Services.AddSingleton<EmbeddingClient>(serviceProvider =>
         embeddingsClient = client.GetEmbeddingClient(embeddingsDeploymentName);
     }...
 });
-```	
+```
 
 With it we can create the `MemoryContext`, as our vector store to compare to the user's query, and return the most relevant products, as follows:
 
@@ -147,15 +148,15 @@ var result = await _embeddingClient.GenerateEmbeddingAsync(productInfo);
 productVector.Vector = result.Value.ToFloats();
 var recordId = await _productsCollection.UpsertAsync(productVector);
 _logger.LogInformation("Product added to memory: {Product} with recordId: {RecordId}", product.Name, recordId);
-``` 
+```
 
-The code above demonstrates how to iterate over the products and add them to the memory. 
+The code above demonstrates how to iterate over the products and add them to the memory.
 
-After we create a new product vector, we use it to generate embedding for the product information, convert the embedding result to a float array, and assign it to the product vector. 
+After we create a new product vector, we use it to generate embedding for the product information, convert the embedding result to a float array, and assign it to the product vector.
 
 Look at `_productsCollection`, it is a reference to the container where the products are stored, using a CosmosDB call to get the response for the recordId. For in this case, for logging.
 
-The product is then added to the memory, repeating the process for each product in the collection. 
+The product is then added to the memory, repeating the process for each product in the collection.
 
 After that, when the user searches for a product, we can compare the user's query with the product vectors and return the most relevant products.
 
@@ -215,9 +216,9 @@ try
 }
 ```
 
-With the code above, we generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information. 
+With the code above, we generate the embedding for the search query, search the vector database for the most similar product, and get a response message using the found product information.
 
-Helping the user find the products they need more easily, leading to a better shopping experience and increased sales. 
+Helping the user find the products they need more easily, leading to a better shopping experience and increased sales.
 
 Moreover, as generative AI evolves, we need some telemetry and monitoring to understand the user's behavior and improve the search engine, this is where Azure Application Insights and .NET Aspire come in.
 
@@ -235,6 +236,14 @@ In the image, we can see the Application Insights dashboard, providing how the s
 
 > 💡 **Pro Tip**: For more information on eShopLite with Semantic Search, look at the repository to learn more: https://aka.ms/netaieshoplitesemanticsearch
 
+### eShopLite with semantic search using Azure AI Search
+
+In eShopLite end-to-end demo, we use **Azure AI Search** to enhance the search capabilities of the e-commerce application. Azure AI Search helps us create a more robust search engine that can understand the context of the user's queries and provide more accurate results.
+
+It also provides a more scalable and reliable search engine that can handle large amounts of data and user queries. Azure AI Search allows the solution to persist the search indexes, so the information will be available even if the application is restarted.
+
+- [eShopLite with Azure AI Search](https://aka.ms/netaieshoplitesemanticsearchazureaisearch)
+
 ### eShopLite with realtime audio
 
 [![eShop with real-time audio explainer video](https://img.youtube.com/vi/bx0hRNdr_bQ/0.jpg)](https://youtu.be/bx0hRNdr_bQ?feature=shared)
@@ -248,7 +257,6 @@ In eShopLite with real-time audio, we use the real-time audio capabilities of GP
 ![Image demonstrating the Realtime Analysis in eShopLite](./images/realtime-analysis-eshoplite.gif)
 
 To implement this feature, we need to implement new features to create the endpoints for the Realtime Analysis, it can be found on the `StoreRealtime\ConversationManager.cs` implementation for real-time analysis.
-
 
 ```csharp
 public async Task RunAsync(
