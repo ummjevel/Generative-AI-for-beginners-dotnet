@@ -45,7 +45,7 @@ Let's see a simple example of this in action!
 
 ### Build a math agent
 
-We'll be building a single purpose agent that acts as a tutor to math students. It's sole purpose in life is to solve and then explain math problems the user asks.
+We'll be building a single purpose agent that acts as a tutor to math students. Its sole purpose in life is to solve and then explain math problems the user asks.
 
 1. To start with, we need to create an `AgentsClient` object that is responsible for managing the connection to Azure, the agent itself, the threads, the messages, and so on.
 
@@ -58,7 +58,7 @@ We'll be building a single purpose agent that acts as a tutor to math students. 
 
     ![Screenshot of the project homepage in AI Foundry with the project connection string highlighted in red](./images/project-connection-string.png)
 
-1. Next we want to create the tutor agent. Remeber, it should be focused only on one thing.
+1. Next we want to create the tutor agent. Remember, it should be focused only on one thing.
    
     ```csharp
     Agent tutorAgent = (await client.CreateAgentAsync(
@@ -142,7 +142,7 @@ We'll be building a single purpose agent that acts as a tutor to math students. 
 
 > 🙋 **Need help?**: If you encounter any issues, [open an issue in the repository](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new).
 
-The logical next step is to start to use multiple agents to create an automous system. A next step might be to have an agent that checks to see if the user has a premium account or not.
+The logical next step is to start to use multiple agents to create an autonomous system. A next step might be to have an agent that checks to see if the user has a premium account or not.
 
 ## Summary
 

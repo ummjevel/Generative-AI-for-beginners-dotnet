@@ -10,13 +10,13 @@ In this lesson learn how vision AI allows your apps to generate and interpret im
 
 _⬆️Click the image to watch the video⬆️_
 
-Vision-based AI approaches are used to generate and interpret images. This can useful for a wide range of applications, such as image recognition, image generation, and image manipulation. Current models are multimodal, meaning they can accept a variety of inputs, such as text, images, and audio, and generate a variety of outputs. In this case, we are going to focus on image recognition.
+Vision-based AI approaches are used to generate and interpret images. This can be useful for a wide range of applications, such as image recognition, image generation, and image manipulation. Current models are multimodal, meaning they can accept a variety of inputs, such as text, images, and audio, and generate a variety of outputs. In this case, we are going to focus on image recognition.
 
 ### Image recognition with MEAI
 
 Image recognition is more than having the AI model tell you what it thinks is present in an image. You can also ask questions about the image, for example: _How many people are present and is it raining?_
 
-Ok - so we're going to put the model through it's paces and ask it if it can tell us how many red shoes are in the first photo and then have it analyze a receipt that's in German so we know how much to tip.
+Ok - so we're going to put the model through its paces and ask it if it can tell us how many red shoes are in the first photo and then have it analyze a receipt that's in German so we know how much to tip.
 
 ![A composite showing both images the example will use. The first is several runners but only showing their legs. The second is a German restaurant receipt](./images/example-visual-image.png)
 
@@ -143,7 +143,7 @@ You'll need the **Microsoft.CognitiveServices.Speech** NuGet package for this ex
     }
     ```
 
-Using AI to process audio is a bit different than what we have been doing because we are using Azure AI Speech services to do so, but the results of translating spoken audio to text is pretty powerful.
+Using AI to process audio is a bit different than what we have been doing because we are using Azure AI Speech services to do so, but the results of translating spoken audio to text are pretty powerful.
 
 > 🙋 **Need help?**: If you encounter any issues, [open an issue in the repository](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new).
 
