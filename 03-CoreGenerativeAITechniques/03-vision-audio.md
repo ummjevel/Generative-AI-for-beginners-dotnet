@@ -42,7 +42,7 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
     ```csharp
     var imagePath = "FULL PATH TO THE IMAGE ON DISK";
 
-    AIContent imageContent = new ImageContent(File.ReadAllBytes(imagePath), "image/jpeg"); // the important part here is that we're loading it in bytes. The image could come from anywhere.
+    AIContent imageContent = new DataContent(File.ReadAllBytes(imagePath), "image/jpeg"); // the important part here is that we're loading it in bytes. The image could come from anywhere.
 
     var imageMessage = new ChatMessage(ChatRole.User, [imageContent]);
 
@@ -63,7 +63,7 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
 
     var receiptPath = "FULL PATH TO THE RECEIPT IMAGE ON DISK";
 
-    AIContent receiptContent = new ImageContent(File.ReadAllBytes(receiptPath), "image/jpeg");
+    AIContent receiptContent = new DataContent(File.ReadAllBytes(receiptPath), "image/jpeg");
     var receiptMessage = new ChatMessage(ChatRole.User, [receiptContent]);
 
     messages.Add(receiptMessage);

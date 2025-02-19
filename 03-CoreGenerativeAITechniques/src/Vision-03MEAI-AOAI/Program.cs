@@ -40,7 +40,7 @@ for (int i = 0; i < frames.Count; i += step)
     Cv2.ImWrite(framePath, frames[i]);
 
     // read the image bytes, create a new image content part and add it to the messages
-    AIContent aic = new ImageContent(File.ReadAllBytes(framePath), "image/jpeg");
+    AIContent aic = new DataContent(File.ReadAllBytes(framePath), "image/jpeg");
     var message = new ChatMessage(ChatRole.User, [aic]);
     messages.Add(message);
 }
