@@ -65,7 +65,7 @@ Once your Codespace is fully loaded and configured, let's run a sample app to ve
 
 One of the cool things about Ollama is that it's easy to change models. The current app uses the "**llama3.2**" model. Let’s switch it up and try the "**phi3.5**" model instead.
 
-1. Download the Phi3.5 model running the command from the terminal:
+1. Download the Phi3.5 model by running the command from the terminal:
 
     ```bash
     ollama pull phi3.5
