@@ -27,17 +27,18 @@ IChatClient client = new ChatCompletionsClient(
     .UseFunctionInvocation()
     .Build();
 
-var response = await client.CompleteAsync("Do I need an umbrella today?", options);
-
-Console.WriteLine(response);
+var question = "Do I need an umbrella today?";
+Console.WriteLine($"question: {question}");
+var response = await client.GetResponseAsync(question, options);
+Console.WriteLine($"response: {response}");
 
 
 [Description("Get the weather")]
 static string GetTheWeather()
 {
     var temperature = Random.Shared.Next(5, 20);
-
     var conditions = Random.Shared.Next(0, 1) == 0 ? "sunny" : "rainy";
-
-    return $"The weather is {temperature} degrees C and {conditions}.";
+    var weatherInfo = $"The weather is {temperature} degrees C and {conditions}.";
+    Console.WriteLine($"\tFunction Call - Returning weather info: {weatherInfo}");
+    return weatherInfo;
 }

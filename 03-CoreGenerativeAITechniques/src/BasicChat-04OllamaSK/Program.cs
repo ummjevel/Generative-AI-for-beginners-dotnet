@@ -1,19 +1,17 @@
-﻿#pragma warning disable SKEXP0070 
+﻿#pragma warning disable SKEXP0001, SKEXP0070  
 
 using Microsoft.SemanticKernel.ChatCompletion;
-using Microsoft.SemanticKernel;
-using OpenAI;
-using System.ClientModel;
-using Microsoft.Extensions.Configuration;
 using System.Text;
 using Microsoft.SemanticKernel.Connectors.Ollama;
+using OllamaSharp;
 
-var modelId = "llama3.2-vision";
+var modelId = "llama3.2";
 var uri = "http://localhost:11434/";
 
 
 // create client
-var chat = new OllamaChatCompletionService(modelId: modelId, new Uri(uri));
+var chat = new OllamaApiClient(uri, modelId)
+    .AsChatCompletionService();
 
 var history = new ChatHistory();
 history.AddSystemMessage("You are a useful chatbot. If you don't know an answer, say 'I don't know!'. Always reply in a funny way. Use emojis if possible.");

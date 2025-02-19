@@ -42,12 +42,12 @@ List<ChatMessage> messages =
 ];
 
 // read the image bytes, create a new image content part and add it to the messages
-AIContent aic = new ImageContent(File.ReadAllBytes(image), "image/jpeg");
+AIContent aic = new DataContent(File.ReadAllBytes(image), "image/jpeg");
 var message = new ChatMessage(Microsoft.Extensions.AI.ChatRole.User, [aic]);
     messages.Add(message);
 
 // send the messages to the assistant
-var response = await chatClient.CompleteAsync(messages);
+var response = await chatClient.GetResponseAsync(messages);
 Console.WriteLine($"Prompt: {prompt}");
 Console.WriteLine($"Image: {imageFileName}");
 Console.WriteLine($"Response: {response.Message}");

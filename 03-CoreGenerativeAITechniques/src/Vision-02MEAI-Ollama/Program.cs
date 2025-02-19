@@ -21,17 +21,17 @@ string imageFileName = imgRunningShoes;
 string image = Path.Combine(Directory.GetCurrentDirectory(), "images", imageFileName);
 
 // read the image bytes, create a new image content part and add it to the messages
-AIContent aic = new ImageContent(File.ReadAllBytes(image), "image/jpeg");
+AIContent aic = new DataContent(File.ReadAllBytes(image), "image/jpeg");
 List<ChatMessage> messages =
 [
     new ChatMessage(ChatRole.User, prompt),
     new ChatMessage(ChatRole.User, [aic])
  ];
 
-var imageAnalysis = await chatClient.CompleteAsync(messages);
+var imageAnalysis = await chatClient.GetResponseAsync(messages);
 
 // send the messages to the assistant
-var response = await chatClient.CompleteAsync(messages);
+var response = await chatClient.GetResponseAsync(messages);
 Console.WriteLine($"Prompt: {prompt}");
 Console.WriteLine($"Image: {imageFileName}");
 Console.WriteLine($"Response: {imageAnalysis.Message.Text}");

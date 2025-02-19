@@ -156,7 +156,7 @@ await foreach (var result in searchResults.Results)
 }
 
 // send the conversation to the model
-var response = await chatClient.CompleteAsync(conversation);
+var response = await chatClient.GetResponseAsync(conversation);
 
 // add the assistant message to the conversation
 conversation.Add(new ChatMessage(ChatRole.Assistant, response.Message));
