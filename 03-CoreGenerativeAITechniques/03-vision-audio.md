@@ -6,7 +6,7 @@ In this lesson learn how vision AI allows your apps to generate and interpret im
 
 ## Vision
 
-[![Vision AI explainer](https://img.youtube.com/vi/QXbASt1KXuw/0.jpg)](https://youtu.be/QXbASt1KXuw?feature=shared)
+[![Vision AI explainer](./images/LIM_GAN_06_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-vision)
 
 _⬆️Click the image to watch the video⬆️_
 
@@ -80,7 +80,7 @@ Here's a point I want to drive home. We're conversing with a language model, or 
 
 ## Audio AI
 
-[![Audio AI explainer video](https://img.youtube.com/vi/fuquPXRNqCo/0.jpg)](https://youtu.be/fuquPXRNqCo?feature=shared)
+[![Audio AI explainer video](./images/LIM_GAN_05_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-realtimeaudio)
 
 _⬆️Click the image to watch the video⬆️_
 

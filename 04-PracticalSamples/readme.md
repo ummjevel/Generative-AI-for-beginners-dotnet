@@ -23,7 +23,7 @@ See all the concepts you've learned in action in these real-world and practical 
     - [Next steps](#next-steps)
 
 
-[![overall explainer video](https://img.youtube.com/vi/Ky4CACXJqR8/0.jpg)](https://youtu.be/Ky4CACXJqR8?feature=shared)
+[![overall explainer video](./images/LIM_GAN_09_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-overview)
 
 _⬆️Click the image to watch the video⬆️_
 
@@ -37,7 +37,7 @@ In the first demo, we show how to use the Semantic Kernel to enhance the search 
 
 ### eShopLite with semantic search
 
-[![eShop Semantic Search explainer video](https://img.youtube.com/vi/FlkruF6USro/0.jpg)](https://youtu.be/FlkruF6USro?feature=shared)
+[![eShop Semantic Search explainer video](./images/LIM_GAN_10_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-eshoplite-semanticsearch)
 
 _⬆️Click the image to watch the video⬆️_
 
@@ -246,7 +246,7 @@ It also provides a more scalable and reliable search engine that can handle larg
 
 ### eShopLite with realtime audio
 
-[![eShop with real-time audio explainer video](https://img.youtube.com/vi/bx0hRNdr_bQ/0.jpg)](https://youtu.be/bx0hRNdr_bQ?feature=shared)
+[![eShop with real-time audio explainer video](./images/LIM_GAN_13_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-eshoplite-realtimeaudio)
 
 _⬆️Click the image to watch the video⬆️_
 
@@ -325,7 +325,7 @@ Each tool is added to the session options, and the conversation session is start
 
 ## Creative Writer Agent
 
-[![Creative Writing Agent explainer video](https://img.youtube.com/vi/ZjZWilI_5z8/0.jpg)](https://youtu.be/ZjZWilI_5z8?feature=shared)
+[![Creative Writing Agent explainer video](./images/LIM_GAN_12_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-creative-writer-agents)
 
 _⬆️Click the image to watch the video⬆️_
 

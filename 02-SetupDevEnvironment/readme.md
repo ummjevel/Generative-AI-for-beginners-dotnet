@@ -15,7 +15,7 @@ This lesson will guide you through setting up your development environment for t
 
 Let's dive in and set up your development environment! 🏃‍♂️
 
-[![Watch the Video Tutorial](https://img.youtube.com/vi/7kYoVRNQXyA/0.jpg)](https://youtu.be/7kYoVRNQXyA?feature=shared)
+[![Watch the Video Tutorial](./images/LIM_GAN_02_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson2-setupdevenv)
 
 _⬆️Click the image to watch the video⬆️_
 
