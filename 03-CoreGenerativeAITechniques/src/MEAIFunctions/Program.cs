@@ -27,7 +27,7 @@ IChatClient client = new ChatCompletionsClient(
     .UseFunctionInvocation()
     .Build();
 
-var response = await client.CompleteAsync("Do I need an umbrella today?", options);
+var response = await client.GetResponseAsync("Do I need an umbrella today?", options);
 
 Console.WriteLine(response);
 

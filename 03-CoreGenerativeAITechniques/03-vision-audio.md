@@ -48,7 +48,7 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
 
     messages.Add(imageMessage);
 
-    var response = await chatClient.CompleteAsync(messages);
+    var response = await chatClient.GetResponseAsync(messages);
 
     messages.Add(response.Message);
 
@@ -68,7 +68,7 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
 
     messages.Add(receiptMessage);
 
-    response = await chatClient.CompleteAsync(messages);
+    response = await chatClient.GetResponseAsync(messages);
     messages.Add(response.Message);
 
     Console.WriteLine(response.Message.Text);

@@ -13,6 +13,6 @@ prompt.AppendLine("I'm not sure about this product. It's okay.");
 prompt.AppendLine("I found this product based on the other reviews. It worked for a bit, and then it didn't.");
 
 // send the prompt to the model and wait for the text completion
-var response = await client.CompleteAsync(prompt.ToString());
+var response = await client.GetResponseAsync(prompt.ToString());
 
 Console.WriteLine(response.Message);

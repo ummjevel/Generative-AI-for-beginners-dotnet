@@ -47,7 +47,7 @@ var message = new ChatMessage(Microsoft.Extensions.AI.ChatRole.User, [aic]);
     messages.Add(message);
 
 // send the messages to the assistant
-var response = await chatClient.CompleteAsync(messages);
+var response = await chatClient.GetResponseAsync(messages);
 Console.WriteLine($"Prompt: {prompt}");
 Console.WriteLine($"Image: {imageFileName}");
 Console.WriteLine($"Response: {response.Message}");

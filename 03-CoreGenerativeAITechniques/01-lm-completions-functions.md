@@ -37,7 +37,7 @@ prompt.AppendLine("I'm not sure about this product. It's okay.");
 prompt.AppendLine("I found this product based on the other reviews. It worked for a bit, and then it didn't.");
 
 // send the prompt to the model and wait for the text completion
-var response = await client.CompleteAsync(prompt.ToString());
+var response = await client.GetResponseAsync(prompt.ToString());
 
 // display the repsonse
 Console.WriteLine(response.Message);
@@ -92,7 +92,7 @@ while (true)
     conversation.Add(new ChatMessage(ChatRole.User, message));
 
     // Process the message with the chat client (example)
-    var response = await client.CompleteAsync(conversation);
+    var response = await client.GetResponseAsync(conversation);
     conversation.Add(response.Message);
     
     Console.WriteLine(response.Message.Text);    
@@ -160,9 +160,9 @@ There are a couple of setup steps you need to take in order to call functions wi
 1. Then finally when we interact with the model, we'll send the `ChatOptions` object that specifies the function the model could call if it needs to get the weather info.
 
     ```csharp
-    var responseOne = await client.CompleteAsync("What is today's date", chatOptions); // won't call the function
+    var responseOne = await client.GetResponseAsync("What is today's date", chatOptions); // won't call the function
 
-    var responseTwo = await client.CompleteAsync("Should I bring an umbrella with me today?", chatOptions); // will call the function
+    var responseTwo = await client.GetResponseAsync("Should I bring an umbrella with me today?", chatOptions); // will call the function
     ```
 
 > 🙋 **Need help?**: If you encounter any issues, [open an issue in the repository](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new).
