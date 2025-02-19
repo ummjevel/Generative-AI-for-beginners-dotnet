@@ -4,7 +4,7 @@ In this lesson learn to create an AI entity that... makes decisions and executes
 
 ---
 
-[![Agents explainer video](https://img.youtube.com/vi/Btkmw1Bosh0/0.jpg)](https://youtu.be/Btkmw1Bosh0?feature=shared)
+[![Agents explainer video](./images/LIM_GAN_08_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-agents)
 
 _⬆️Click the image to watch the video⬆️_
 

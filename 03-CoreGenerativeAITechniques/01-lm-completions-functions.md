@@ -6,7 +6,7 @@ In this lesson, we will explore the basics of building chat applications using l
 
 ## Text completions and chat
 
-[![Text completions and chat video](https://img.youtube.com/vi/Av1FCQf83QU/0.jpg)](https://youtu.be/Av1FCQf83QU?feature=shared)
+[![Text completions and chat video](./images/LIM_GAN_03_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-chat)
 
 _⬆️Click the image to watch the video⬆️_
 
@@ -106,7 +106,7 @@ while (true)
 
 ## Function calling
 
-[![function explainer video](https://img.youtube.com/vi/i84GijmGlYU/0.jpg)](https://youtu.be/i84GijmGlYU?feature=shared)
+[![function explainer video](./images/LIM_GAN_04_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-functioncall)
 
 _⬆️Click the image to watch the video⬆️_
 

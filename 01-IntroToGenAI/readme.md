@@ -4,7 +4,7 @@ Refresh your generative AI knowledge and understand the .NET tooling available t
 
 ---
 
-[![Introduction to Generative AI](http://img.youtube.com/vi/SZvE_meBdvg/0.jpg)](http://www.youtube.com/watch?v=SZvE_meBdvg)
+[![Introduction to Generative AI](./images/LIM_GAN_01_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson1-genaireview)
 
 _⬆️Click the image to watch the video⬆️_
 

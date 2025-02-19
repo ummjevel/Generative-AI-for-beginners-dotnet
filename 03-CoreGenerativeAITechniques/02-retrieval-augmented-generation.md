@@ -4,7 +4,7 @@ In this lesson learn how to use **Retrieval-Augmented Generation (RAG)** in your
 
 ---
 
-[![RAG explainer video](https://img.youtube.com/vi/mY7O0OY2vho/0.jpg)](https://youtu.be/mY7O0OY2vho?feature=shared)
+[![RAG explainer video](./images/LIM_GAN_07_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson3-rag)
 
 _⬆️Click the image to watch the video⬆️_
 
