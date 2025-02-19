@@ -53,6 +53,18 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 | 04  | [**Practical .NET Generative AI Samples**](./04-PracticalSamples/readme.md) | <ul><li>Complete samples demonstrating GenAI in real-life scenarios</li><li>Semantic search applications.</li><li>Multiple agent applications</li></ul> |
 | 05  | [**Responsible Use of Generative AI in .NET Apps**](./05-ResponsibleGenAI/readme.md) | <ul><li>Ethical considerations, bias mitigation, and secure implementations.</li></ul> |
 
+## 🌐 Multi-Language Support
+
+| Language             | Code | Link to Translated README                               | Last Updated |
+|----------------------|------|---------------------------------------------------------|--------------|
+| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-02-19   |
+| Chinese (Traditional)| tw   | [Chinese Translation](./translations/tw/README.md)      | 2025-02-19   |
+| French               | fr   | [French Translation](./translations/fr/README.md)       | 2025-02-19   |
+| Japanese             | ja   | [Japanese Translation](./translations/ja/README.md)     | 2025-02-19   |
+| Korean               | ko   | [Korean Translation](./translations/ko/README.md)       | 2025-02-19   |
+| Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-02-19   |
+| Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-02-19   |
+| German               | de   | [German Translation](./translations/de/README.md)       | 2025-02-19   |
 
 ## 🛠️ What You Need
 
