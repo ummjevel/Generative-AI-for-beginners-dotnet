@@ -2,7 +2,7 @@
 using System.Text;
 
 IChatClient client =
-    new OllamaChatClient(new Uri("http://localhost:11434/"), "llama3.2-vision");
+    new OllamaChatClient(new Uri("http://localhost:11434/"), "llama3.2");
 
 // here we're building the prompt
 StringBuilder prompt = new StringBuilder();
