@@ -72,7 +72,7 @@ We'll be building a single purpose agent that acts as a tutor to math students. 
 
     > 🗒️**Note**: You can create your own tools too. See the [Functions](./src/AgentLabs-02-Functions/) to learn more.
 
-    Second note the `instructions` that are being sent along. It's a prompt and we're limiting it to answer math questions. Then last creating the agent is an async operation. That's because it's creating an object within Azure AI Foundry Agents service. So we both `await` the `CreateAgentAsync` function and then grab the `Value` of its return to get at the actual `Agent` object. You'll see this pattern occur over and over again when creating objects with the **Azure.AI.Projects** SDK.
+    Second note the `instructions` that are being sent along. It's a prompt and we're limiting it to answering math questions. Then last creating the agent is an async operation. That's because it's creating an object within Azure AI Foundry Agents service. So we both `await` the `CreateAgentAsync` function and then grab the `Value` of its return to get at the actual `Agent` object. You'll see this pattern occur over and over again when creating objects with the **Azure.AI.Projects** SDK.
 
 1. An `AgentThread` is an object that handles the communication between individual agents and the user and so on. We'll need to create that so we can add a `ThreadMessage` on to it. And in this case it's the user's first question.
 
