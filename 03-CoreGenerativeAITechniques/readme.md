@@ -20,6 +20,6 @@ For this lesson, we will subdivide the content into the following sections:
 - [Vision and audio AI applications](./03-vision-audio.md)
 - [Agents](04-agents.md)
 
-Starting with Langauge Model completions and Chat applications and function implementations with language models in .NET.
+Starting with Language Model completions and Chat applications and function implementations with language models in .NET.
 
 👉 [Go to part 1 - completions, chat and functions](./01-lm-completions-functions.md)
