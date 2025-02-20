@@ -15,7 +15,7 @@ _⬆️Click the image to watch the video⬆️_
 
 ## Generative AI Fundamentals for .NET
 
-Before we dive into some code, let's take a  minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
+Before we dive into some code, let's take a minute to review some generative AI (GenAI) concepts. In this lesson, **Generative AI Fundamentals for .NET**, we'll refresh some fundamental GenAI concepts so you can understand why certain things are done like they are. And we'll introduce the tooling and SDKs you'll use to build apps, like **MEAI** (Microsoft.Extensions.AI), **Semantic Kernel**, and the **AI Toolkit Extension for VS Code**.
 
 ### A quick refresh on Generative AI concepts
 
