@@ -1,6 +1,6 @@
 # Core Generative AI Techniques
 
-In this lession you'll learn some practical skills for building AI-enabled .NET applications. Concepts include large language model completions and chat, Retrieval-Augmented Generation (RAG), Audio/Video analysis and even AI Agents.
+In this lesson you'll learn some practical skills for building AI-enabled .NET applications. Concepts include large language model completions and chat, Retrieval-Augmented Generation (RAG), Audio/Video analysis and even AI Agents.
 
 ---
 
