@@ -96,11 +96,11 @@ Now let’s update the code to use the newly deployed model. First we'll need to
 1. Run the following commands to add the required package:
 
     ```bash
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.1.0-preview.1.25064.3
+    dotnet add package Azure.AI.OpenAI --version 2.2.0-beta.2
+    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.3.0-preview.1.25114.11
     ```
 
-[More information about Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container).
+[More information about Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI/2.2.0-beta.2).
 
 1. Open `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-01MEAI/Program.cs`.
 
