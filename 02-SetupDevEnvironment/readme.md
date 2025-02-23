@@ -54,7 +54,7 @@ ollama pull all-minilm
 
 **GitHub Models** provides an intuitive way to experiment with various AI models directly within your development environment. This feature allows developers to test and interact with different models, understanding their capabilities and limitations before implementation. Through a simple interface, you can explore model responses, evaluate performance, and determine the best fit for your application requirements. Hosted within GitHub's infrastructure, these models offer reliable access and consistent performance, making them ideal for development and testing phases. Best of all, there is a free tier to start your exploration without any cost.
 
-![Image for GitHub Models page, demonstrating multiple generative AI models](./images/github-models-webapge.png)
+![Image for GitHub Models page, demonstrating multiple generative AI models](./images/github-models-webpage.png)
 
 ## Pre-flight check: Setting up GitHub Access Tokens
 
