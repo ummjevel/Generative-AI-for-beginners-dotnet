@@ -36,18 +36,6 @@ Generative AI is transforming software development, and .NET is no exception. Th
 
 You'll learn how to implement Generative AI into .NET projects, from basic text generation to building full-fledged solutions using **GitHub Models**, **Azure OpenAI Services** and **local models with Ollama**.
 
-#### **NOTE for local models with Ollama:**
-
-- For lesson "**02 - Setting Up for .NET Development with Generative AI**" and project "**MEAIFunctionsOllama**" you need to pull model "**llama3.2**"  by entering in terminal
- 
-    **ollama pull llama3.2**
-
-- For lesson "**03 - Core Generative AI Techniques with .NET**" and project "**RAGSimple-10SKOllama**" you need to pull 2 models "**all-minilm**" and "**phi3.5**" by entering in terminal:
-
-     **ollama pull phi3.5**
-
-     **ollama pull all-minilm**
-
 ## 📦 Each Lesson Includes
 
 - **Short Video**: A quick overview of the lesson (5-10 minutes).
