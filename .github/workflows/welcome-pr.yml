@@ -1,4 +1,4 @@
-name:  Welcome to the GenAINet
+name:  Welcome to GenAINet - PRs
 on:
   # Trigger the workflow on pull request
   pull_request_target:

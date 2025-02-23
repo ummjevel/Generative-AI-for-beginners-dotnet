@@ -1,4 +1,4 @@
-name:  Welcome to the GenAINet
+name:  Welcome to GenAINet - Issues
 on:
   # Trigger the workflow on new issue
   issues:
