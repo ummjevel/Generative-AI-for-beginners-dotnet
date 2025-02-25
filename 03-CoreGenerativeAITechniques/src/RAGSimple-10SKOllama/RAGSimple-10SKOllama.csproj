@@ -5,6 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>3df1b46d-f403-4c4e-8830-3b59a27f950e</UserSecretsId>
   </PropertyGroup>
 
 	<ItemGroup>
@@ -15,6 +16,6 @@
 		  <TreatAsUsed>true</TreatAsUsed>
 		</PackageReference>
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.38.0-alpha" />
-		<PackageReference Include="Spectre.Console" Version="0.49.2-preview.0.75" />
+		<PackageReference Include="Spectre.Console" Version="0.49.2-preview.0.76" />
 	</ItemGroup>
 </Project>

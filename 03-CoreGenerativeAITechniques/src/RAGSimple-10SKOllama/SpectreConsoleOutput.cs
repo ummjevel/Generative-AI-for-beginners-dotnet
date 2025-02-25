@@ -42,6 +42,7 @@ public static class SpectreConsoleOutput
 
     public static void DisplayTitleH3(string subtitle)
     {
+        AnsiConsole.MarkupLine($"");
         AnsiConsole.MarkupLine($"[bold]>> {subtitle}[/]");
         AnsiConsole.MarkupLine($"");
     }
@@ -53,15 +54,37 @@ public static class SpectreConsoleOutput
         AnsiConsole.MarkupLine($"");
     }
 
-    public static void WriteGreen(string message)
+    public static void DisplayNewLine()
+    {
+        AnsiConsole.MarkupLine($"");
+    }
+
+    public static void WriteGreen(string message, bool newLine = false)
+    {
+        Write(message, "green", newLine);
+    }
+    public static void WriteYellow(string message, bool newLine = false)
+    {
+        Write(message, "yellow", newLine);
+    }
+    public static void WriteBlue(string message, bool newLine = false)
+    {
+        Write(message, "blue", newLine);
+    }
+
+    public static void Write(string message, string color = "yellow", bool newLine = false)
     {
         try
         {
-            AnsiConsole.Markup($"[green]{message}[/]");
+            AnsiConsole.Markup($"[{color}]{message}[/]");
         }
         catch
         {
             AnsiConsole.Write($"{message}");
+        }
+        if (newLine)
+        {
+            AnsiConsole.MarkupLine($"");
         }
     }
 
