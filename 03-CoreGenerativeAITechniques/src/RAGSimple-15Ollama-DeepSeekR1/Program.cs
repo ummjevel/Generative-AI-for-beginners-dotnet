@@ -82,7 +82,7 @@ var informationList = new List<string>
     "Gisela watched Venom 3 2 weeks ago",
     "Bruno's favourite super hero is Invincible",
     "Bruno went to the cinema to watch Venom 3",
-    "Bruno don't like the super hero movie: Eternals",
+    "Bruno doesn't like the super hero movie: Eternals",
     "ACE and Goku watched the movies Venom 3 and Eternals",
 };
 
