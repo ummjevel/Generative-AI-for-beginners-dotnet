@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Reasoning", "07 Reasonin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReasoningLabs-01-SK", "ReasoningLabs-01-SK\ReasoningLabs-01-SK.csproj", "{7274D8C3-EC9B-4D54-B472-CBE1E44C39AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAGSimple-15Ollama-DeepSeekR1", "RAGSimple-15Ollama-DeepSeekR1\RAGSimple-15Ollama-DeepSeekR1.csproj", "{8DDF748E-B27D-3139-9BCE-B1276B817345}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{7274D8C3-EC9B-4D54-B472-CBE1E44C39AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7274D8C3-EC9B-4D54-B472-CBE1E44C39AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7274D8C3-EC9B-4D54-B472-CBE1E44C39AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDF748E-B27D-3139-9BCE-B1276B817345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDF748E-B27D-3139-9BCE-B1276B817345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDF748E-B27D-3139-9BCE-B1276B817345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDF748E-B27D-3139-9BCE-B1276B817345}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{33CE094D-6C79-4151-87D5-8D49A9982328} = {F5798C6F-98D6-4411-A5F0-F928CBA64095}
 		{B0A1DF75-4625-45D5-87B0-29F7290F63E1} = {F5798C6F-98D6-4411-A5F0-F928CBA64095}
 		{7274D8C3-EC9B-4D54-B472-CBE1E44C39AC} = {301F771F-CBE6-4D34-A24A-02F7DE5463DC}
+		{8DDF748E-B27D-3139-9BCE-B1276B817345} = {B5980212-D3CF-4A46-94EA-3B22EFAD1257}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {961EEBAB-4149-4AA4-BEE7-9DAAE4C94133}
