@@ -25,21 +25,19 @@
 
 #pragma warning disable SKEXP0001, SKEXP0003, SKEXP0010, SKEXP0011, SKEXP0050, SKEXP0052, SKEXP0070
 
-using DocumentFormat.OpenXml.Bibliography;
 using Microsoft.KernelMemory;
 using Microsoft.KernelMemory.AI.Ollama;
 using Microsoft.SemanticKernel;
 
 var ollamaEndpoint = "http://localhost:11434";
-var modelIdChat = "phi3.5";
+//var modelIdChat = "phi";
+var modelIdChat = "deepseek-r1";
 var modelIdEmbeddings = "all-minilm";
 
 // questions
 var questionEn = "What is Bruno's favourite super hero?";
-var questionSp = "Cual es el SuperHeroe favorito de Bruno?";
-var questionFr = "Quel est le super-héros préféré de Bruno?";
-var questionEn2 = "who watched venom 3?";
-var question = questionEn;
+var questionEn2 = "How many people watched Venom 3?";
+var question = questionEn2;
 
 // intro
 SpectreConsoleOutput.DisplayTitle(modelIdChat);
@@ -48,15 +46,6 @@ SpectreConsoleOutput.DisplayTitleH3(question);
 SpectreConsoleOutput.DisplayTitleH2($"Approach:");
 SpectreConsoleOutput.DisplayTitleH3($"1st approach will be to ask the question directly to the {modelIdChat} model.");
 SpectreConsoleOutput.DisplayTitleH3("2nd approach will be to add facts to a semantic memory and ask the question again");
-Console.WriteLine("");
-
-var configOllamaKernelMemory = new OllamaConfig
-{
-    Endpoint = ollamaEndpoint,
-    TextModel = new OllamaModelConfig(modelIdChat),
-    EmbeddingModel = new OllamaModelConfig(modelIdEmbeddings, 2048)
-};
-
 
 SpectreConsoleOutput.DisplayTitleH2($"{modelIdChat} response (no memory).");
 
@@ -73,32 +62,39 @@ await foreach (var result in response)
 }
 
 // separator
+Console.WriteLine("");
 SpectreConsoleOutput.DisplaySeparator();
-SpectreConsoleOutput.DisplayTitleH2($"{modelIdChat} response (using semantic memory).");
 
+var configOllamaKernelMemory = new OllamaConfig
+{
+    Endpoint = ollamaEndpoint,
+    TextModel = new OllamaModelConfig(modelIdChat),
+    EmbeddingModel = new OllamaModelConfig(modelIdEmbeddings, 2048)
+};
 var memory = new KernelMemoryBuilder()
     .WithOllamaTextGeneration(configOllamaKernelMemory)
     .WithOllamaTextEmbeddingGeneration(configOllamaKernelMemory)
     .Build();
 
-SpectreConsoleOutput.DisplayTitleH3($"Adding information to the memory.");
-var facts = new List<string>
+var informationList = new List<string>
 {
     "Gisela's favourite super hero is Batman",
-    "The last super hero movie watched by Gisela was Venom 3",
+    "Gisela watched Venom 3 2 weeks ago",
     "Bruno's favourite super hero is Invincible",
-    "The last super hero movie watched by Bruno was Venom 3",
-    "Bruno doesn't like the super hero movie: Eternals"
+    "Bruno went to the cinema to watch Venom 3",
+    "Bruno doesn't like the super hero movie: Eternals",
+    "ACE and Goku watched the movies Venom 3 and Eternals",
 };
 
+SpectreConsoleOutput.DisplayTitleH2($"Information List");
+
 int docId = 1;
-foreach (var fact in facts)
+foreach (var info in informationList)
 {
-    SpectreConsoleOutput.WriteYellow($"Adding docId: {docId} - fact: {fact}", true);
-    await memory.ImportTextAsync(fact, docId.ToString());
+    SpectreConsoleOutput.WriteYellow($"Adding docId: {docId} - information: {info}", true);
+    await memory.ImportTextAsync(info, docId.ToString());
     docId++;
 }
-
 
 SpectreConsoleOutput.DisplayTitleH3($"Asking question with memory: {question}");
 var answer = memory.AskStreamingAsync(question);
@@ -129,4 +125,3 @@ await foreach (var result in answer)
 }
 
 Console.WriteLine($"");
-
