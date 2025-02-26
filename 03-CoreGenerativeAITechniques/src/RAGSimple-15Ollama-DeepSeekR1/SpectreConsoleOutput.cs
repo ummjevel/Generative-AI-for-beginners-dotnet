@@ -1,4 +1,4 @@
-﻿//    Copyright (c) 2024
+//    Copyright (c) 2024
 //    Author      : Bruno Capuano
 //    Change Log  :
 //
@@ -138,7 +138,7 @@ public static class SpectreConsoleOutput
                 .InstructionsText(
                     "[grey](Press [blue]<space>[/] to toggle a scenario, " +
                     "[green]<enter>[/] to accept)[/]")
-                .AddChoiceGroup("Select an image to be analuyzed", new[]
+                .AddChoiceGroup("Select an image to be analyzed", new[]
                     {"foggyday.png","foggydaysmall.png","petsmusic.png","ultrarunningmug.png",
                     })
                 .AddChoices(new[] {
