@@ -27,7 +27,7 @@ jobs:
         with:
           command: check_broken_paths
           directory: ./
-          guide-url: 'https://github.com/microsoft/Phi-3CookBook/blob/main/CONTRIBUTING.md'
+          guide-url: 'https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/CONTRIBUTING.MD'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
   check-urls-locale:
