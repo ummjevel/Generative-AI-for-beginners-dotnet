@@ -152,7 +152,7 @@ conversation.Add(new ChatMessage(ChatRole.User, query)); // this is the user pro
 // add the search results to the conversation
 await foreach (var result in searchResults.Results)
 {
-    conversation.Add(new ChatMessage(ChatRole.User, $"This move is playing nearby: {result.Record.Title} and it's about {result.Record.Description}"));
+    conversation.Add(new ChatMessage(ChatRole.User, $"This movie is playing nearby: {result.Record.Title} and it's about {result.Record.Description}"));
 }
 
 // send the conversation to the model
