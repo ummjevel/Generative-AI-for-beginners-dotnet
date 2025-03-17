@@ -100,7 +100,7 @@ Contributions are welcome! Here's how you can help:
 - Suggest additional lessons or enhancements.
 - Do you have suggestions or found spelling or code errors?, [create a pull request](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/compare)
 
-Check the [CONTRIBUTING.md](./CONTRIBUTING.MD) file for details on how to get involved.
+Check the [CONTRIBUTING.MD](./CONTRIBUTING.MD) file for details on how to get involved.
 
 ## 📄 License
 
