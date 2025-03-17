@@ -4,7 +4,7 @@ If you want to use Ollama to run local models for this course, follow the steps 
 
 Don't want to use Azure OpenAI?
 
-👉 [To use GitHub Models this is the guide for you](README.md)
+👉 [To use GitHub Models this is the guide for you](./readme.md)
 👉 [Here are the steps for Ollama](getting-started-ollama.md)
 
 ## Creating a GitHub Codespace
