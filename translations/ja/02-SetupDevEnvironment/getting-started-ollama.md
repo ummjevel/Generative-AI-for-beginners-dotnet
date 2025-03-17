@@ -107,7 +107,7 @@ Ollamaの便利な点の1つは、モデルを簡単に切り替えられるこ�
 
 - [Ollama Models](https://ollama.com/search)  
 - [GitHub Codespacesの使用方法](https://docs.github.com/en/codespaces/getting-started)  
-- [Microsoft Extensions for AI ドキュメント](https://learn.microsoft.com/en-us/dotnet/)  
+- [Microsoft Extensions for AI ドキュメント](https://learn.microsoft.com/dotnet/)  
 
 ## 次のステップ
 

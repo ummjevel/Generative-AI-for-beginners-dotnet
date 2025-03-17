@@ -107,7 +107,7 @@ Ollama 的一個有趣功能是可以輕鬆更換模型。目前的應用程式�
 
 - [Ollama 模型](https://ollama.com/search)  
 - [使用 GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [Microsoft AI 擴展文件](https://learn.microsoft.com/en-us/dotnet/)
+- [Microsoft AI 擴展文件](https://learn.microsoft.com/dotnet/)
 
 ## 下一步
 

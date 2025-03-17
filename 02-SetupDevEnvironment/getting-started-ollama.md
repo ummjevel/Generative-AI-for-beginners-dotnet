@@ -107,7 +107,7 @@ In this lesson, you learned how to set up your development environment for the r
 
 - [Ollama Models](https://ollama.com/search)
 - [Working with GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)
-- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/en-us/dotnet/)
+- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/dotnet/)
 
 ## Next Steps
 

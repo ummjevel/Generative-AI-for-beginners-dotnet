@@ -107,7 +107,7 @@ Ollama 的一个很棒的功能是可以轻松切换模型。目前的应用程�
 
 - [Ollama 模型](https://ollama.com/search)  
 - [使用 GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [Microsoft AI 扩展文档](https://learn.microsoft.com/en-us/dotnet/)  
+- [Microsoft AI 扩展文档](https://learn.microsoft.com/dotnet/)  
 
 ## 接下来的步骤
 

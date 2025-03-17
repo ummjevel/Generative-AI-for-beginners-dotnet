@@ -154,9 +154,9 @@ Azure AI Foundry 모델을 사용하려면, Azure AI Foundry 포털에서 허브
 
 ### 추가 자료
 
-- [Azure AI Foundry 문서](https://learn.microsoft.com/en-us/azure/ai-services/)  
+- [Azure AI Foundry 문서](https://learn.microsoft.com/azure/ai-services/)  
 - [GitHub Codespaces 사용법](https://docs.github.com/en/codespaces/getting-started)  
-- [Azure AI Foundry에서 모델 배포하기](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)  
+- [Azure AI Foundry에서 모델 배포하기](https://learn.microsoft.com/azure/ai-services/deploy/)  
 - [Azure.AI.OpenAI NuGet 패키지](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## 다음 단계

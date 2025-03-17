@@ -107,7 +107,7 @@ In dieser Lektion hast du gelernt, wie du deine Entwicklungsumgebung für den Re
 
 - [Ollama-Modelle](https://ollama.com/search)  
 - [Arbeiten mit GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [Microsoft Extensions für AI-Dokumentation](https://learn.microsoft.com/en-us/dotnet/)
+- [Microsoft Extensions für AI-Dokumentation](https://learn.microsoft.com/dotnet/)
 
 ## Nächste Schritte
 

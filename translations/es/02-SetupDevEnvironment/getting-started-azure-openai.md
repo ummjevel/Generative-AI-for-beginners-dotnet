@@ -154,9 +154,9 @@ En esta lección, aprendiste cómo configurar tu entorno de desarrollo para el r
 
 ### Recursos Adicionales
 
-- [Documentación de Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/)  
+- [Documentación de Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/)  
 - [Trabajar con Codespaces en GitHub](https://docs.github.com/en/codespaces/getting-started)  
-- [Cómo desplegar modelos en Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)  
+- [Cómo desplegar modelos en Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/deploy/)  
 - [Paquete NuGet Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## Próximos Pasos
