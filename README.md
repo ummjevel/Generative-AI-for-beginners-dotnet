@@ -33,6 +33,7 @@ We're constantly improving this course with the latest AI tools and models:
 - **phi4-mini model support**: The [Ollama Codespace](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/02-SetupDevEnvironment/getting-started-ollama.md) now automatically downloads the [phi4-mini model](https://ollama.com/library/phi4-mini) - Microsoft's compact yet powerful LLM. Try it in samples like:
   - [Chat Application](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/BasicChat-03Ollama/Program.cs) - Experience fast responses with this efficient model
   - [RAG Implementation](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/RAGSimple-10SKOllama/Program.cs) - See how phi4-mini handles retrieval-augmented generation tasks
+  - Learn more about the model in the [Phi Cookbook](https://aka.ms/phicookbook)
 
 
 ## 🚀 Introduction
@@ -133,5 +134,6 @@ We have a lot of other content to help your learning journey. Check out:
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Hands-On Examples with Microsoft's Phi Models](https://aka.ms/phicookbook)
 
 [Let's start learning Generative AI and .NET!](02-SetupDevEnvironment/readme.md) 🚀
