@@ -5,7 +5,8 @@ using System.Text;
 using Microsoft.SemanticKernel.Connectors.Ollama;
 using OllamaSharp;
 
-var modelId = "llama3.2";
+//var modelId = "llama3.2";
+var modelId = "phi4-mini";
 var uri = "http://localhost:11434/";
 
 

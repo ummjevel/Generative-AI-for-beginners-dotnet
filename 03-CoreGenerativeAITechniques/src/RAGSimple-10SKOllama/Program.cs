@@ -25,13 +25,12 @@
 
 #pragma warning disable SKEXP0001, SKEXP0003, SKEXP0010, SKEXP0011, SKEXP0050, SKEXP0052, SKEXP0070
 
-using DocumentFormat.OpenXml.Bibliography;
 using Microsoft.KernelMemory;
 using Microsoft.KernelMemory.AI.Ollama;
 using Microsoft.SemanticKernel;
 
 var ollamaEndpoint = "http://localhost:11434";
-var modelIdChat = "phi3.5";
+var modelIdChat = "phi4-mini";
 var modelIdEmbeddings = "all-minilm";
 
 // questions

@@ -26,6 +26,15 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 ➡️Get your own copy by [Forking this repo](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/fork) and find it next in your own repositories.
 
+## ✨ What's New!
+
+We're constantly improving this course with the latest AI tools and models:
+
+- **phi4-mini model support**: The [Ollama Codespace](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/02-SetupDevEnvironment/getting-started-ollama.md) now automatically downloads the [phi4-mini model](https://ollama.com/library/phi4-mini) - Microsoft's compact yet powerful LLM. Try it in samples like:
+  - [Chat Application](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/BasicChat-03Ollama/Program.cs) - Experience fast responses with this efficient model
+  - [RAG Implementation](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/RAGSimple-10SKOllama/Program.cs) - See how phi4-mini handles retrieval-augmented generation tasks
+
+
 ## 🚀 Introduction
 
 Generative AI is transforming software development, and .NET is no exception. This course aims to simplify the journey by offering:
