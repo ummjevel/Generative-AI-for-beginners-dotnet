@@ -30,7 +30,6 @@ using Microsoft.KernelMemory.AI.Ollama;
 using Microsoft.SemanticKernel;
 
 var ollamaEndpoint = "http://localhost:11434";
-//var modelIdChat = "phi";
 var modelIdChat = "deepseek-r1";
 var modelIdEmbeddings = "all-minilm";
 

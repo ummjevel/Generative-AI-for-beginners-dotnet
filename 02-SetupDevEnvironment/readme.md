@@ -37,16 +37,16 @@ Here's a quick rundown of the services:
 
 The Ollama Codespace will provision all the necessary models that you need. However, if you are working in local mode, once you have installed Ollama, you need to pull the models for the lessons you want to run.
 
-- For lesson "**02 - Setting Up for .NET Development with Generative AI**" and project [MEAIFunctionsOllama](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/02-SetupDevEnvironment/src/BasicChat-03Ollama) you need to pull model [llama3.2](https://ollama.com/library/llama3.2)  by entering in terminal
+- For lesson "**02 - Setting Up for .NET Development with Generative AI**" and project [MEAIFunctionsOllama](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/02-SetupDevEnvironment/src/BasicChat-03Ollama) you need to pull a model like [phi4-mini](https://ollama.com/library/phi4-mini) or [llama3.2](https://ollama.com/library/llama3.2)  by entering in terminal
 
 ```bash
-ollama pull llama3.2
+ollama pull phi4-mini
 ```
 
-- For lesson "**03 - Core Generative AI Techniques with .NET**", when running the ollama projects like [RAGSimple-10SKOllama](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/03-CoreGenerativeAITechniques/src/RAGSimple-10SKOllama),  you need to pull the models [all-minilm](https://ollama.com/library/all-minilm) and [phi3.5](https://ollama.com/library/phi3.5) by entering in terminal:
+- For lesson "**03 - Core Generative AI Techniques with .NET**", when running the ollama projects like [RAGSimple-10SKOllama](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/tree/main/03-CoreGenerativeAITechniques/src/RAGSimple-10SKOllama),  you need to pull the models [all-minilm](https://ollama.com/library/all-minilm) and [phi4-mini](https://ollama.com/library/phi4-mini) by entering in terminal:
 
 ```bash
-ollama pull phi3.5
+ollama pull phi4-mini
 ollama pull all-minilm
 ```
 
