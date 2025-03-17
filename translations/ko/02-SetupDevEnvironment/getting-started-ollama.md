@@ -107,7 +107,7 @@ Ollama의 멋진 점 중 하나는 모델을 쉽게 변경할 수 있다는 것�
 
 - [Ollama 모델](https://ollama.com/search)  
 - [GitHub Codespaces 사용하기](https://docs.github.com/en/codespaces/getting-started)  
-- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/en-us/dotnet/)
+- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/dotnet/)
 
 ## 다음 단계
 

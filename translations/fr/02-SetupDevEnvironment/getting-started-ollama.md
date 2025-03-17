@@ -107,7 +107,7 @@ Dans cette leçon, vous avez appris à configurer votre environnement de dévelo
 
 - [Modèles Ollama](https://ollama.com/search)  
 - [Travailler avec GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [Documentation des extensions Microsoft pour l'IA](https://learn.microsoft.com/en-us/dotnet/)
+- [Documentation des extensions Microsoft pour l'IA](https://learn.microsoft.com/dotnet/)
 
 ## Prochaines étapes
 

@@ -154,9 +154,9 @@
 
 ### 更多資源
 
-- [Azure AI Foundry 文件](https://learn.microsoft.com/en-us/azure/ai-services/)  
+- [Azure AI Foundry 文件](https://learn.microsoft.com/azure/ai-services/)  
 - [使用 GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [如何在 Azure AI Foundry 中部署模型](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)  
+- [如何在 Azure AI Foundry 中部署模型](https://learn.microsoft.com/azure/ai-services/deploy/)  
 - [Azure.AI.OpenAI NuGet 套件](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## 下一步

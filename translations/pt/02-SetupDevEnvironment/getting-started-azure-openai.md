@@ -154,9 +154,9 @@ Nesta lição, você aprendeu como configurar seu ambiente de desenvolvimento pa
 
 ### Recursos adicionais
 
-- [Documentação do Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/)
+- [Documentação do Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/)
 - [Trabalhando com Codespaces no GitHub](https://docs.github.com/en/codespaces/getting-started)
-- [Como Implantar Modelos no Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)
+- [Como Implantar Modelos no Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/deploy/)
 - [Pacote NuGet Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## Próximos Passos

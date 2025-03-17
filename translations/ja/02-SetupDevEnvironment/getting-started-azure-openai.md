@@ -154,9 +154,9 @@ Azure AI Foundry モデルを使用するには、Azure AI Foundry ポータル�
 
 ### 追加リソース
 
-- [Azure AI Foundry ドキュメント](https://learn.microsoft.com/en-us/azure/ai-services/)  
+- [Azure AI Foundry ドキュメント](https://learn.microsoft.com/azure/ai-services/)  
 - [GitHub Codespaces の使用方法](https://docs.github.com/en/codespaces/getting-started)  
-- [Azure AI Foundry でモデルをデプロイする方法](https://learn.microsoft.com/en-us/azure/ai-services/deploy/)  
+- [Azure AI Foundry でモデルをデプロイする方法](https://learn.microsoft.com/azure/ai-services/deploy/)  
 - [Azure.AI.OpenAI NuGet パッケージ](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## 次のステップ

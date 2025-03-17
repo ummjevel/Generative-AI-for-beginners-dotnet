@@ -107,7 +107,7 @@ Nesta lição, você aprendeu a configurar seu ambiente de desenvolvimento para 
 
 - [Modelos Ollama](https://ollama.com/search)  
 - [Trabalhando com Codespaces do GitHub](https://docs.github.com/en/codespaces/getting-started)  
-- [Documentação de Extensões da Microsoft para IA](https://learn.microsoft.com/en-us/dotnet/)
+- [Documentação de Extensões da Microsoft para IA](https://learn.microsoft.com/dotnet/)
 
 ## Próximos Passos
 
