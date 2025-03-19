@@ -1,6 +1,6 @@
-# 初心者向け Generative AI .NET コース
+# 初心者向け 生成 AI .NET コース
 
-### .NET で Generative AI アプリケーションを構築するための実践的なレッスン
+### .NET で 生成 AI アプリケーションを構築するための実践的なレッスン
 
 [![GitHub license](https://img.shields.io/github/license/microsoft/Generative-AI-For-beginners-dotnet.svg)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/LICENSE)  
 [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/Generative-AI-For-Beginners-Dotnet.svg)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/graphs/contributors/)  
@@ -14,11 +14,11 @@
 
 [![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)  
 
-![初心者向け Generative AI .NET ロゴ](../../translated_images/main-logo.5ac974278bc20b3520e631aaa6bf8799f2d219c5aec555da85555725546f25f8.ja.jpg)
+![初心者向け 生成 AI .NET ロゴ](../../translated_images/main-logo.5ac974278bc20b3520e631aaa6bf8799f2d219c5aec555da85555725546f25f8.ja.jpg)
 
-**初心者向け Generative AI .NET** へようこそ！.NET 開発者が Generative AI の世界に飛び込むための実践的なコースです！
+**初心者向け 生成 AI .NET** へようこそ！.NET 開発者が 生成 AI の世界に飛び込むための実践的なコースです！
 
-このコースは単なる「理論を教えて終わり」のようなものではありません。このリポジトリは **実際のアプリケーション** と **ライブコーディング** に焦点を当て、.NET 開発者が Generative AI を最大限に活用できるようサポートします。
+このコースは単なる「理論を教えて終わり」のようなものではありません。このリポジトリは **実際のアプリケーション** と **ライブコーディング** に焦点を当て、.NET 開発者が 生成 AI を最大限に活用できるようサポートします。
 
 このコースは **ハンズオン形式**、**実践的**、そして **楽しい** を目指しています！
 
@@ -28,30 +28,30 @@
 
 ## 🚀 はじめに
 
-Generative AI はソフトウェア開発を変革しており、.NET も例外ではありません。このコースでは以下の内容をシンプルに学べます：
+生成 AI はソフトウェア開発を変革しており、.NET も例外ではありません。このコースでは以下の内容をシンプルに学べます：
 
 - 各レッスンごとの 5～10 分の短い動画。
 - 実行可能な .NET のコードサンプル。
 - **GitHub Codespaces** や **GitHub Models** などのツールとの統合により、簡単にセットアップしてすぐにコーディングを始められる環境。ローカルでモデルを使用してサンプルを実行することも可能です。
 
-基本的なテキスト生成から **GitHub Models**、**Azure OpenAI Services**、**Ollama を使ったローカルモデル** まで、.NET プロジェクトに Generative AI を実装する方法を学びます。
+基本的なテキスト生成から **GitHub Models**、**Azure OpenAI Services**、**Ollama を使ったローカルモデル** まで、.NET プロジェクトに 生成 AI を実装する方法を学びます。
 
 ## 📦 各レッスンの内容
 
 - **短い動画**：レッスンの概要を 5～10 分で説明。
 - **完全なコードサンプル**：実行可能で、そのまま使えるサンプル。
 - **ステップバイステップのガイド**：コンセプトを学び、実装するためのシンプルな指示。
-- **詳細リファレンス**：このコースは GenAI の実践的な実装に焦点を当てていますが、理論的な背景について詳しく知りたい場合は [Generative AI for Beginners - A Course](https://github.com/microsoft/generative-ai-for-beginners) のリンクも提供しています。
+- **詳細リファレンス**：このコースは GenAI の実践的な実装に焦点を当てていますが、理論的な背景について詳しく知りたい場合は [生成 AI for Beginners - A Course](https://github.com/microsoft/generative-ai-for-beginners) のリンクも提供しています。
 
 ## 🗃️ レッスン一覧
 
 | #   | **レッスンリンク** | **説明** |
 | --- | --- | --- |
-| 01  | [**.NET 開発者向け Generative AI の基礎**](./01-IntroToGenAI/readme.md) | <ul><li>生成モデルの概要と .NET における応用</li></ul> |
-| 02  | [**Generative AI のための .NET 開発環境のセットアップ**](./02-SetupDevEnvironment/readme.md) | <ul><li>**Microsoft.Extensions.AI** や **Semantic Kernel** などのライブラリの利用。</li><li>GitHub Models、Azure AI Foundry、Ollama などのプロバイダーのセットアップ。</li></ul> |
-| 03  | [**.NET を使った Generative AI のコア技術**](./03-CoreGenerativeAITechniques/readme.md) | <ul><li>テキスト生成と会話フロー。</li><li>マルチモーダル機能（ビジョンと音声）。</li><li>エージェント。</li></ul> |
-| 04  | [**実践的な .NET Generative AI サンプル**](./04-PracticalSamples/readme.md) | <ul><li>実際のシナリオでの GenAI を示す完全なサンプル。</li><li>セマンティック検索アプリケーション。</li><li>複数エージェントアプリケーション。</li></ul> |
-| 05  | [**.NET アプリにおける Generative AI の責任ある利用**](./05-ResponsibleGenAI/readme.md) | <ul><li>倫理的考慮、バイアスの軽減、安全な実装。</li></ul> |
+| 01  | [**.NET 開発者向け 生成 AI の基礎**](./01-IntroToGenAI/readme.md) | <ul><li>生成モデルの概要と .NET における応用</li></ul> |
+| 02  | [**生成 AI のための .NET 開発環境のセットアップ**](./02-SetupDevEnvironment/readme.md) | <ul><li>**Microsoft.Extensions.AI** や **Semantic Kernel** などのライブラリの利用。</li><li>GitHub Models、Azure AI Foundry、Ollama などのプロバイダーのセットアップ。</li></ul> |
+| 03  | [**.NET を使った 生成 AI のコア技術**](./03-CoreGenerativeAITechniques/readme.md) | <ul><li>テキスト生成と会話フロー。</li><li>マルチモーダル機能（ビジョンと音声）。</li><li>エージェント。</li></ul> |
+| 04  | [**実践的な .NET 生成 AI サンプル**](./04-PracticalSamples/readme.md) | <ul><li>実際のシナリオでの GenAI を示す完全なサンプル。</li><li>セマンティック検索アプリケーション。</li><li>複数エージェントアプリケーション。</li></ul> |
+| 05  | [**.NET アプリにおける 生成 AI の責任ある利用**](./05-ResponsibleGenAI/readme.md) | <ul><li>倫理的考慮、バイアスの軽減、安全な実装。</li></ul> |
 
 ## 🌐 多言語サポート
 
@@ -126,7 +126,7 @@ Generative AI はソフトウェア開発を変革しており、.NET も例外�
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
 
-[Generative AIと.NETの学習を始めましょう！](02-SetupDevEnvironment/readme.md) 🚀
+[生成 AI と.NET の学習を始めましょう！](02-SetupDevEnvironment/readme.md) 🚀
 
 **免責事項**:  
 本書類は、機械翻訳AIサービスを使用して翻訳されています。正確性を追求しておりますが、自動翻訳には誤りや不正確な表現が含まれる場合があります。原文（原言語で記載された文書）を公式な情報源としてご参照ください。重要な情報については、専門の人間による翻訳を推奨いたします。本翻訳の利用に起因する誤解や解釈の相違について、当方は一切の責任を負いかねます。
