@@ -48,7 +48,7 @@
 | #   | **レッスンリンク** | **説明** |
 | --- | --- | --- |
 | 01  | [**.NET 開発者向け 生成 AI の基礎**](./01-IntroToGenAI/readme.md) | <ul><li>生成モデルの概要と .NET における応用</li></ul> |
-| 02  | [**生成 AI のための .NET 開発環境のセットアップ**](./02-SetupDevEnvironment/readme.md) | <ul><li>**Microsoft.Extensions.AI** や **Semantic Kernel** などのライブラリの利用。</li><li>GitHub Models、Azure AI Foundry、Ollama などのプロバイダーのセットアップ。</li></ul> |
+| 02  | [**生成 AI のための .NET 開発環境のセットアップ**](./02-SetupDevEnvironment/readme.md) | <ul><li>**Microsoft.Extensions.AI** や **セマンティック カーネル** などのライブラリの利用。</li><li>GitHub Models、Azure AI Foundry、Ollama などのプロバイダーのセットアップ。</li></ul> |
 | 03  | [**.NET を使った 生成 AI のコア技術**](./03-CoreGenerativeAITechniques/readme.md) | <ul><li>テキスト生成と会話フロー。</li><li>マルチモーダル機能（ビジョンと音声）。</li><li>エージェント。</li></ul> |
 | 04  | [**実践的な .NET 生成 AI サンプル**](./04-PracticalSamples/readme.md) | <ul><li>実際のシナリオでの GenAI を示す完全なサンプル。</li><li>セマンティック検索アプリケーション。</li><li>複数エージェントアプリケーション。</li></ul> |
 | 05  | [**.NET アプリにおける 生成 AI の責任ある利用**](./05-ResponsibleGenAI/readme.md) | <ul><li>倫理的考慮、バイアスの軽減、安全な実装。</li></ul> |
