@@ -83,8 +83,8 @@
 - [Fairlearn - A Python package to assess AI system's fairness](https://techcommunity.microsoft.com/blog/educatordeveloperblog/fairlearn---a-python-package-to-assess-ai-systems-fairness/1402950)
 - [Azure AI Content Safety](https://azure.microsoft.com/products/ai-services/ai-content-safety/): コンテンツを効果的にモデレートする。
 - [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/): 倫理的なAIソリューションを構築する。
-- [Microsoft Learn - Responsible AI](https://learn.microsoft.com/training/modules/embrace-responsible-ai-principles-practices/): 責任あるAIの実践を探る。
-- [Microsoft の責任ある AI](https://www.microsoft.com/ai/responsible-ai): Microsoftが実践する責任あるAIについて学ぶ。
+- [Microsoft Learn - 責任ある AI](https://learn.microsoft.com/training/modules/embrace-responsible-ai-principles-practices/): 責任あるAIの実践を探る。
+- [Microsoft Responsible AI](https://www.microsoft.com/ai/responsible-ai): Microsoftが実践する責任あるAIについて学ぶ。
 
 **免責事項**:  
 この文書は、機械翻訳AIサービスを使用して翻訳されています。正確さを追求しておりますが、自動翻訳にはエラーや不正確な部分が含まれる場合があります。元の言語で書かれた原文を公式な情報源としてご参照ください。重要な情報については、専門の人間による翻訳を推奨します。この翻訳の使用により生じた誤解や誤認について、当社は一切の責任を負いかねます。
