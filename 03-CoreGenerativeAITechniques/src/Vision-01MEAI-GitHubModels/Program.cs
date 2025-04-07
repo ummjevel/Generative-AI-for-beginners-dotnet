@@ -32,7 +32,7 @@ var promptReceipt = "I bought the coffee and the sausage. How much do I owe? Add
 string systemPrompt = @"You are a useful assistant that describes images using a direct style.";
 var prompt = promptDescribe;
 string imageFileName = imgRunningShoes;
-string image = Path.Combine(Directory.GetCurrentDirectory(), "images", imageFileName);
+string image = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "images", imageFileName);
 
 
 List<ChatMessage> messages =
