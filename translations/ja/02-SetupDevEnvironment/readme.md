@@ -126,7 +126,7 @@ Codespace が完全にロードされ、設定が完了したら、サンプル�
     ...
     ```
 
-> 🙋 **ヘルプが必要？**: 何か問題が発生しましたか？[問題を報告](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new?template=Blank+issue)してサポートを受けてください。
+> 🙋 **サポートが必要ですか？**: 何か問題が発生しましたか？[問題を報告](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new?template=Blank+issue)してサポートを受けてください。
 
 ## まとめ
 
