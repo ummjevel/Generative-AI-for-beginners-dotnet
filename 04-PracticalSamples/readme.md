@@ -512,8 +512,7 @@ Those are just a few examples of how you can use GenAI in your applications. The
 - [eShopLite with ChromaDB](https://aka.ms/eshoplite/chromadb/repo)
 - [eShopLite with DeepSeek](https://aka.ms/eshoplite/deepseekr1/repo)
 - [eShopLite with MCP](https://aka.ms/eshoplite/mcp/repo)
-- [eShopLite with Azure AI Search](X https://aka.ms/eshoplite/AzureAISearch/repo)
-
+- [eShopLite with Azure AI Search](https://aka.ms/eshoplite/AzureAISearch/repo)
 ### Next steps
 
 Learn about responsible AI practices and how to ensure that your AI models are ethical and have a positive impact!
