@@ -5,13 +5,27 @@ This page tracks the history of new features, tools, and models added to the cou
 ## March 2025
 
 ### MCP Library Integration
+
 - **Model Context Protocol for .NET**: We've added support for the [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk), which provides a standardized way to communicate with AI models across different providers.
 - This integration enables more consistent interactions with models while reducing provider lock-in.
 - Check out our new samples demonstrating MCP integration in the [Core Generative AI Techniques](../03-CoreGenerativeAITechniques/) section.
 
+### eShopLite Scenarios Repository
+
+- **New eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
+
+- The new repo includes:
+  - Product catalog browsing
+  - Shopping cart management
+  - Order placement and tracking
+  - User authentication and profiles
+  - Integration with Generative AI for recommendations and chat
+  - Admin dashboard for product and order management
+
 ## February 2025
 
 ### phi4-mini Model Support
+
 - The [Ollama Codespace](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/02-SetupDevEnvironment/getting-started-ollama.md) now automatically downloads the [phi4-mini model](https://ollama.com/library/phi4-mini) - Microsoft's compact yet powerful LLM.
 - Try it in samples like:
   - [Chat Application](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/BasicChat-03Ollama/Program.cs) - Experience fast responses with this efficient model

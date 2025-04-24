@@ -30,10 +30,14 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 We're constantly improving this course with the latest AI tools and models:
 
-- **MCP Library Integration**: We've integrated the [Model Context Protocol C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) to provide a standardized way to communicate with AI models across different providers. This allows for more consistent model interactions while reducing provider lock-in. Check our samples in the Core Techniques section!
-  - [5 min video overview of an Aspire + MCP demo](https://www.youtube.com/watch?v=2holzbob1_I)
-  - Sample code for the video in the [04-PracticalSamples/src/Aspire.MCP.Sample.sln](./04-PracticalSamples/src/Aspire.MCP.Sample.sln) solution.
-  
+- **eShopLite Scenarios Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
+  - Product catalog browsing
+  - Shopping cart management
+  - Order placement and tracking
+  - User authentication and profiles
+  - Integration with Generative AI for recommendations and chat
+  - Admin dashboard for product and order management
+
 [View all previous updates in our What's New section](./10-WhatsNew/readme.md)
 
 ## 🚀 Introduction
