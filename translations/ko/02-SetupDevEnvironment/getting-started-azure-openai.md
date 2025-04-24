@@ -102,7 +102,7 @@ Azure AI Foundry 모델을 사용하려면, Azure AI Foundry 포털에서 허브
 
 [Azure.AI.OpenAI에 대한 추가 정보](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container).
 
-1. `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-01MEAI/Program.cs` 파일을 엽니다.
+1. `/workspaces/Generative-AI-for-beginners-dotnet/02-SetupDevEnvironment/src/BasicChat-01MEAI/Program.cs` 파일을 엽니다.
 
     파일 상단에 다음 using 문을 추가하세요:
 
