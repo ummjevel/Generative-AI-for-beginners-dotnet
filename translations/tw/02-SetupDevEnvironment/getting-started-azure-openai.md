@@ -102,7 +102,7 @@
 
 [更多關於 Azure.AI.OpenAI 的資訊](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container)。
 
-1. 打開 `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-01MEAI/Program.cs`。
+1. 打開 `/workspaces/Generative-AI-for-beginners-dotnet/02-SetupDevEnvironment/src/BasicChat-01MEAI/Program.cs`。
 
     在文件頂部添加以下 using 語句：
 

@@ -102,7 +102,7 @@ Mettons à jour le code pour utiliser le modèle que vous venez de déployer. To
 
 [Plus d'informations sur Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container).
 
-1. Ouvrez `/workspaces/Generative-AI-for-beginners-dotnet/02-SettingUp.NETDev/src/BasicChat-01MEAI/Program.cs`.
+1. Ouvrez `/workspaces/Generative-AI-for-beginners-dotnet/02-SetupDevEnvironment/src/BasicChat-01MEAI/Program.cs`.
 
     Ajoutez les instructions `using` suivantes en haut du fichier :
 

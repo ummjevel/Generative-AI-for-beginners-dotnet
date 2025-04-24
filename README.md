@@ -30,13 +30,9 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 We're constantly improving this course with the latest AI tools and models:
 
-- **eShopLite Scenarios Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
-  - Product catalog browsing
-  - Shopping cart management
-  - Order placement and tracking
-  - User authentication and profiles
-  - Integration with Generative AI for recommendations and chat
-  - Admin dashboard for product and order management
+- **eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
+
+  The repository includes scenarios such as: Semantic Search (keyword and semantic search in .NET Aspire), Azure AI Search (SQL and vector search with Azure AI Search), Realtime Audio (advanced search and real-time audio with GPT-4o), Chroma DB (semantic search using Chroma DB), DeepSeek-R1 (integration for enhanced semantic search), and Model Context Protocol (MCP) for advanced AI interactions with MCP Servers and Clients.
 
 [View all previous updates in our What's New section](./10-WhatsNew/readme.md)
 
