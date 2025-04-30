@@ -28,10 +28,11 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 ## ✨ What's New!
 
-We're constantly improving this course with the latest AI tools and models:
+We're constantly improving this course with the latest AI tools, models, and practical samples:
+
+- **New: Run Local Models with AI Toolkit and Docker**: Explore new samples for running models locally using [AI Toolkit for Windows](https://learn.microsoft.com/en-us/windows/ai/toolkit/) and [Docker Model Runner](https://docs.docker.com/model-runner/). The source code is in [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/) and demonstrates how to use Semantic Kernel and Microsoft Extensions for AI to interact with these models.
 
 - **eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
-
   The repository includes scenarios such as: Semantic Search (keyword and semantic search), Azure AI Search (SQL and vector search with Azure AI Search), Realtime Audio (advanced search and real-time audio with GPT models), Chroma DB (semantic search using Chroma DB), DeepSeek-R1 (integration for enhanced semantic search using a reasoning model), and Model Context Protocol (MCP) for advanced AI interactions with MCP Servers and Clients.
 
 [View all previous updates in our What's New section](./10-WhatsNew/readme.md)
