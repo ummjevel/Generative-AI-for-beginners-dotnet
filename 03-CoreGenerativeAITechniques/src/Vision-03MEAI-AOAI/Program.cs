@@ -6,6 +6,31 @@ using Microsoft.Extensions.AI;
 using System;
 
 
+// define video file and data folder
+string videoFile = VideosHelper.GetVideoFilePathFireTruck();
+string dataFolderPath = VideosHelper.CreateDataFolder();
+
+//////////////////////////////////////////////////////
+/// VIDEO ANALYSIS using OpenCV
+//////////////////////////////////////////////////////
+
+// Extract the frames from the video
+var video = new VideoCapture(videoFile);
+var frames = new List<Mat>();
+while (video.IsOpened())
+{
+    var frame = new Mat();
+    if (!video.Read(frame) || frame.Empty())
+        break;
+    // resize the frame to half of its size if the with is greater than 800
+    if (frame.Width > 800)
+    {
+        Cv2.Resize(frame, frame, new OpenCvSharp.Size(frame.Width / 2, frame.Height / 2));
+    }
+    frames.Add(frame);
+}
+video.Release();
+
 
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 var endpoint = config["AZURE_OPENAI_ENDPOINT"];
@@ -46,7 +71,7 @@ for (int i = 0; i < frames.Count; i += step)
 }
 
 // send the messages to the chat client
-var completionUpdates = chatClient.GetStreamingResponseAsync(chatMessages: messages);
+var completionUpdates = chatClient.CompleteStreamingAsync(chatMessages: messages);
 
 // print the assistant responses
 Console.WriteLine($"\n[Azure OpenAI Services response using Microsoft Extensions for AI]: ");
