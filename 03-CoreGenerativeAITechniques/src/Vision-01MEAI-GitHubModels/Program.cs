@@ -14,7 +14,7 @@ IChatClient chatClient =
     new ChatCompletionsClient(
         endpoint: new Uri("https://models.inference.ai.azure.com"),
         new AzureKeyCredential(githubToken))
-        .AsChatClient("gpt-4o-mini");
+        .AsIChatClient("gpt-4o-mini");
 
 
 // images
@@ -50,4 +50,4 @@ var message = new ChatMessage(Microsoft.Extensions.AI.ChatRole.User, [aic]);
 var response = await chatClient.GetResponseAsync(messages);
 Console.WriteLine($"Prompt: {prompt}");
 Console.WriteLine($"Image: {imageFileName}");
-Console.WriteLine($"Response: {response.Message}");
+Console.WriteLine($"Response: {response.Text}");
