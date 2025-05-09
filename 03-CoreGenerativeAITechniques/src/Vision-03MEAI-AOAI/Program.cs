@@ -42,7 +42,8 @@ var credential = new ApiKeyCredential(apiKey);
 
 IChatClient chatClient =
     new AzureOpenAIClient(new Uri(endpoint),credential)
-            .AsChatClient(modelId: modelId);
+            .GetChatClient(modelId)
+            .AsIChatClient();
 
 List<ChatMessage> messages =
 [
@@ -71,7 +72,7 @@ for (int i = 0; i < frames.Count; i += step)
 }
 
 // send the messages to the chat client
-var completionUpdates = chatClient.CompleteStreamingAsync(chatMessages: messages);
+var completionUpdates = chatClient.GetStreamingResponseAsync(messages);
 
 // print the assistant responses
 Console.WriteLine($"\n[Azure OpenAI Services response using Microsoft Extensions for AI]: ");

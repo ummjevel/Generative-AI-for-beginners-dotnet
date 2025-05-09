@@ -225,7 +225,7 @@
                     client = new Azure.AI.Inference.ChatCompletionsClient(
                         endpoint: new Uri(endpoint),
                         credential: new DefaultAzureCredential())
-                        .AsChatClient()
+                        .AsIChatClient(deploymentName)
                         .AsBuilder()
                         .UseFunctionInvocation()
                         .Build();
@@ -236,10 +236,10 @@
                     client = new Azure.AI.Inference.ChatCompletionsClient(
                         endpoint: new Uri(endpoint),
                         credential: new AzureKeyCredential(apiKey))
-                        .AsChatClient(deploymentName)
+                        .AsIChatClient(deploymentName)
                         .AsBuilder()
                         .UseFunctionInvocation()
-                        .Build(); ;
+                        .Build();
                 }
             }
             Logger.LogInformation($"===================================================");
