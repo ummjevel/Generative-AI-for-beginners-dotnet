@@ -2,6 +2,16 @@
 
 This page tracks the history of new features, tools, and models added to the course. Check back for updates!
 
+## May 2025
+
+### Azure OpenAI Image Generation Model: gpt-image-1
+
+- **New Lesson 3 Sample: Azure OpenAI Image Generation**
+  - Lesson 3 now includes code samples and explanations for using the new Azure OpenAI image generation model: `gpt-image-1`.
+  - Learn how to generate images using the latest Azure OpenAI capabilities directly from .NET.
+  - See the [official Azure OpenAI DALL·E documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
+  - Find the sample in [Lesson 3: Core Generative AI Techniques](../03-CoreGenerativeAITechniques/).
+
 ## March 2025
 
 ### MCP Library Integration
@@ -13,7 +23,6 @@ This page tracks the history of new features, tools, and models added to the cou
 ### eShopLite Scenarios Repository
 
 - **New eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
-
 - The new repo includes:
   - Product catalog browsing
   - Shopping cart management
@@ -21,13 +30,3 @@ This page tracks the history of new features, tools, and models added to the cou
   - User authentication and profiles
   - Integration with Generative AI for recommendations and chat
   - Admin dashboard for product and order management
-
-## February 2025
-
-### phi4-mini Model Support
-
-- The [Ollama Codespace](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/02-SetupDevEnvironment/getting-started-ollama.md) now automatically downloads the [phi4-mini model](https://ollama.com/library/phi4-mini) - Microsoft's compact yet powerful LLM.
-- Try it in samples like:
-  - [Chat Application](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/BasicChat-03Ollama/Program.cs) - Experience fast responses with this efficient model
-  - [RAG Implementation](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/blob/main/03-CoreGenerativeAITechniques/src/RAGSimple-10SKOllama/Program.cs) - See how phi4-mini handles retrieval-augmented generation tasks
-  - Learn more about the model in the [Phi Cookbook](https://aka.ms/phicookbook)
