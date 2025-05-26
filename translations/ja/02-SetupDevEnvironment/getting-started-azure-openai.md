@@ -97,7 +97,7 @@ Azure AI Foundry モデルを使用するには、Azure AI Foundry ポータル�
 
     ```bash
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.1.0-preview.1.25064.3
+    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.5.0
     ```
 
 [Azure.AI.OpenAI に関する詳細はこちら](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container)。

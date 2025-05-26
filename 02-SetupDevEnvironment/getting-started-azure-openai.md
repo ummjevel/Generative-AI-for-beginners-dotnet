@@ -97,7 +97,7 @@ Now let’s update the code to use the newly deployed model. First we'll need to
 
     ```bash
     dotnet add package Azure.AI.OpenAI --version 2.2.0-beta.2
-    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.3.0-preview.1.25114.11
+    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.5.0
     ```
 
 [More information about Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI/2.2.0-beta.2).
