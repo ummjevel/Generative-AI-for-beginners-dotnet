@@ -15,13 +15,13 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
     new OllamaEmbeddingGenerator(new Uri("http://localhost:11434/"), "all-minilm");
 foreach (var movie in movieData)
 {
-    movie.Vector = await generator.GenerateEmbeddingVectorAsync(movie.Description);
+    movie.Vector = await generator.GenerateEmbeddingAsync(movie.Description);
     await movies.UpsertAsync(movie);
 }
 
 // perform the search
 var query = "A family friendly movie that includes ogres and dragons";
-var queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
+var queryEmbedding = await generator.GenerateEmbeddingAsync(query);
 
 var searchOptions = new VectorSearchOptions()
 {
