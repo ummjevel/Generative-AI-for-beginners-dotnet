@@ -37,12 +37,11 @@ To run the sample code, you'll need to:
    ```
 
 ```csharp
-
 // this example illustrates using a model hosted on GitHub Models
 IChatClient client = new ChatCompletionsClient(
-    endpoint: new Uri("https://models.inference.ai.azure.com"),
-    new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
-    .AsIChatClient("Phi-3.5-MoE-instruct");
+        endpoint: new Uri("https://models.inference.ai.azure.com"),
+        new AzureKeyCredential(githubToken))
+        .AsIChatClient("Phi-3.5-MoE-instruct");
 
 // here we're building the prompt
 StringBuilder prompt = new StringBuilder();
@@ -57,7 +56,6 @@ var response = await client.GetResponseAsync(prompt.ToString());
 
 // display the response
 Console.WriteLine(response.Text);
-
 ```
 
 > 🗒️**Note:** This example showed GitHub Models as the hosting service. If you want to use Ollama, [check out this example](./src/BasicChat-03Ollama/) (it instantiates a different `IChatClient`).
@@ -89,12 +87,11 @@ Let's take a look at how you would build a chat application using MEAI.
 > 🧑‍💻**Sample code**: You can find complete chat application examples in the [BasicChat-01MEAI](./src/BasicChat-01MEAI/) and [BasicChat-02SK](./src/BasicChat-02SK/) directories.
 
 ```csharp
-
 // assume IChatClient is instantiated as before
 
 List<ChatMessage> conversation =
 [
-    new (ChatRole.System, "You are a product review assistant. Your job is to help people write great product reviews. Keep asking questions on the person's experience with the product until you have enough information to write a review. Then write the review for them and ask if they are happy with it.")
+    new ChatMessage(ChatRole.System, "You are a product review assistant. Your job is to help people write great product reviews. Keep asking questions on the person's experience with the product until you have enough information to write a review. Then write the review for them and ask if they are happy with it.")
 ];
 
 Console.Write("Start typing a review (type 'q' to quit): ");
@@ -117,7 +114,6 @@ while (true)
     
     Console.WriteLine(response.Message.Text);    
 }
-
 ```
 
 > 🗒️**Note:** This can also be done with Semantic Kernel. [Check out the code here](./src/BasicChat-02SK/).
@@ -148,10 +144,10 @@ There are a couple of setup steps you need to take in order to call functions wi
     static string GetTheWeather()
     {    
         var temperature = Random.Shared.Next(5, 20);
-
         var conditions = Random.Shared.Next(0, 1) == 0 ? "sunny" : "rainy";
-
-        return $"The weather is {temperature} degrees C and {conditions}.";
+        var weatherInfo = $"The weather is {temperature} degrees C and {conditions}.";
+        Console.WriteLine($"\tFunction Call - Returning weather info: {weatherInfo}");
+        return weatherInfo;
     }
 
     ```
@@ -172,10 +168,10 @@ There are a couple of setup steps you need to take in order to call functions wi
     ```csharp
     IChatClient client = new ChatCompletionsClient(
         endpoint: new Uri("https://models.inference.ai.azure.com"),
-        new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
+        new AzureKeyCredential(githubToken))
     .AsIChatClient("gpt-4o-mini")
     .AsBuilder()
-    .UseFunctionInvocation()  // here we're saying that we could be invoking functions!
+    .UseFunctionInvocation()
     .Build();
     ```
 
