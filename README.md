@@ -22,7 +22,7 @@ This isn’t your typical “here’s some theory, good luck” course. This rep
 
 This is **hands-on**, **practical**, and designed to be **fun**!
 
-Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars) to find it easier later. 
+Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars) to find it easier later.
 
 ➡️Get your own copy by [Forking this repo](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/fork) and find it next in your own repositories.
 
@@ -31,7 +31,7 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 We're constantly improving this course with the latest AI tools, models, and practical samples:
 
 - **New: Azure OpenAI Image Generation Model (`gpt-image-1`)**: Lesson 3 now features code samples for using the new Azure OpenAI image generation model, `gpt-image-1`. Learn how to generate images from .NET using the latest Azure OpenAI capabilities.
-  - See the official: [How to use Azure OpenAI image generation models](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
+  - See the official: [How to use Azure OpenAI image generation models](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
   - Find the sample in [Lesson 3: Core Generative AI Techniques .. /src/ImageGeneration-01.csproj](./03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
 
 - **eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)

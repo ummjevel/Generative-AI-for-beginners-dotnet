@@ -9,7 +9,7 @@ This page tracks the history of new features, tools, and models added to the cou
 - **New Lesson 3 Sample: Azure OpenAI Image Generation**
   - Lesson 3 now includes code samples and explanations for using the new Azure OpenAI image generation model: `gpt-image-1`.
   - Learn how to generate images using the latest Azure OpenAI capabilities directly from .NET.
-  - See the [official Azure OpenAI DALL·E documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
+  - See the [official Azure OpenAI DALL·E documentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
   - Find the sample in [Lesson 3: Core Generative AI Techniques](../03-CoreGenerativeAITechniques/).
 
 ## March 2025
