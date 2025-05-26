@@ -97,7 +97,7 @@ Azure AI Foundry 모델을 사용하려면, Azure AI Foundry 포털에서 허브
 
     ```bash
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.5.0
+    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.5.0-preview.1.25265.7
     ```
 
 [Azure.AI.OpenAI에 대한 추가 정보](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container).
