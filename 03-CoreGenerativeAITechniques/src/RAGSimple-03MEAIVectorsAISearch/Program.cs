@@ -20,7 +20,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
     new OllamaEmbeddingGenerator(new Uri("http://localhost:11434/"), "all-minilm");
 foreach (var movie in movieData)
 {
-    movie.Vector = await generator.GenerateEmbeddingAsync(movie.Description);
+    movie.Vector = await generator.GenerateVectorAsync(movie.Description);
     await movies.UpsertAsync(movie);
 }
 
@@ -43,7 +43,7 @@ async Task SearchMovieAsync(string question, int resultCount)
     Console.WriteLine();
 
     // perform the search
-    var queryEmbedding = await generator.GenerateEmbeddingAsync(question);
+    var queryEmbedding = await generator.GenerateVectorAsync(question);
 
     var searchOptions = new VectorSearchOptions()
     {
