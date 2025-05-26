@@ -97,7 +97,7 @@
 
     ```bash
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.1.0-preview.1.25064.3
+    dotnet add package Microsoft.Extensions.AI.OpenAI --version 9.5.0-preview.1.25265.7
     ```
 
 [更多关于 Azure.AI.OpenAI 的信息](https://www.nuget.org/packages/Azure.AI.OpenAI/2.1.0#show-readme-container)。
