@@ -190,6 +190,6 @@ We have another example that [demonstrates how to perform real-time audio conver
 
 ## Up next
 
-You've learned how to add vision and audio capabilities to your .NET applications, in the next lesson find out how to create AI that has some ability to act autonomously.
+You've learned how to add vision and audio capabilities to your .NET applications, in the next lesson you'll learn how to generate images with Azure OpenAI.
 
-👉 [Check out AI Agents](./04-agents.md).
+👉 [Learn about Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md).
