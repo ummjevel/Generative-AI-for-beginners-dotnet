@@ -11,6 +11,7 @@ In this lesson you'll learn some practical skills for building AI-enabled .NET a
 - 🔎 Retrieval-Augmented Generation (RAG)
 - 👀 Vision-based AI approaches
 - 🔊 Audio creation and transcription
+- 🖼️ Image generation with DALL-E
 - 🧩 Agents & assistants
 
 For this lesson, we will subdivide the content into the following sections:
@@ -18,6 +19,7 @@ For this lesson, we will subdivide the content into the following sections:
 - [Chat, LLM completions, and function calling](./01-lm-completions-functions.md)
 - [Retrieval-Augmented Generation (RAG)](./02-retrieval-augmented-generation.md)
 - [Vision and audio AI applications](./03-vision-audio.md)
+- [Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md)
 - [Agents](04-agents.md)
 
 Starting with Language Model completions and Chat applications and function implementations with language models in .NET.

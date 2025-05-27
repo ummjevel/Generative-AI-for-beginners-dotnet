@@ -153,6 +153,6 @@ Image generation opens up new creative possibilities for your applications, allo
 
 ## Up next
 
-You've learned how to generate images with Azure OpenAI in your .NET applications. In the next lesson, you'll explore more advanced generative AI techniques.
+You've learned how to generate images with Azure OpenAI in your .NET applications. In the next lesson, you'll learn how to create AI that has some ability to act autonomously.
 
-👉 [Return to the Core Generative AI Techniques overview](./readme.md)
+👉 [Check out AI Agents](./04-agents.md)
