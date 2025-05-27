@@ -25,34 +25,51 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
 1. We're using MEAI and GitHub Models, so instantiate the `IChatClient` as we have been. Also start to create a chat history.
 
     ```csharp
-    IChatClient chatClient = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.ai.azure.com"),
-        new AzureKeyCredential(githubToken)) // make sure to grab githubToken from the secrets or environment
-    .AsChatClient("gpt-4o-mini");
+    IChatClient chatClient =
+        new ChatCompletionsClient(
+            endpoint: new Uri("https://models.inference.ai.azure.com"),
+            new AzureKeyCredential(githubToken))
+            .AsIChatClient("gpt-4o-mini");
 
-    List<ChatMessage> messages = 
+
+    // images
+    string imgRunningShoes = "running-shoes.jpg";
+    string imgCarLicense = "license.jpg";
+    string imgReceipt = "german-receipt.jpg";
+
+    // prompts
+    var promptDescribe = "Describe the image";
+    var promptAnalyze = "How many red shoes are in the picture? and what other shoes colors are there?";
+    var promptOcr = "What is the text in this picture? Is there a theme for this?";
+    var promptReceipt = "I bought the coffee and the sausage. How much do I owe? Add a 18% tip.";
+
+    // prompts
+    string systemPrompt = @"You are a useful assistant that describes images using a direct style.";
+    var prompt = promptDescribe;
+    string imageFileName = imgRunningShoes;
+    string image = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "images", imageFileName);
+
+
+    List<ChatMessage> messages =
     [
-        new ChatMessage(ChatRole.System, "You are a useful assistant that describes images using a direct style."),
-        new ChatMessage(ChatRole.User, "How many red shoes are in the photo?") // we'll start with the running photo
+        new ChatMessage(Microsoft.Extensions.AI.ChatRole.System, systemPrompt),
+        new ChatMessage(Microsoft.Extensions.AI.ChatRole.User, prompt),
     ];
     ```
 
 1. The next part is to load the image into an `AIContent` object and set that as part of our conversation and then send that off to the model to describe for us.
 
     ```csharp
-    var imagePath = "FULL PATH TO THE IMAGE ON DISK";
+    // read the image bytes, create a new image content part and add it to the messages
+    AIContent aic = new DataContent(File.ReadAllBytes(image), "image/jpeg");
+    var message = new ChatMessage(Microsoft.Extensions.AI.ChatRole.User, [aic]);
+        messages.Add(message);
 
-    AIContent imageContent = new DataContent(File.ReadAllBytes(imagePath), "image/jpeg"); // the important part here is that we're loading it in bytes. The image could come from anywhere.
-
-    var imageMessage = new ChatMessage(ChatRole.User, [imageContent]);
-
-    messages.Add(imageMessage);
-
+    // send the messages to the assistant
     var response = await chatClient.GetResponseAsync(messages);
-
-    messages.Add(response.Message);
-
-    Console.WriteLine(response.Message.Text);
+    Console.WriteLine($"Prompt: {prompt}");
+    Console.WriteLine($"Image: {imageFileName}");
+    Console.WriteLine($"Response: {response.Text}");
     ```
 
 1. Then to get the model to work on the restaurant receipt - which is in German - to find out how much of a tip we should leave:
@@ -101,8 +118,15 @@ You'll need the **Microsoft.CognitiveServices.Speech** NuGet package for this ex
 1. The first thing we'll do (after grabbing the key and region of the model's deployment) is instantiate a `SpeechTranslationConfig` object. This will enable us to direct the model that we'll be taking in spoken English and translating to written Spanish.
 
     ```csharp
-    var speechKey = "<FROM YOUR MODEL DEPLOYMENT>";
-    var speechRegion = "<FROM YOUR MODEL DEPLOYMENT>";
+    // get key and region
+    string? speechKey = Environment.GetEnvironmentVariable("SPEECH_KEY");
+    string? speechRegion = Environment.GetEnvironmentVariable("SPEECH_REGION");
+    if (string.IsNullOrEmpty(speechKey) || string.IsNullOrEmpty(speechRegion))
+    {
+        var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+        speechKey = config["SPEECH_KEY"];
+        speechRegion = config["SPEECH_REGION"];
+    }
 
     var speechTranslationConfig = SpeechTranslationConfig.FromSubscription(speechKey, speechRegion);
     speechTranslationConfig.SpeechRecognitionLanguage = "en-US";
@@ -119,6 +143,7 @@ You'll need the **Microsoft.CognitiveServices.Speech** NuGet package for this ex
 1. Finally, we'll call the model and setup a function to handle its return.
    
     ```csharp
+    Console.WriteLine("Speak into your microphone.");
     var translationRecognitionResult = await translationRecognizer.RecognizeOnceAsync();
     OutputSpeechRecognitionResult(translationRecognitionResult);
 
@@ -134,10 +159,18 @@ You'll need the **Microsoft.CognitiveServices.Speech** NuGet package for this ex
                 }
                 break;
             case ResultReason.NoMatch:
-                // handle when speech could not be recognized
+                Console.WriteLine($"NOMATCH: Speech could not be recognized.");
                 break;
             case ResultReason.Canceled:
-                // handle an error condition
+                var cancellation = CancellationDetails.FromResult(translationRecognitionResult);
+                Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+
+                if (cancellation.Reason == CancellationReason.Error)
+                {
+                    Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
+                    Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
+                    Console.WriteLine($"CANCELED: Did you set the speech resource key and region values?");
+                }
                 break;
         }
     }
