@@ -147,6 +147,6 @@ Running AI models locally with AI Toolkit for Windows or Docker Model Runner off
 
 ## Next Steps
 
-Explore more advanced AI techniques:
+You've learned how to run AI models locally using AI Toolkit for Windows and Docker Model Runner. Next, you'll explore how to create AI agents that can perform tasks autonomously.
 
-👉 [Go back to main page](./readme.md)
+👉 [Check out AI Agents](./04-agents.md)
