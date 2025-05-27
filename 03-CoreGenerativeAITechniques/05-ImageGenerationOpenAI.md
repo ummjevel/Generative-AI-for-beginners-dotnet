@@ -153,6 +153,6 @@ Image generation opens up new creative possibilities for your applications, allo
 
 ## Up next
 
-You've learned how to generate images with Azure OpenAI in your .NET applications. In the next lesson, you'll learn how to create AI that has some ability to act autonomously.
+You've learned how to generate images with Azure OpenAI in your .NET applications. In the next lesson, you'll learn how to run AI models locally on your machine.
 
-👉 [Check out AI Agents](./04-agents.md)
+👉 [Running models locally with AI Toolkit and Docker](./06-AIToolkitAndDockerModels.md)
