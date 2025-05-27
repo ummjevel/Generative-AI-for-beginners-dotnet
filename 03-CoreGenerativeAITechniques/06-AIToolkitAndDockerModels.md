@@ -1,7 +1,7 @@
 # Running AI Models Locally with AI Toolkit and Docker
 
 In this lesson, we'll explore how to run AI models locally using two popular approaches:
-- **[AI Toolkit for Windows](https://learn.microsoft.com/en-us/windows/ai/toolkit/)** - A suite of tools for Windows that enables running AI models locally
+- **[AI Toolkit for Windows](https://learn.microsoft.com/windows/ai/toolkit/)** - A suite of tools for Windows that enables running AI models locally
 - **[Docker Model Runner](https://docs.docker.com/model-runner/)** - A containerized approach for running AI models with Docker
 
 Running models locally provides several benefits:
@@ -25,7 +25,7 @@ The AI Toolkit for Windows is a collection of tools and technologies that help y
 
 To get started with AI Toolkit for Windows:
 
-1. [Install the AI Toolkit](https://learn.microsoft.com/en-us/windows/ai/toolkit/install)
+1. [Install the AI Toolkit](https://learn.microsoft.com/windows/ai/toolkit/install)
 2. Download a supported model
 3. Use the APIs through .NET or other supported languages
 
@@ -131,15 +131,15 @@ To run the samples in this repository:
 | Platform | Windows only | Cross-platform |
 | Integration | Native Windows APIs | REST API |
 | Deployment | Local installation | Container-based |
-| Hardware Acceleration | DirectML, DirectX | CUDA, CPU |
+| Hardware Acceleration | DirectML, DirectX | CPU, GPU |
 | Models | Optimized for Windows | Any containerized model |
 
 ## Additional Resources
 
-- [AI Toolkit for Windows Documentation](https://learn.microsoft.com/en-us/windows/ai/toolkit/)
+- [AI Toolkit for Windows Documentation](https://learn.microsoft.com/windows/ai/toolkit/)
 - [Docker Model Runner Documentation](https://docs.docker.com/model-runner/)
-- [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
-- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/en-us/dotnet/ai/)
+- [Semantic Kernel Documentation](https://learn.microsoft.com/semantic-kernel/overview/)
+- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/dotnet/ai/)
 
 ## Summary
 
