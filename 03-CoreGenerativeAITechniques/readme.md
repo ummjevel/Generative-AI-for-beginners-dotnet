@@ -13,6 +13,7 @@ In this lesson you'll learn some practical skills for building AI-enabled .NET a
 - 🔊 Audio creation and transcription
 - 🖼️ Image generation with DALL-E
 - 🧩 Agents & assistants
+- 💻 Running models locally with AI Toolkit and Docker
 
 For this lesson, we will subdivide the content into the following sections:
 
@@ -21,6 +22,7 @@ For this lesson, we will subdivide the content into the following sections:
 - [Vision and audio AI applications](./03-vision-audio.md)
 - [Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md)
 - [Agents](04-agents.md)
+- [Running models locally with AI Toolkit and Docker](./06-AIToolkitAndDockerModels.md)
 
 Starting with Language Model completions and Chat applications and function implementations with language models in .NET.
 

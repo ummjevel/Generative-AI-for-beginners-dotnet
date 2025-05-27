@@ -1,0 +1,152 @@
+# Running AI Models Locally with AI Toolkit and Docker
+
+In this lesson, we'll explore how to run AI models locally using two popular approaches:
+- **[AI Toolkit for Windows](https://learn.microsoft.com/en-us/windows/ai/toolkit/)** - A suite of tools for Windows that enables running AI models locally
+- **[Docker Model Runner](https://docs.docker.com/model-runner/)** - A containerized approach for running AI models with Docker
+
+Running models locally provides several benefits:
+- Data privacy - Your data never leaves your machine
+- Cost efficiency - No usage charges for API calls
+- Offline availability - Use AI even without internet connectivity
+- Customization - Fine-tune models for specific use cases
+
+## AI Toolkit for Windows
+
+The AI Toolkit for Windows is a collection of tools and technologies that help you build and run AI applications locally on Windows PCs. It leverages the Windows platform capabilities to optimize AI workloads.
+
+### Key Features
+
+- **DirectML** - Hardware-accelerated machine learning primitives
+- **Windows AI Runtime (WinRT)** - Runtime environment for AI models
+- **ONNX Runtime** - Cross-platform inference accelerator
+- **Local model downloads** - Access to optimized models for Windows
+
+### Getting Started
+
+To get started with AI Toolkit for Windows:
+
+1. [Install the AI Toolkit](https://learn.microsoft.com/en-us/windows/ai/toolkit/install)
+2. Download a supported model
+3. Use the APIs through .NET or other supported languages
+
+> 📝 **Note**: AI Toolkit for Windows requires Windows 10/11 and compatible hardware for optimal performance.
+
+## Docker Model Runner
+
+Docker Model Runner is a tool for running AI models in containers, making it easy to deploy and run inference workloads consistently across different environments.
+
+### Key Features
+
+- **Containerized models** - Package models with their dependencies
+- **Cross-platform** - Run on Windows, macOS, and Linux
+- **Built-in API** - RESTful API for model interaction
+- **Resource management** - Control CPU and memory usage
+
+### Getting Started
+
+To get started with Docker Model Runner:
+
+1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Pull a model image
+3. Run the model container
+4. Interact with the model through the API
+
+```bash
+# Pull and run a Llama model
+docker run -d -p 12434:8080 \
+  --name deepseek-model \
+  --runtime=nvidia \
+  ghcr.io/huggingface/dockerfiles/model-runner:latest \
+  deepseek-ai/deepseek-llm-7b-chat
+```
+
+## Sample Code: Using Docker Models with .NET
+
+In this repository, we have two examples that demonstrate how to interact with Docker-based models using .NET:
+
+### 1. Semantic Kernel with Docker Models
+
+The [DockerModels-01-SK-Chat](./src/DockerModels-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running in Docker.
+
+```csharp
+var model = "ai/deepseek-r1-distill-llama";
+var base_url = "http://localhost:12434/engines/llama.cpp/v1";
+var api_key = "unused";
+
+// Create a chat completion service
+var builder = Kernel.CreateBuilder();
+builder.AddOpenAIChatCompletion(modelId: model, apiKey: api_key, endpoint: new Uri(base_url));
+var kernel = builder.Build();
+
+var chat = kernel.GetRequiredService<IChatCompletionService>();
+var history = new ChatHistory();
+history.AddSystemMessage("You are a useful chatbot. Always reply in a funny way with short answers.");
+
+// ... continue with chat functionality
+```
+
+### 2. Microsoft Extensions for AI with Docker Models
+
+The [DockerModels-02-MEAI-Chat](./src/DockerModels-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with Docker-based models.
+
+```csharp
+var model = "ai/deepseek-r1-distill-llama";
+var base_url = "http://localhost:12434/engines/llama.cpp/v1";
+var api_key = "unused";
+
+OpenAIClientOptions options = new OpenAIClientOptions();
+options.Endpoint = new Uri(base_url);
+ApiKeyCredential credential = new ApiKeyCredential(api_key);
+
+ChatClient client = new OpenAIClient(credential, options).GetChatClient(model);
+
+// Build and send a prompt
+StringBuilder prompt = new StringBuilder();
+prompt.AppendLine("You will analyze the sentiment of the following product reviews...");
+// ... add more text to the prompt
+
+var response = await client.CompleteChatAsync(prompt.ToString());
+Console.WriteLine(response.Value.Content[0].Text);
+```
+
+## Running the Samples
+
+To run the samples in this repository:
+
+1. Install Docker Desktop and start it
+2. Pull the required model:
+   ```bash
+   docker run -d -p 12434:8080 \
+     --name deepseek-model \
+     ghcr.io/huggingface/dockerfiles/model-runner:latest \
+     deepseek-ai/deepseek-llm-7b-chat
+   ```
+3. Navigate to one of the sample project directories
+4. Run the project with `dotnet run`
+
+## Comparing AI Toolkit and Docker Approach
+
+| Feature | AI Toolkit for Windows | Docker Model Runner |
+|---------|------------------------|---------------------|
+| Platform | Windows only | Cross-platform |
+| Integration | Native Windows APIs | REST API |
+| Deployment | Local installation | Container-based |
+| Hardware Acceleration | DirectML, DirectX | CUDA, CPU |
+| Models | Optimized for Windows | Any containerized model |
+
+## Additional Resources
+
+- [AI Toolkit for Windows Documentation](https://learn.microsoft.com/en-us/windows/ai/toolkit/)
+- [Docker Model Runner Documentation](https://docs.docker.com/model-runner/)
+- [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
+- [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/en-us/dotnet/ai/)
+
+## Summary
+
+Running AI models locally with AI Toolkit for Windows or Docker Model Runner offers flexibility, privacy, and cost benefits. The samples in this repository demonstrate how to integrate these local models with your .NET applications using Semantic Kernel and Microsoft Extensions for AI.
+
+## Next Steps
+
+Explore more advanced AI techniques:
+
+👉 [Go back to main page](./readme.md)
