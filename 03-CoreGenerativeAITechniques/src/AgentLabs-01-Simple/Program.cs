@@ -48,7 +48,7 @@ var runResponse = await persistentClient.Runs.CreateRunAsync(thread, agentMathTu
 // run the agent thread
 do
 {
-    await Task.Delay(TimeSpan.FromMilliseconds(500));
+    await Task.Delay(TimeSpan.FromMilliseconds(PollingDelayMilliseconds));
     runResponse = await persistentClient.Runs.GetRunAsync(thread.Id, runResponse.Value.Id);
 }
 while (runResponse.Value.Status == RunStatus.Queued
