@@ -29,7 +29,6 @@ var agentResponse = await persistentClient.Administration.CreateAgentAsync(
     name: "Math Tutor",
     instructions: "You are a personal math tutor. Write and run code to answer math questions.",
     tools: [new CodeInterpreterToolDefinition()]);
-
 var agentMathTutor = agentResponse.Value;
 
 // Create thread for communication
@@ -48,7 +47,7 @@ var runResponse = await persistentClient.Runs.CreateRunAsync(thread, agentMathTu
 // run the agent thread
 do
 {
-    await Task.Delay(TimeSpan.FromMilliseconds(PollingDelayMilliseconds));
+    await Task.Delay(TimeSpan.FromMilliseconds(500));
     runResponse = await persistentClient.Runs.GetRunAsync(thread.Id, runResponse.Value.Id);
 }
 while (runResponse.Value.Status == RunStatus.Queued
