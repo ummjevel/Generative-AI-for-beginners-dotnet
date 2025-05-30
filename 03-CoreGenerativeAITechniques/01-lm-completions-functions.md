@@ -137,6 +137,8 @@ When building AI applications you are not limited to just text-based interaction
 There are a couple of setup steps you need to take in order to call functions with MEAI.
 
 > 🧑‍💻**Sample code**: [Here is a working example of function calling](./src/MEAIFunctions/) you can follow along with. To run this example, follow the same steps as for the previous examples, but navigate to `03-CoreGenerativeAITechniques/src/MEAIFunctions` directory.
+>
+> We also have examples showing function calling with [Azure OpenAI](./src/MEAIFunctionsAzureOpenAI/) and [Ollama](./src/MEAIFunctionsOllama/).
 
 1. First, of course, define the function that you want the chatbot to be able to call. In this example we're going to get the weather forecast.
 

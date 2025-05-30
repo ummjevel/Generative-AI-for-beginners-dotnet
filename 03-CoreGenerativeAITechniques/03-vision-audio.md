@@ -21,6 +21,11 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
 ![A composite showing both images the example will use. The first is several runners but only showing their legs. The second is a German restaurant receipt](./images/example-visual-image.png)
 
 > 🧑‍💻**Sample code**: You can follow [along with sample code here](./src/Vision-01MEAI-GitHubModels/).
+>
+> We also have examples showing vision capabilities with:
+> - [Ollama](./src/Vision-02MEAI-Ollama/) - Using local Ollama models for vision tasks
+> - [Azure OpenAI](./src/Vision-03MEAI-AOAI/) - Using Azure OpenAI for vision tasks
+> - [Azure OpenAI with Spectre UI](./src/Vision-04MEAI-AOAI-Spectre/) - A more advanced UI using the Spectre console library
 
 1. We're using MEAI and GitHub Models, so instantiate the `IChatClient` as we have been. Also start to create a chat history.
 

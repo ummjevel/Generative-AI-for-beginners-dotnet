@@ -38,6 +38,12 @@ We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.Vector
 > 🧑‍💻**Sample code:** You can follow along with the [sample code here](./src/RAGSimple-02MEAIVectorsMemory/).
 > 
 > You can also see how to implement a RAG app [using Semantic Kernel by itself in our sample source code here](./src/RAGSimple-01SK/).
+>
+> We have additional RAG examples for different vector stores and models:
+> - [RAGSimple-03MEAIVectorsAISearch](./src/RAGSimple-03MEAIVectorsAISearch/) - Using Azure AI Search as a vector store
+> - [RAGSimple-04MEAIVectorsQdrant](./src/RAGSimple-04MEAIVectorsQdrant/) - Using Qdrant as a vector store
+> - [RAGSimple-10SKOllama](./src/RAGSimple-10SKOllama/) - Using Semantic Kernel with Ollama
+> - [RAGSimple-15Ollama-DeepSeekR1](./src/RAGSimple-15Ollama-DeepSeekR1/) - Using Ollama with DeepSeek-R1 model
 
 ### Populating the knowledge store
 

@@ -20,7 +20,10 @@ We'll be working with a couple of new concepts in order to build an AI agent in 
 
 > 🧑‍💻**Sample code**: We'll be working from the [AgentLabs-01-Simple sample](./src/AgentLabs-01-Simple/) for this lesson.
 >
-> We did include some more advanced samples in the `/src/` folder as well. You can view the README's of [AgentLabs-02-Functions](./src/AgentLabs-02-Functions/) or [AgentLabs-03-OpenAPIs](./src/AgentLabs-03-OpenAPIs/) or [AgentLabs-03-PythonParksInformationServer](./src/AgentLabs-03-PythonParksInformationServer/) for more info on them.
+> We also have more advanced agent examples:
+> - [AgentLabs-02-Functions](./src/AgentLabs-02-Functions/) - Showing how to create custom functions for your agents
+> - [AgentLabs-03-OpenAPIs](./src/AgentLabs-03-OpenAPIs/) - Demonstrating how agents can use OpenAPI specifications
+> - [AgentLabs-03-PythonParksInformationServer](./src/AgentLabs-03-PythonParksInformationServer/) - A Python server that works with the OpenAPI example
 
 ### Azure AI Agent Service
 
