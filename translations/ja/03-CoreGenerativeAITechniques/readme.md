@@ -11,14 +11,18 @@
 - 🔎 情報検索を強化する生成（RAG）  
 - 👀 ビジョンベースのAIアプローチ  
 - 🔊 音声生成と文字起こし  
+- 🖼️ DALL-Eを使用した画像生成  
 - 🧩 エージェントとアシスタント
+- 💻 AI ToolkitとDockerを使用したモデルのローカル実行  
 
 このレッスンでは、以下のセクションに内容を分割して進めていきます：
 
 - [チャット、LLM補完、関数呼び出し](./01-lm-completions-functions.md)
 - [情報検索を強化する生成（RAG）](./02-retrieval-augmented-generation.md)
 - [ビジョンと音声のAIアプリケーション](./03-vision-audio.md)
+- [Azure OpenAIによる画像生成](./05-ImageGenerationOpenAI.md)  
 - [エージェント](04-agents.md)
+- [AI ToolkitとDockerを使用したモデルのローカル実行](./06-AIToolkitAndDockerModels.md)  
 
 まずは、言語モデルによる補完、チャットアプリケーション、そして.NETでの関数実装について学びます。
 

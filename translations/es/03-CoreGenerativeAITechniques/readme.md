@@ -11,14 +11,18 @@ En esta lección aprenderás habilidades prácticas para construir aplicaciones 
 - 🔎 Generación Aumentada con Recuperación (RAG)  
 - 👀 Enfoques de IA basados en visión  
 - 🔊 Creación y transcripción de audio  
+- 🖼️ Generación de imágenes con DALL-E  
 - 🧩 Agentes y asistentes  
+- 💻 Ejecución local de modelos con AI Toolkit y Docker  
 
 Para esta lección, subdividiremos el contenido en las siguientes secciones:
 
 - [Chat, completaciones con LLM y llamadas a funciones](./01-lm-completions-functions.md)  
 - [Generación Aumentada con Recuperación (RAG)](./02-retrieval-augmented-generation.md)  
 - [Aplicaciones de IA para visión y audio](./03-vision-audio.md)  
+- [Generación de imágenes con Azure OpenAI](./05-ImageGenerationOpenAI.md)  
 - [Agentes](04-agents.md)  
+- [Ejecución local de modelos con AI Toolkit y Docker](./06-AIToolkitAndDockerModels.md)  
 
 Comenzaremos con las completaciones de modelos de lenguaje y aplicaciones de chat, además de la implementación de funciones con modelos de lenguaje en .NET.
 
