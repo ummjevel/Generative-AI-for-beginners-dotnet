@@ -60,6 +60,39 @@ docker run -d -p 12434:8080 \
   deepseek-ai/deepseek-llm-7b-chat
 ```
 
+## Sample Code: Using AI Toolkit for Windows with .NET
+
+The AI Toolkit for Windows provides a way to run AI models locally on Windows machines. We have two examples that demonstrate how to interact with AI Toolkit models using .NET:
+
+### 1. Semantic Kernel with AI Toolkit
+
+The [AIToolkit-01-SK-Chat](./src/AIToolkit-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running via AI Toolkit for Windows.
+
+```csharp
+// Example code demonstrating AI Toolkit with Semantic Kernel integration
+var builder = Kernel.CreateBuilder();
+// Configure to use a locally installed model through AI Toolkit
+builder.AddAzureOpenAIChatCompletion(
+    modelId: modelId,
+    endpoint: new Uri(endpoint),
+    apiKey: apiKey);
+var kernel = builder.Build();
+// Create a chat history and use it with the kernel
+```
+
+### 2. Microsoft Extensions for AI with AI Toolkit
+
+The [AIToolkit-02-MEAI-Chat](./src/AIToolkit-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with AI Toolkit models.
+
+```csharp
+// Example code demonstrating AI Toolkit with MEAI
+OpenAIClientOptions options = new OpenAIClientOptions();
+options.Endpoint = new Uri(endpoint);
+ApiKeyCredential credential = new ApiKeyCredential(apiKey);
+// Create a chat client using local model through AI Toolkit
+ChatClient client = new OpenAIClient(credential, options).GetChatClient(modelId);
+```
+
 ## Sample Code: Using Docker Models with .NET
 
 In this repository, we have two examples that demonstrate how to interact with Docker-based models using .NET:
