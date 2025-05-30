@@ -61,6 +61,8 @@ Console.WriteLine(response.Text);
 > 🗒️**Note:** This example showed GitHub Models as the hosting service. If you want to use Ollama, [check out this example](./src/BasicChat-03Ollama/) (it instantiates a different `IChatClient`).
 > 
 > If you want to use Azure AI Foundry you can use the same code, but you will need to change the endpoint and the credentials.
+>
+> If you want to use both Ollama and Semantic Kernel together, [check out the BasicChat-04OllamaSK example](./src/BasicChat-04OllamaSK/).
 > 
 > For instructions on how to set up Ollama, refer to [Getting Started with Ollama](../02-SetupDevEnvironment/getting-started-ollama.md).
 
