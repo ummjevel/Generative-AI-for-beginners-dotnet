@@ -30,12 +30,15 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 We're constantly improving this course with the latest AI tools, models, and practical samples:
 
+
 - **New: Azure OpenAI Image Generation Model (`gpt-image-1`)**: Lesson 3 now features code samples for using the new Azure OpenAI image generation model, `gpt-image-1`. Learn how to generate images from .NET using the latest Azure OpenAI capabilities.
   - See the official: [How to use Azure OpenAI image generation models](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
   - Find the sample in [Lesson 3: Core Generative AI Techniques .. /src/ImageGeneration-01.csproj](./03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
 
 - **eShopLite Repository**: All eShopLite scenarios are now available in a single repository: [https://aka.ms/eshoplite/repo](https://aka.ms/eshoplite/repo)
   The repository includes scenarios such as: Semantic Search (keyword and semantic search), Azure AI Search (SQL and vector search with Azure AI Search), Realtime Audio (advanced search and real-time audio with GPT models), Chroma DB (semantic search using Chroma DB), DeepSeek-R1 (integration for enhanced semantic search using a reasoning model), and Model Context Protocol (MCP) for advanced AI interactions with MCP Servers and Clients.
+
+- **New Scenario: Concurrent Agent Orchestration in eShopLite**: The [eShopLite repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) now features a scenario demonstrating concurrent agent orchestration using Semantic Kernel. This scenario showcases how multiple agents can work in parallel to analyze user queries and provide valuable insights for future analysis.
 
 [View all previous updates in our What's New section](./10-WhatsNew/readme.md)
 

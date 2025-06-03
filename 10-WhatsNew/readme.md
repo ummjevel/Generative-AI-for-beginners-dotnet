@@ -12,6 +12,12 @@ This page tracks the history of new features, tools, and models added to the cou
   - See the [official Azure OpenAI DALL·E documentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
   - Find the sample in [Lesson 3: Core Generative AI Techniques](../03-CoreGenerativeAITechniques/).
 
+### New eShopLite Scenario: Concurrent Agent Orchestration (June 2025)
+
+- **New Scenario: Concurrent Agent Orchestration**
+  - The [eShopLite repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) now features a scenario demonstrating concurrent agent orchestration using Semantic Kernel.
+  - This scenario showcases how multiple agents can work in parallel to analyze user queries and provide valuable insights for future analysis.
+
 ## March 2025
 
 ### MCP Library Integration
