@@ -12,7 +12,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Fork)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/network/)
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)
 
-[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
+[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)]([https://discord.com/invite/ByRwuEEgH4](https://aka.ms/ai-discord/dotnet))
 
 ![Generative AI for Beginners .NET logo](./images/main-logo.jpg)
 
