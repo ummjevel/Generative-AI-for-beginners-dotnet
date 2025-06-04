@@ -81,6 +81,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Image Generation", "10 I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGeneration-01", "ImageGeneration-01\ImageGeneration-01.csproj", "{EDBD038C-E163-424C-9738-3710FFF6127C}"
 EndProject
+<<<<<<< Updated upstream
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 Video Generation", "11 Video Generation", "{A02293A0-BFF3-4708-A110-30944AD39A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGeneration-AzureSora-01", "VideoGeneration-AzureSora-01\VideoGeneration-AzureSora-01.csproj", "{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12 Files", "12 Files", "{E224737A-CFFB-4292-8F73-A543A0387938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAI-FileProcessing-Pdf-01", "OpenAI-FileProcessing-Pdf-01\OpenAI-FileProcessing-Pdf-01.csproj", "{4266A1B3-94FF-482E-A292-F1A36E0777D9}"
+EndProject
+>>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -439,6 +450,33 @@ Global
 		{EDBD038C-E163-424C-9738-3710FFF6127C}.Release|x64.Build.0 = Release|Any CPU
 		{EDBD038C-E163-424C-9738-3710FFF6127C}.Release|x86.ActiveCfg = Release|Any CPU
 		{EDBD038C-E163-424C-9738-3710FFF6127C}.Release|x86.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
+=======
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|x64.Build.0 = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Debug|x86.Build.0 = Debug|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|x64.ActiveCfg = Release|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|x64.Build.0 = Release|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|x86.ActiveCfg = Release|Any CPU
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8}.Release|x86.Build.0 = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|x64.Build.0 = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|x64.ActiveCfg = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|x64.Build.0 = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9}.Release|x86.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -473,6 +511,11 @@ Global
 		{73644053-4698-A9AF-9C25-380A6D70517E} = {DB695299-EBB6-430A-BAE3-FFB4A592EA92}
 		{5D39F3CE-CA22-4DD2-BED0-DEA510245AE9} = {F5798C6F-98D6-4411-A5F0-F928CBA64095}
 		{EDBD038C-E163-424C-9738-3710FFF6127C} = {2E7A2F07-C66E-4EC8-AC6A-F1343B2F7478}
+<<<<<<< Updated upstream
+=======
+		{20C3DA44-FAF4-41FB-9B3D-1782A250A0B8} = {A02293A0-BFF3-4708-A110-30944AD39A69}
+		{4266A1B3-94FF-482E-A292-F1A36E0777D9} = {E224737A-CFFB-4292-8F73-A543A0387938}
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {961EEBAB-4149-4AA4-BEE7-9DAAE4C94133}
