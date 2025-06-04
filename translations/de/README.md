@@ -26,6 +26,27 @@ Vergessen Sie nicht, [dieses Repository zu favorisieren (🌟)](https://docs.git
 
 ➡️ Erstellen Sie Ihre eigene Kopie, indem Sie [dieses Repository forken](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/fork) und es anschließend in Ihren eigenen Repositories wiederfinden.
 
+## ✨ Was ist neu!
+
+Wir verbessern diesen Kurs kontinuierlich mit den neuesten KI-Tools, Modellen und praktischen Beispielen:
+
+- **Neu: Azure OpenAI Sora Video-Generierungs-Demo!**
+  - Lektion 3 bietet jetzt eine praktische Demonstration, die zeigt, wie man Videos aus Text-Prompts mit dem neuen [Sora Video-Generierungsmodell](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) in Azure OpenAI generiert.
+  - Das Beispiel demonstriert, wie man:
+    - Einen Video-Generierungsauftrag mit einem kreativen Prompt einreicht.
+    - Den Auftragsstatus abfragt und die resultierende Videodatei automatisch herunterlädt.
+    - Das generierte Video auf dem Desktop zur einfachen Anzeige speichert.
+  - Siehe die offizielle Dokumentation: [Azure OpenAI Sora Video-Generierung](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
+  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken /src/VideoGeneration-AzureSora-01/Program.cs](../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+
+- **Neu: Azure OpenAI Bild-Generierungsmodell (`gpt-image-1`)**: Lektion 3 bietet jetzt Codebeispiele für die Verwendung des neuen Azure OpenAI Bild-Generierungsmodells `gpt-image-1`. Lernen Sie, wie Sie Bilder aus .NET mit den neuesten Azure OpenAI-Funktionen generieren.
+  - Siehe die offizielle Dokumentation: [Wie man Azure OpenAI Bild-Generierungsmodelle verwendet](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) und den [openai-dotnet Bild-Generierungsleitfaden](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) für weitere Details.
+  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken .. /src/ImageGeneration-01.csproj](../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
+
+- **Neues Szenario: Parallele Agent-Orchestrierung in eShopLite**: Das [eShopLite Repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) bietet jetzt ein Szenario, das parallele Agent-Orchestrierung mit Semantic Kernel demonstriert. Dieses Szenario zeigt, wie mehrere Agenten parallel arbeiten können, um Benutzeranfragen zu analysieren und wertvolle Erkenntnisse für zukünftige Analysen zu liefern.
+
+[Alle vorherigen Updates in unserem Was ist neu-Bereich anzeigen](./10-WhatsNew/readme.md)
+
 ## 🚀 Einführung
 
 Generative KI revolutioniert die Softwareentwicklung, und .NET bildet da keine Ausnahme. Ziel dieses Kurses ist es, den Einstieg zu erleichtern, indem er Folgendes bietet:
