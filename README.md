@@ -78,17 +78,17 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 
 | Language             | Code | Link to Translated README                               | Last Updated |
 |----------------------|------|---------------------------------------------------------|--------------|
-| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-05-30   |
-| Chinese (Traditional)| tw   | [Chinese Translation](./translations/tw/README.md)      | 2025-05-30   |
-| French               | fr   | [French Translation](./translations/fr/README.md)       | 2025-05-30   |
-| Japanese             | ja   | [Japanese Translation](./translations/ja/README.md)     | 2025-05-30   |
-| Korean               | ko   | [Korean Translation](./translations/ko/README.md)       | 2025-05-30   |
-| Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-05-30   |
-| Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-05-30   |
-| German               | de   | [German Translation](./translations/de/README.md)       | 2025-05-30   |
+| Chinese (Simplified) | zh   | [Chinese Translation](./translations/zh/README.md)      | 2025-06-04   |
+| Chinese (Traditional)| tw   | [Chinese Translation](./translations/tw/README.md)      | 2025-06-04   |
+| French               | fr   | [French Translation](./translations/fr/README.md)       | 2025-06-04   |
+| Japanese             | ja   | [Japanese Translation](./translations/ja/README.md)     | 2025-06-04   |
+| Korean               | ko   | [Korean Translation](./translations/ko/README.md)       | 2025-06-04   |
+| Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-06-04   |
+| Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-06-04   |
+| German               | de   | [German Translation](./translations/de/README.md)       | 2025-06-04   |
 
 
-> **Note:** All translations were updated to match the original content on **2025-05-30**. See [PR #160](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/pull/160) for details.
+> **Note:** All translations were updated to match the original content on **2025-06-04**. See [PR #161](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/pull/161) for details.
 
 ## 🛠️ What You Need
 
