@@ -127,7 +127,8 @@ Azure AI Foundry モデルを使用するには、Azure AI Foundry ポータル�
     IChatClient client = new AzureOpenAIClient(
         endpoint,
         apiKey)
-    .AsChatClient(deploymentName);
+    .GetChatClient(deploymentName)
+    .AsIChatClient();
     ```
 
 1. ターミナルで次のコマンドを実行します。

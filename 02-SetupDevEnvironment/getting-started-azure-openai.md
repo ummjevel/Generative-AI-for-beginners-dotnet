@@ -128,7 +128,8 @@ Now let’s update the code to use the newly deployed model. First we'll need to
     IChatClient client = new AzureOpenAIClient(
         endpoint,
         apiKey)
-    .AsChatClient(deploymentName);
+    .GetChatClient(deploymentName)
+    .AsIChatClient();
     ```
 
 1. Run the following command in the terminal:
