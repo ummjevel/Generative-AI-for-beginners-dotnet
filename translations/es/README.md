@@ -80,14 +80,14 @@ Aprenderás cómo implementar IA Generativa en proyectos .NET, desde generación
 
 | Idioma               | Código | Enlace al README Traducido                            | Última Actualización |
 |----------------------|--------|------------------------------------------------------|-----------------------|
-| Chino (Simplificado) | zh     | [Traducción al Chino](../zh/README.md)   | 2025-02-19           |
-| Chino (Tradicional)  | tw     | [Traducción al Chino](../tw/README.md)   | 2025-02-19           |
-| Francés              | fr     | [Traducción al Francés](../fr/README.md) | 2025-02-19           |
-| Japonés              | ja     | [Traducción al Japonés](../ja/README.md) | 2025-02-19           |
-| Coreano              | ko     | [Traducción al Coreano](../ko/README.md) | 2025-02-19           |
-| Portugués            | pt     | [Traducción al Portugués](../pt/README.md) | 2025-02-19         |
-| Español              | es     | [Traducción al Español](./README.md) | 2025-02-19           |
-| Alemán               | de     | [Traducción al Alemán](../de/README.md)  | 2025-02-19           |
+| Chino (Simplificado) | zh     | [Traducción al Chino](../zh/README.md)   | 2025-05-30           |
+| Chino (Tradicional)  | tw     | [Traducción al Chino](../tw/README.md)   | 2025-05-30           |
+| Francés              | fr     | [Traducción al Francés](../fr/README.md) | 2025-05-30           |
+| Japonés              | ja     | [Traducción al Japonés](../ja/README.md) | 2025-05-30           |
+| Coreano              | ko     | [Traducción al Coreano](../ko/README.md) | 2025-05-30           |
+| Portugués            | pt     | [Traducción al Portugués](../pt/README.md) | 2025-05-30         |
+| Español              | es     | [Traducción al Español](./README.md) | 2025-05-30           |
+| Alemán               | de     | [Traducción al Alemán](../de/README.md)  | 2025-05-30           |
 
 ## 🛠️ Lo Que Necesitas
 
