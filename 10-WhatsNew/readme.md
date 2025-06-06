@@ -33,7 +33,7 @@ This page tracks the history of new features, tools, and models added to the cou
 
 ### Run Local Models with AI Toolkit and Docker
 
-- **New: Run Local Models with AI Toolkit and Docker**: Explore new samples for running models locally using [AI Toolkit for Windows](https://learn.microsoft.com/en-us/windows/ai/toolkit/) and [Docker Model Runner](https://docs.docker.com/model-runner/). The source code is in [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/) and demonstrates how to use Semantic Kernel and Microsoft Extensions for AI to interact with these models.
+- **New: Run Local Models with AI Toolkit and Docker**: Explore new samples for running models locally using [AI Toolkit for Windows](https://learn.microsoft.com/windows/ai/toolkit/) and [Docker Model Runner](https://docs.docker.com/model-runner/). The source code is in [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/) and demonstrates how to use Semantic Kernel and Microsoft Extensions for AI to interact with these models.
 
 ## March 2025
 
