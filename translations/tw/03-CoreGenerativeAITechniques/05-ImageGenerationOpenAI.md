@@ -40,7 +40,7 @@ Uri imageUri = imageGenerations.Value.Data[0].Url;
 
 ## 下一步
 
-👉 [讓我們使用 AI Toolkit 和 Docker 在本地運行模型！](./06-AIToolkitAndDockerModels.md)
+👉 [讓我們使用 AI Toolkit、Docker 和 Foundry Local 在本地運行模型！](./06-LocalModelRunners.md)
 
 **免責聲明**：  
 本文檔使用機器翻譯服務進行翻譯。儘管我們努力保證準確性，但請注意，自動翻譯可能包含錯誤或不準確之處。應以原始語言的文件作為權威來源。對於關鍵資訊，建議尋求專業人工翻譯。我們對使用本翻譯而引起的任何誤解或錯誤解釋不承擔責任。

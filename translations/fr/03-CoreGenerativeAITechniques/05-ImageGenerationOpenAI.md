@@ -40,7 +40,7 @@ Dans l'exemple [ImageGeneration-01](./src/ImageGeneration-01), nous avons implé
 
 ## Prochaine étape
 
-👉 [Exécutons des modèles localement avec AI Toolkit et Docker !](./06-AIToolkitAndDockerModels.md)
+👉 [Exécutons des modèles localement avec AI Toolkit, Docker et Foundry Local !](./06-LocalModelRunners.md)
 
 **Avertissement** :  
 Ce document a été traduit à l'aide de services de traduction automatisée basés sur l'intelligence artificielle. Bien que nous fassions de notre mieux pour garantir l'exactitude, veuillez noter que les traductions automatiques peuvent contenir des erreurs ou des inexactitudes. Le document original dans sa langue d'origine doit être considéré comme la source faisant autorité. Pour des informations critiques, il est recommandé de recourir à une traduction humaine professionnelle. Nous déclinons toute responsabilité en cas de malentendus ou d'interprétations erronées résultant de l'utilisation de cette traduction.
