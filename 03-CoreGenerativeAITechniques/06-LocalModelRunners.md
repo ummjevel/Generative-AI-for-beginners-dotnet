@@ -1,11 +1,13 @@
 # Running AI Models Locally: AI Toolkit, Docker, and Foundry Local
 
 In this lesson, you'll learn how to run AI models locally using three popular approaches:
+
 - **[AI Toolkit for Windows](https://learn.microsoft.com/windows/ai/toolkit/)** – A suite of tools for Windows that enables running AI models locally
 - **[Docker Model Runner](https://docs.docker.com/model-runner/)** – A containerized approach for running AI models with Docker
-- **[Foundry Local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)** – A cross-platform, open-source solution for running Microsoft AI models locally
+- **[Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)** – A cross-platform, open-source solution for running Microsoft AI models locally
 
 Running models locally provides several benefits:
+
 - Data privacy – Your data never leaves your machine
 - Cost efficiency – No usage charges for API calls
 - Offline availability – Use AI even without internet connectivity
@@ -16,12 +18,14 @@ Running models locally provides several benefits:
 The AI Toolkit for Windows is a collection of tools and technologies that help you build and run AI applications locally on Windows PCs. It leverages the Windows platform capabilities to optimize AI workloads.
 
 ### Key Features
+
 - **DirectML** – Hardware-accelerated machine learning primitives
 - **Windows AI Runtime (WinRT)** – Runtime environment for AI models
 - **ONNX Runtime** – Cross-platform inference accelerator
 - **Local model downloads** – Access to optimized models for Windows
 
 ### Getting Started
+
 1. [Install the AI Toolkit](https://learn.microsoft.com/windows/ai/toolkit/install)
 2. Download a supported model
 3. Use the APIs through .NET or other supported languages
@@ -32,14 +36,14 @@ The AI Toolkit for Windows is a collection of tools and technologies that help y
 
 Docker Model Runner is a tool for running AI models in containers, making it easy to deploy and run inference workloads consistently across different environments.
 
-### Key Features
+### Key Features - Docker Model Runner
 
 - **Containerized models** – Package models with their dependencies
 - **Cross-platform** – Run on Windows, macOS, and Linux
 - **Built-in API** – RESTful API for model interaction
 - **Resource management** – Control CPU and memory usage
 
-### Getting Started
+### Getting Started - Docker Model Runner
 
 1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Pull a model image
@@ -62,14 +66,14 @@ docker run -d -p 12434:8080 \
 - **Official documentation:** https://learn.microsoft.com/azure/ai-foundry/foundry-local/
 - **GitHub repository:** https://github.com/microsoft/Foundry-Local/tree/main
 
-### Key Features
+### Key Features - Foundry Local
 
 - **Cross-platform** – Windows, Linux, and macOS
 - **Microsoft models** – Run models from Azure AI Foundry locally
 - **REST API** – Interact with models using a local API endpoint
 - **No cloud dependency** – All inference runs on your machine
 
-### Getting Started
+### Getting Started - Foundry Local
 
 1. [Read the official Foundry Local documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
 2. Download and install Foundry Local for your OS
