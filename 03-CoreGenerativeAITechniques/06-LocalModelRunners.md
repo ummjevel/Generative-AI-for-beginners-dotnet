@@ -1,4 +1,32 @@
+
 # Running AI Models Locally: AI Toolkit, Docker, and Foundry Local
+
+## Table of Contents
+
+- [Introduction](#running-ai-models-locally-ai-toolkit-docker-and-foundry-local)
+- [AI Toolkit for Windows](#ai-toolkit-for-windows)
+  - [Key Features](#key-features)
+  - [Getting Started](#getting-started)
+- [Docker Model Runner](#docker-model-runner)
+  - [Key Features - Docker Model Runner](#key-features---docker-model-runner)
+  - [Getting Started - Docker Model Runner](#getting-started---docker-model-runner)
+- [Foundry Local](#foundry-local)
+  - [Key Features - Foundry Local](#key-features---foundry-local)
+  - [Getting Started - Foundry Local](#getting-started---foundry-local)
+- [Sample Code: Using AI Toolkit for Windows with .NET](#sample-code-using-ai-toolkit-for-windows-with-net)
+  - [Semantic Kernel with AI Toolkit](#1-semantic-kernel-with-ai-toolkit)
+  - [Microsoft Extensions for AI with AI Toolkit](#2-microsoft-extensions-for-ai-with-ai-toolkit)
+- [Sample Code: Using Docker Models with .NET](#sample-code-using-docker-models-with-net)
+  - [Semantic Kernel with Docker Models](#1-semantic-kernel-with-docker-models)
+  - [Microsoft Extensions for AI with Docker Models](#2-microsoft-extensions-for-ai-with-docker-models)
+- [Sample Code: Using Foundry Local with .NET](#sample-code-using-foundry-local-with-net)
+  - [Semantic Kernel with Foundry Local](#1-semantic-kernel-with-foundry-local)
+  - [Microsoft Extensions for AI with Foundry Local](#2-microsoft-extensions-for-ai-with-foundry-local)
+- [Running the Samples](#running-the-samples)
+- [Comparing Local Model Runners](#comparing-local-model-runners)
+- [Additional Resources](#additional-resources)
+- [Summary](#summary)
+- [Next Steps](#next-steps)
 
 In this lesson, you'll learn how to run AI models locally using three popular approaches:
 
