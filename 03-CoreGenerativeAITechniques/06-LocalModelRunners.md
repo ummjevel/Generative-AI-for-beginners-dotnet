@@ -33,12 +33,14 @@ The AI Toolkit for Windows is a collection of tools and technologies that help y
 Docker Model Runner is a tool for running AI models in containers, making it easy to deploy and run inference workloads consistently across different environments.
 
 ### Key Features
+
 - **Containerized models** – Package models with their dependencies
 - **Cross-platform** – Run on Windows, macOS, and Linux
 - **Built-in API** – RESTful API for model interaction
 - **Resource management** – Control CPU and memory usage
 
 ### Getting Started
+
 1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Pull a model image
 3. Run the model container
@@ -55,19 +57,21 @@ docker run -d -p 12434:8080 \
 
 ## Foundry Local
 
-[Foundry Local](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/) is an open-source, cross-platform solution for running Microsoft AI models on your own hardware. It supports Windows, Linux, and macOS, and is designed for privacy, performance, and flexibility.
+[Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/) is an open-source, cross-platform solution for running Microsoft AI models on your own hardware. It supports Windows, Linux, and macOS, and is designed for privacy, performance, and flexibility.
 
-- **Official documentation:** https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/
+- **Official documentation:** https://learn.microsoft.com/azure/ai-foundry/foundry-local/
 - **GitHub repository:** https://github.com/microsoft/Foundry-Local/tree/main
 
 ### Key Features
+
 - **Cross-platform** – Windows, Linux, and macOS
 - **Microsoft models** – Run models from Azure AI Foundry locally
 - **REST API** – Interact with models using a local API endpoint
 - **No cloud dependency** – All inference runs on your machine
 
 ### Getting Started
-1. [Read the official Foundry Local documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
+
+1. [Read the official Foundry Local documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
 2. Download and install Foundry Local for your OS
 3. Start the Foundry Local server and download a model
 4. Use the REST API to interact with the model
@@ -77,6 +81,7 @@ docker run -d -p 12434:8080 \
 The AI Toolkit for Windows provides a way to run AI models locally on Windows machines. We have two examples that demonstrate how to interact with AI Toolkit models using .NET:
 
 ### 1. Semantic Kernel with AI Toolkit
+
 The [AIToolkit-01-SK-Chat](./src/AIToolkit-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running via AI Toolkit for Windows.
 
 ```csharp
@@ -92,6 +97,7 @@ var kernel = builder.Build();
 ```
 
 ### 2. Microsoft Extensions for AI with AI Toolkit
+
 The [AIToolkit-02-MEAI-Chat](./src/AIToolkit-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with AI Toolkit models.
 
 ```csharp
@@ -108,6 +114,7 @@ ChatClient client = new OpenAIClient(credential, options).GetChatClient(modelId)
 In this repository, we have two examples that demonstrate how to interact with Docker-based models using .NET:
 
 ### 1. Semantic Kernel with Docker Models
+
 The [DockerModels-01-SK-Chat](./src/DockerModels-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running in Docker.
 
 ```csharp
@@ -128,6 +135,7 @@ history.AddSystemMessage("You are a useful chatbot. Always reply in a funny way 
 ```
 
 ### 2. Microsoft Extensions for AI with Docker Models
+
 The [DockerModels-02-MEAI-Chat](./src/DockerModels-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with Docker-based models.
 
 ```csharp
@@ -155,9 +163,11 @@ Console.WriteLine(response.Value.Content[0].Text);
 This repository includes two demos for Foundry Local:
 
 ### 1. Semantic Kernel with Foundry Local
+
 The [AIFoundryLocal-01-SK-Chat](./src/AIFoundryLocal-01-SK-Chat/Program.cs) project shows how to use Semantic Kernel to chat with a model running via Foundry Local.
 
 ### 2. Microsoft Extensions for AI with Foundry Local
+
 The [AIFoundryLocal-01-MEAI-Chat](./src/AIFoundryLocal-01-MEAI-Chat/Program.cs) project demonstrates how to use Microsoft Extensions for AI to interact with Foundry Local models.
 
 ## Running the Samples
@@ -184,7 +194,7 @@ To run the samples in this repository:
 
 - [AI Toolkit for Windows Documentation](https://learn.microsoft.com/windows/ai/toolkit/)
 - [Docker Model Runner Documentation](https://docs.docker.com/model-runner/)
-- [Foundry Local Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-local/)
+- [Foundry Local Documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
 - [Foundry Local GitHub Repository](https://github.com/microsoft/Foundry-Local/tree/main)
 - [Semantic Kernel Documentation](https://learn.microsoft.com/semantic-kernel/overview/)
 - [Microsoft Extensions for AI Documentation](https://learn.microsoft.com/dotnet/ai/)
