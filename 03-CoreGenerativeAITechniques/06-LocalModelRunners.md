@@ -1,10 +1,9 @@
-
 # Running AI Models Locally: AI Toolkit, Docker, and Foundry Local
 
 ## Table of Contents
 
 - [Introduction](#running-ai-models-locally-ai-toolkit-docker-and-foundry-local)
-- [AI Toolkit for Windows](#ai-toolkit-for-windows)
+- [AI Toolkit for Visual Studio Code](#ai-toolkit-for-visual-studio-code)
   - [Key Features](#key-features)
   - [Getting Started](#getting-started)
 - [Docker Model Runner](#docker-model-runner)
@@ -13,7 +12,7 @@
 - [Foundry Local](#foundry-local)
   - [Key Features - Foundry Local](#key-features---foundry-local)
   - [Getting Started - Foundry Local](#getting-started---foundry-local)
-- [Sample Code: Using AI Toolkit for Windows with .NET](#sample-code-using-ai-toolkit-for-windows-with-net)
+- [Sample Code: Using AI Toolkit for Visual Studio Code with .NET](#sample-code-using-ai-toolkit-for-visual-studio-code-with-net)
   - [Semantic Kernel with AI Toolkit](#1-semantic-kernel-with-ai-toolkit)
   - [Microsoft Extensions for AI with AI Toolkit](#2-microsoft-extensions-for-ai-with-ai-toolkit)
 - [Sample Code: Using Docker Models with .NET](#sample-code-using-docker-models-with-net)
@@ -30,7 +29,7 @@
 
 In this lesson, you'll learn how to run AI models locally using three popular approaches:
 
-- **[AI Toolkit for Windows](https://learn.microsoft.com/windows/ai/toolkit/)** – A suite of tools for Windows that enables running AI models locally
+- **[AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview)** – A suite of tools for Visual Studio Code that enables running AI models locally
 - **[Docker Model Runner](https://docs.docker.com/model-runner/)** – A containerized approach for running AI models with Docker
 - **[Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)** – A cross-platform, open-source solution for running Microsoft AI models locally
 
@@ -41,9 +40,9 @@ Running models locally provides several benefits:
 - Offline availability – Use AI even without internet connectivity
 - Customization – Fine-tune models for specific use cases
 
-## AI Toolkit for Windows
+## AI Toolkit for Visual Studio Code
 
-The AI Toolkit for Windows is a collection of tools and technologies that help you build and run AI applications locally on Windows PCs. It leverages the Windows platform capabilities to optimize AI workloads.
+The AI Toolkit for Visual Studio Code is a collection of tools and technologies that help you build and run AI applications locally on your PC. It leverages platform capabilities to optimize AI workloads.
 
 ### Key Features
 
@@ -54,11 +53,11 @@ The AI Toolkit for Windows is a collection of tools and technologies that help y
 
 ### Getting Started
 
-1. [Install the AI Toolkit](https://learn.microsoft.com/windows/ai/toolkit/install)
+1. [Install the AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview)
 2. Download a supported model
 3. Use the APIs through .NET or other supported languages
 
-> 📝 **Note**: AI Toolkit for Windows requires Windows 10/11 and compatible hardware for optimal performance.
+> 📝 **Note**: AI Toolkit for Visual Studio Code requires Visual Studio Code and compatible hardware for optimal performance.
 
 ## Docker Model Runner
 
@@ -108,36 +107,35 @@ docker run -d -p 12434:8080 \
 3. Start the Foundry Local server and download a model
 4. Use the REST API to interact with the model
 
-## Sample Code: Using AI Toolkit for Windows with .NET
+## Sample Code: Using AI Toolkit for Visual Studio Code with .NET
 
-The AI Toolkit for Windows provides a way to run AI models locally on Windows machines. We have two examples that demonstrate how to interact with AI Toolkit models using .NET:
+The AI Toolkit for Visual Studio Code provides a way to run AI models locally on your machine. We have two examples that demonstrate how to interact with AI Toolkit models using .NET:
 
 ### 1. Semantic Kernel with AI Toolkit
 
-The [AIToolkit-01-SK-Chat](./src/AIToolkit-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running via AI Toolkit for Windows.
+The [AIToolkit-01-SK-Chat](./src/AIToolkit-01-SK-Chat/) project shows how to use Semantic Kernel to chat with a model running via AI Toolkit for Visual Studio Code.
 
 ```csharp
-// Example code demonstrating AI Toolkit with Semantic Kernel integration
+// Example code demonstrating AI Toolkit for Visual Studio Code with Semantic Kernel integration
+// Configure to use a locally installed model through AI Toolkit for Visual Studio Code
 var builder = Kernel.CreateBuilder();
-// Configure to use a locally installed model through AI Toolkit
 builder.AddAzureOpenAIChatCompletion(
     modelId: modelId,
     endpoint: new Uri(endpoint),
     apiKey: apiKey);
 var kernel = builder.Build();
-// Create a chat history and use it with the kernel
 ```
 
 ### 2. Microsoft Extensions for AI with AI Toolkit
 
-The [AIToolkit-02-MEAI-Chat](./src/AIToolkit-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with AI Toolkit models.
+The [AIToolkit-02-MEAI-Chat](./src/AIToolkit-02-MEAI-Chat/) project demonstrates how to use Microsoft Extensions for AI to interact with AI Toolkit for Visual Studio Code models.
 
 ```csharp
-// Example code demonstrating AI Toolkit with MEAI
+// Example code demonstrating AI Toolkit for Visual Studio Code with MEAI
 OpenAIClientOptions options = new OpenAIClientOptions();
 options.Endpoint = new Uri(endpoint);
 ApiKeyCredential credential = new ApiKeyCredential(apiKey);
-// Create a chat client using local model through AI Toolkit
+// Create a chat client using local model through AI Toolkit for Visual Studio Code
 ChatClient client = new OpenAIClient(credential, options).GetChatClient(modelId);
 ```
 
@@ -206,7 +204,7 @@ The [AIFoundryLocal-01-MEAI-Chat](./src/AIFoundryLocal-01-MEAI-Chat/Program.cs) 
 
 To run the samples in this repository:
 
-1. Install Docker Desktop, AI Toolkit for Windows, or Foundry Local as needed
+1. Install Docker Desktop, AI Toolkit for Visual Studio Code, or Foundry Local as needed
 2. Pull or download the required model
 3. Start the local model server (Docker, AI Toolkit, or Foundry Local)
 4. Navigate to one of the sample project directories
@@ -214,17 +212,17 @@ To run the samples in this repository:
 
 ## Comparing Local Model Runners
 
-| Feature | AI Toolkit for Windows | Docker Model Runner | Foundry Local |
-|---------|------------------------|---------------------|--------------|
-| Platform | Windows only | Cross-platform | Cross-platform |
-| Integration | Native Windows APIs | REST API | REST API |
-| Deployment | Local installation | Container-based | Local installation |
+| Feature | AI Toolkit for Visual Studio Code | Docker Model Runner | Foundry Local |
+|---------|-------------------------------|---------------------|--------------|
+| Platform | Windows, macOS, Linux | Cross-platform | Cross-platform |
+| Integration | Visual Studio Code APIs | REST API | REST API |
+| Deployment | VS Code Extension | Container-based | Local installation |
 | Hardware Acceleration | DirectML, DirectX | CPU, GPU | CPU, GPU |
-| Models | Optimized for Windows | Any containerized model | Microsoft Foundry models |
+| Models | Optimized for VS Code | Any containerized model | Microsoft Foundry models |
 
 ## Additional Resources
 
-- [AI Toolkit for Windows Documentation](https://learn.microsoft.com/windows/ai/toolkit/)
+- [AI Toolkit for Visual Studio Code Documentation](https://code.visualstudio.com/docs/intelligentapps/overview)
 - [Docker Model Runner Documentation](https://docs.docker.com/model-runner/)
 - [Foundry Local Documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
 - [Foundry Local GitHub Repository](https://github.com/microsoft/Foundry-Local/tree/main)
@@ -233,10 +231,10 @@ To run the samples in this repository:
 
 ## Summary
 
-Running AI models locally with AI Toolkit for Windows, Docker Model Runner, or Foundry Local offers flexibility, privacy, and cost benefits. The samples in this repository demonstrate how to integrate these local models with your .NET applications using Semantic Kernel and Microsoft Extensions for AI.
+Running AI models locally with AI Toolkit for Visual Studio Code, Docker Model Runner, or Foundry Local offers flexibility, privacy, and cost benefits. The samples in this repository demonstrate how to integrate these local models with your .NET applications using Semantic Kernel and Microsoft Extensions for AI.
 
 ## Next Steps
 
-You've learned how to run AI models locally using AI Toolkit for Windows, Docker Model Runner, and Foundry Local. Next, you'll explore how to create AI agents that can perform tasks autonomously.
+You've learned how to run AI models locally using AI Toolkit for Visual Studio Code, Docker Model Runner, and Foundry Local. Next, you'll explore how to create AI agents that can perform tasks autonomously.
 
 👉 [Check out AI Agents](./04-agents.md)
