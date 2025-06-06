@@ -155,4 +155,4 @@ Image generation opens up new creative possibilities for your applications, allo
 
 You've learned how to generate images with Azure OpenAI in your .NET applications. In the next lesson, you'll learn how to run AI models locally on your machine.
 
-👉 [Running models locally with AI Toolkit and Docker](./06-AIToolkitAndDockerModels.md)
+👉 [Running models locally with AI Toolkit, Docker, and Foundry Local](./06-LocalModelRunners.md)

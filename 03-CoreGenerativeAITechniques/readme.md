@@ -22,7 +22,7 @@ For this lesson, we will subdivide the content into the following sections:
 - [Vision and audio AI applications](./03-vision-audio.md)
 - [Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md)
 - [Agents](04-agents.md)
-- [Running models locally with AI Toolkit and Docker](./06-AIToolkitAndDockerModels.md)
+- [Running models locally with AI Toolkit, Docker, and Foundry Local](./06-LocalModelRunners.md)
 
 Starting with Language Model completions and Chat applications and function implementations with language models in .NET.
 

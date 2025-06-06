@@ -40,7 +40,7 @@ Uri imageUri = imageGenerations.Value.Data[0].Url;
 
 ## 次のステップ
 
-👉 [AI ToolkitとDockerを使ってローカルでモデルを実行しましょう！](./06-AIToolkitAndDockerModels.md)
+👉 [AI Toolkit、Docker、Foundry Localを使ってローカルでモデルを実行しましょう！](./06-LocalModelRunners.md)
 
 **免責事項**:  
 この文書は、機械ベースのAI翻訳サービスを使用して翻訳されています。正確性を期すよう努めていますが、自動翻訳には誤りや不正確さが含まれる場合があります。元の言語で記載された原文が正式な情報源と見なされるべきです。重要な情報については、専門の人間による翻訳をお勧めします。この翻訳の使用に起因する誤解や解釈の誤りについて、当方は責任を負いません。

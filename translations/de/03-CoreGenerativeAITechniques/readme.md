@@ -22,7 +22,7 @@ Für diese Lektion unterteilen wir den Inhalt in die folgenden Abschnitte:
 - [Vision- und Audio-KI-Anwendungen](./03-vision-audio.md)  
 - [Bildgenerierung mit Azure OpenAI](./05-ImageGenerationOpenAI.md)  
 - [Agenten](04-agents.md)  
-- [Lokales Ausführen von Modellen mit AI Toolkit und Docker](./06-AIToolkitAndDockerModels.md)  
+- [Lokales Ausführen von Modellen mit AI Toolkit, Docker und Foundry Local](./06-LocalModelRunners.md)  
 
 Wir beginnen mit Sprachmodell-Abschlüssen, Chat-Anwendungen und der Implementierung von Funktionen mit Sprachmodellen in .NET.
 
