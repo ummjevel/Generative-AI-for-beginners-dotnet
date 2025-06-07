@@ -196,9 +196,89 @@ This repository includes two demos for Foundry Local:
 
 The [AIFoundryLocal-01-SK-Chat](./src/AIFoundryLocal-01-SK-Chat/Program.cs) project shows how to use Semantic Kernel to chat with a model running via Foundry Local.
 
+```csharp
+#pragma warning disable SKEXP0001, SKEXP0003, SKEXP0010, SKEXP0011, SKEXP0050, SKEXP0052
+using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
+using System.Text;
+
+var model = "Phi-3.5-mini-instruct-cuda-gpu";
+var baseUrl = "http://localhost:5273/v1";
+var apiKey = "unused";
+
+// Create a chat completion service
+var kernel = Kernel.CreateBuilder()
+    .AddOpenAIChatCompletion(modelId: model, apiKey: apiKey, endpoint: new Uri(baseUrl))
+    .Build();
+
+var chat = kernel.GetRequiredService<IChatCompletionService>();
+var history = new ChatHistory();
+history.AddSystemMessage("You are a useful chatbot. Always reply in a funny way with short answers.");
+
+var settings = new OpenAIPromptExecutionSettings
+{
+    MaxTokens = 50000,
+    Temperature = 1
+};
+
+while (true)
+{
+    Console.Write("Q: ");
+    var userQuestion = Console.ReadLine();
+    if (string.IsNullOrWhiteSpace(userQuestion))
+    {
+        break;
+    }
+    history.AddUserMessage(userQuestion);
+
+    var responseBuilder = new StringBuilder();
+    Console.Write("AI: ");
+    await foreach (var message in chat.GetStreamingChatMessageContentsAsync(history, settings, kernel))
+    {
+        responseBuilder.Append(message.Content);
+        Console.Write(message.Content);
+    }
+    Console.WriteLine();
+
+    history.AddAssistantMessage(responseBuilder.ToString());
+}
+```
+
 ### 2. Microsoft Extensions for AI with Foundry Local
 
 The [AIFoundryLocal-01-MEAI-Chat](./src/AIFoundryLocal-01-MEAI-Chat/Program.cs) project demonstrates how to use Microsoft Extensions for AI to interact with Foundry Local models.
+
+```csharp
+using OpenAI;
+using OpenAI.Chat;
+using System.ClientModel;
+using System.Text;
+
+var model = "Phi-3.5-mini-instruct-cuda-gpu";
+var baseUrl = "http://localhost:5273/v1";
+var apiKey = "unused";
+
+OpenAIClientOptions options = new OpenAIClientOptions();
+options.Endpoint = new Uri(baseUrl);
+ApiKeyCredential credential = new ApiKeyCredential(apiKey);
+
+ChatClient client = new OpenAIClient(credential, options).GetChatClient(model);
+
+// here we're building the prompt
+StringBuilder prompt = new StringBuilder();
+prompt.AppendLine("You will analyze the sentiment of the following product reviews. Each line is its own review. Output the sentiment of each review in a bulleted list and then provide a generate sentiment of all reviews. ");
+prompt.AppendLine("I bought this product and it's amazing. I love it!");
+prompt.AppendLine("This product is terrible. I hate it.");
+prompt.AppendLine("I'm not sure about this product. It's okay.");
+prompt.AppendLine("I found this product based on the other reviews. It worked for a bit, and then it didn't.");
+
+// send the prompt to the model and wait for the text completion
+var response = await client.CompleteChatAsync(prompt.ToString());
+
+// display the response
+Console.WriteLine(response.Value.Content[0].Text);
+```
 
 ## Running the Samples
 
