@@ -47,10 +47,14 @@ var client = azureClient.GetImageClient(model);
 ```
 
 In this code:
+
 1. We load the configuration from user secrets
-2. We extract the model name (should be "gpt-image-1"), API URL, and API key from the configuration
-3. We create an Azure OpenAI client using the URL and API key
-4. We get an image client specifically for the `gpt-image-1` model
+
+1. We extract the model name (should be "gpt-image-1"), API URL, and API key from the configuration
+
+1. We create an Azure OpenAI client using the URL and API key
+
+1. We get an image client specifically for the `gpt-image-1` model
 
 #### Creating Advanced Prompts and Options
 
@@ -68,6 +72,7 @@ ImageGenerationOptions options = new()
 ```
 
 The `gpt-image-1` model provides:
+
 - Enhanced understanding of complex prompts
 - Better style interpretation
 - Improved image quality and consistency
@@ -86,6 +91,7 @@ File.WriteAllBytes(path, image.ImageBytes.ToArray());
 ```
 
 This code:
+
 1. Calls the `GenerateImageAsync` method with our prompt and options
 2. Creates a file path on the desktop with a unique filename
 3. Saves the generated image bytes to the file
@@ -186,9 +192,14 @@ if (status == "succeeded")
 }
 ```
 
+
 #### Using AzureSoraSDK (Alternative Approach)
 
-For a more streamlined experience, you can use the [AzureSoraSDK](https://github.com/DrHazemAli/AzureSoraSDK) - an official SDK that simplifies Sora integration:
+For a more streamlined experience, you can use the [AzureSoraSDK](https://github.com/DrHazemAli/AzureSoraSDK) by [DrHazemAli](https://github.com/DrHazemAli). **Note:** This is *not* an official SDK from Microsoft or OpenAI, but it works well and provides a convenient way to generate videos with Sora in .NET applications.
+
+> ℹ️ **Learn more:** Visit the [AzureSoraSDK repository](https://github.com/DrHazemAli/AzureSoraSDK) and check out the [Wiki](https://github.com/DrHazemAli/AzureSoraSDK/wiki) for detailed documentation, usage examples, and the latest updates from the author.
+
+---
 
 ```csharp
 // Configure the client
@@ -214,6 +225,16 @@ var jobId = await client.SubmitVideoJobAsync(
 var videoUri = await client.WaitForCompletionAsync(jobId);
 var outputPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "sora_videos", "output.mp4");
 await client.DownloadVideoAsync(videoUri, outputPath);
+
+---
+
+**References:**
+
+- Author: [DrHazemAli](https://github.com/DrHazemAli)
+- Repository: [AzureSoraSDK](https://github.com/DrHazemAli/AzureSoraSDK)
+- Wiki: [AzureSoraSDK Wiki](https://github.com/DrHazemAli/AzureSoraSDK/wiki)
+
+> 📝 **Note:** AzureSoraSDK is a community-developed SDK and not an official Microsoft or OpenAI product. However, it is well-maintained and provides a user-friendly way to generate videos with Sora. For the latest features, troubleshooting, and advanced usage, please visit the author's [repository](https://github.com/DrHazemAli/AzureSoraSDK) and [wiki](https://github.com/DrHazemAli/AzureSoraSDK/wiki).
 ```
 
 > 🗒️**Note:** Video generation with Sora typically takes several minutes to complete, depending on the length and complexity of the requested video.
