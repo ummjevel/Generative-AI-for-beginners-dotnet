@@ -32,6 +32,11 @@
 
 私たちは最新のAIツール、モデル、実践的なサンプルでこのコースを継続的に改良しています：
 
+- **新機能：Foundry Local デモ！**
+  - レッスン3では、[Foundry Local モデル](https://github.com/microsoft/Foundry-Local/tree/main) の実践的なデモを提供しています。
+  - 公式ドキュメントを確認：[Foundry Local ドキュメント](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
+  - **詳細な説明とコードサンプルは [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md) で確認できます**
+
 - **新機能：Azure OpenAI Sora 動画生成デモ！**
   - レッスン3では、Azure OpenAIの新しい[Sora動画生成モデル](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)を使用してテキストプロンプトから動画を生成する実践的なデモを提供しています。
   - このサンプルでは以下の方法を学習できます：

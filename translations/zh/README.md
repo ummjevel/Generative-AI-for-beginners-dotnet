@@ -32,6 +32,11 @@
 
 我们不断改进本课程，加入最新的 AI 工具、模型和实践示例：
 
+- **新增：Foundry Local 演示！**
+  - 第3课现在提供 [Foundry Local 模型](https://github.com/microsoft/Foundry-Local/tree/main) 的实践演示。
+  - 查看官方文档：[Foundry Local 文档](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
+  - **完整说明和代码示例请参见 [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
+
 - **新增：Azure OpenAI Sora 视频生成演示！**
   - 第3课现在提供实践演示，展示如何使用新的 [Sora 视频生成模型](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) 在 Azure OpenAI 中从文本提示生成视频。
   - 该示例演示如何：

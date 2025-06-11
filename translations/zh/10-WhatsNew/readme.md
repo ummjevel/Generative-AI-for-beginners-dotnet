@@ -31,6 +31,10 @@
   - 查看 [官方 Azure OpenAI DALL·E 文档](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) 和 [openai-dotnet 图像生成指南](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) 了解更多详情。
   - 在这里找到示例：[第3课：核心生成式 AI 技术](../../03-CoreGenerativeAITechniques/)。
 
+### 使用 AI Toolkit 和 Docker 运行本地模型
+
+- **新增：使用 AI Toolkit 和 Docker 运行本地模型**：探索使用 [Visual Studio Code 的 AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/overview) 和 [Docker Model Runner](https://docs.docker.com/model-runner/) 本地运行模型的新示例。源代码位于 [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/)，演示了如何使用 Semantic Kernel 和 Microsoft Extensions for AI 与这些模型进行交互。
+
 ## 2025年3月
 
 ### MCP 库集成
