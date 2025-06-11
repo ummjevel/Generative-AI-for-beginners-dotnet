@@ -315,6 +315,6 @@ Running AI models locally with AI Toolkit for Visual Studio Code, Docker Model R
 
 ## Next Steps
 
-You've learned how to run AI models locally using AI Toolkit for Visual Studio Code, Docker Model Runner, and Foundry Local. Next, you'll explore how to create AI agents that can perform tasks autonomously.
+You've learned how to run AI models locally using AI Toolkit for Visual Studio Code, Docker Model Runner, and Foundry Local. Next, you'll explore the latest Azure OpenAI models for image and video generation.
 
-👉 [Check out AI Agents](./04-agents.md)
+👉 [Image and Video Generation with New Azure OpenAI Models](./07-ImageVideoGenerationNewModels.md)
