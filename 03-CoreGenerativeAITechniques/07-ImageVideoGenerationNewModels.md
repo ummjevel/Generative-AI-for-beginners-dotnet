@@ -188,7 +188,7 @@ if (status == "succeeded")
 
 #### Using AzureSoraSDK (Alternative Approach)
 
-For a more streamlined experience, you can use the AzureSoraSDK:
+For a more streamlined experience, you can use the [AzureSoraSDK](https://github.com/DrHazemAli/AzureSoraSDK) - an official SDK that simplifies Sora integration:
 
 ```csharp
 // Configure the client
@@ -257,6 +257,7 @@ These new models represent significant advances in AI-generated visual content, 
 - [OpenAI-dotnet image generation](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images)
 - [Microsoft Learn: Sora video generation (preview)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/video-generation)
 - [Azure Sora SDK documentation](https://github.com/DrHazemAli/AzureSoraSDK/tree/main)
+- [AzureSoraSDK Official Repository](https://github.com/DrHazemAli/AzureSoraSDK)
 
 ## Up next
 
