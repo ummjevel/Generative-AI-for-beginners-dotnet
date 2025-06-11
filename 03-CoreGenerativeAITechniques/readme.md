@@ -12,6 +12,7 @@ In this lesson you'll learn some practical skills for building AI-enabled .NET a
 - 👀 Vision-based AI approaches
 - 🔊 Audio creation and transcription
 - 🖼️ Image generation with DALL-E
+- 🎬 Image and video generation with new models (gpt-image-1 and sora)
 - 🧩 Agents & assistants
 - 💻 Running models locally with AI Toolkit and Docker
 
@@ -20,9 +21,10 @@ For this lesson, we will subdivide the content into the following sections:
 - [Chat, LLM completions, and function calling](./01-lm-completions-functions.md)
 - [Retrieval-Augmented Generation (RAG)](./02-retrieval-augmented-generation.md)
 - [Vision and audio AI applications](./03-vision-audio.md)
-- [Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md)
 - [Agents](04-agents.md)
+- [Image Generation with Azure OpenAI](./05-ImageGenerationOpenAI.md)
 - [Running models locally with AI Toolkit, Docker, and Foundry Local](./06-LocalModelRunners.md)
+- [Image and Video Generation with New Azure OpenAI Models](./07-ImageVideoGenerationNewModels.md)
 
 Starting with Language Model completions and Chat applications and function implementations with language models in .NET.
 
