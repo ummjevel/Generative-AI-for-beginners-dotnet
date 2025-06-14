@@ -31,6 +31,10 @@
   - [공식 Azure OpenAI DALL·E 문서](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) 및 [openai-dotnet 이미지 생성 가이드](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images)에서 자세한 내용을 확인하세요.
   - 샘플 찾기: [레슨 3: 핵심 생성 AI 기술](../../03-CoreGenerativeAITechniques/).
 
+### AI Toolkit과 Docker로 로컬 모델 실행
+
+- **새로운 기능: AI Toolkit과 Docker로 로컬 모델 실행**: [Visual Studio Code용 AI Toolkit](https://code.visualstudio.com/docs/intelligentapps/overview)과 [Docker Model Runner](https://docs.docker.com/model-runner/)를 사용하여 로컬에서 모델을 실행하는 새로운 샘플을 탐색해 보세요. 소스 코드는 [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/)에 있으며 Semantic Kernel과 Microsoft Extensions for AI를 사용하여 이러한 모델과 상호 작용하는 방법을 보여줍니다.
+
 ## 2025년 3월
 
 ### MCP 라이브러리 통합

@@ -32,6 +32,11 @@ Não se esqueça de [dar uma estrela (🌟) neste repositório](https://docs.git
 
 Estamos constantemente melhorando este curso com as mais recentes ferramentas de IA, modelos e exemplos práticos:
 
+- **Novo: Demos do Foundry Local!**
+  - A Lição 3 agora apresenta demonstrações práticas para [modelos Foundry Local](https://github.com/microsoft/Foundry-Local/tree/main).
+  - Veja a documentação oficial: [Documentação do Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
+  - **Explicação completa e exemplos de código estão disponíveis em [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
+
 - **Novo: Demo de Geração de Vídeo Azure OpenAI Sora!**
   - A Lição 3 agora apresenta uma demonstração prática mostrando como gerar vídeos a partir de prompts de texto usando o novo [modelo de geração de vídeo Sora](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) no Azure OpenAI.
   - O exemplo demonstra como:

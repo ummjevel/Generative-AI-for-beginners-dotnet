@@ -31,6 +31,10 @@ Diese Seite verfolgt die Geschichte neuer Funktionen, Tools und Modelle, die dem
   - Siehe die [offizielle Azure OpenAI DALL·E Dokumentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) und den [openai-dotnet Bild-Generierungsleitfaden](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) für weitere Details.
   - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken](../../03-CoreGenerativeAITechniques/).
 
+### Lokale Modelle mit AI Toolkit und Docker ausführen
+
+- **Neu: Lokale Modelle mit AI Toolkit und Docker ausführen**: Entdecken Sie neue Beispiele für das lokale Ausführen von Modellen mit [AI Toolkit für Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview) und [Docker Model Runner](https://docs.docker.com/model-runner/). Der Quellcode befindet sich in [./03-CoreGenerativeAITechniques/src/](./03-CoreGenerativeAITechniques/src/) und zeigt, wie man Semantic Kernel und Microsoft Extensions für AI verwendet, um mit diesen Modellen zu interagieren.
+
 ## März 2025
 
 ### MCP-Bibliothek Integration
