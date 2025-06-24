@@ -85,14 +85,14 @@ Sie lernen, wie Sie Generative KI in .NET-Projekte implementieren, von grundlege
 
 | Sprache              | Code | Link zur übersetzten README                              | Letzte Aktualisierung |
 |----------------------|------|---------------------------------------------------------|-----------------------|
-| Chinesisch (vereinfacht) | zh   | [Chinesische Übersetzung](../zh/README.md)  | 2025-02-19           |
-| Chinesisch (traditionell)| tw   | [Chinesische Übersetzung](../tw/README.md)  | 2025-02-19           |
-| Französisch          | fr   | [Französische Übersetzung](../fr/README.md)  | 2025-02-19           |
-| Japanisch            | ja   | [Japanische Übersetzung](../ja/README.md)    | 2025-02-19           |
-| Koreanisch           | ko   | [Koreanische Übersetzung](../ko/README.md)   | 2025-02-19           |
-| Portugiesisch        | pt   | [Portugiesische Übersetzung](../pt/README.md)| 2025-02-19           |
-| Spanisch             | es   | [Spanische Übersetzung](../es/README.md)     | 2025-02-19           |
-| Deutsch              | de   | [Deutsche Übersetzung](./README.md)      | 2025-02-19           |
+| Chinesisch (vereinfacht) | zh   | [Chinesische Übersetzung](../zh/README.md)  | 2025-06-11           |
+| Chinesisch (traditionell)| tw   | [Chinesische Übersetzung](../tw/README.md)  | 2025-06-11           |
+| Französisch          | fr   | [Französische Übersetzung](../fr/README.md)  | 2025-06-11           |
+| Japanisch            | ja   | [Japanische Übersetzung](../ja/README.md)    | 2025-06-11           |
+| Koreanisch           | ko   | [Koreanische Übersetzung](../ko/README.md)   | 2025-06-11           |
+| Portugiesisch        | pt   | [Portugiesische Übersetzung](../pt/README.md)| 2025-06-11           |
+| Spanisch             | es   | [Spanische Übersetzung](../es/README.md)     | 2025-06-11           |
+| Deutsch              | de   | [Deutsche Übersetzung](./README.md)      | 2025-06-11           |
 
 ## 🛠️ Was Sie benötigen
 
