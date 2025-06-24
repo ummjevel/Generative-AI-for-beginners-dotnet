@@ -5,7 +5,7 @@ namespace SpaceAINet.Screenshot;
 
 public static class ScreenshotService
 {
-    private static readonly string Folder = "screenshoots";
+    private static readonly string Folder = "screenshots";
     private static int _counter = 0;
     private static readonly string FontName = "Consolas";
     private static readonly int FontSize = 16;
