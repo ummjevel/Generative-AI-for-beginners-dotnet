@@ -152,6 +152,7 @@ Temos muito mais conteúdo para ajudar na sua jornada de aprendizado. Confira:
 - [Dominando o GitHub Copilot para Programação em Dupla](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Dominando o GitHub Copilot para Desenvolvedores C#/.NET](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Escolha Sua Própria Aventura com o Copilot](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Exemplos Práticos com os Modelos Phi da Microsoft](https://aka.ms/phicookbook)
 
 [Vamos começar a aprender IA Generativa e .NET!](02-SetupDevEnvironment/readme.md) 🚀
 

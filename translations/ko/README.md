@@ -152,6 +152,7 @@ Generative AI는 소프트웨어 개발의 패러다임을 변화시키고 있�
 - [페어드 프로그래밍을 위한 GitHub Copilot 마스터하기](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [C#/.NET 개발자를 위한 GitHub Copilot 마스터하기](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [GitHub Copilot 모험을 선택하세요](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Microsoft Phi 모델을 활용한 실습 예제](https://aka.ms/phicookbook)
 
 [생성형 AI와 .NET 학습을 시작해봅시다!](02-SetupDevEnvironment/readme.md) 🚀
 

@@ -112,45 +112,6 @@ Nous avons conçu ce cours pour qu'il soit aussi simple que possible. Nous utili
 
 - **Exécuter dans GitHub Codespaces** : En un clic, vous obtiendrez un environnement préconfiguré pour tester et explorer les leçons.
 
-# 🤖 Générative IA pour les Débutants .NET
-
-Bienvenue dans ce dépôt qui vous aidera à démarrer avec l'IA générative en utilisant .NET. Nous avons conçu ce cours pour vous accompagner pas à pas, que vous soyez un débutant ou que vous souhaitiez approfondir vos connaissances.
-
-## 🧠 Ce que vous allez apprendre
-
-- **Comprendre les bases de l'IA générative** : Explorez les concepts fondamentaux et apprenez comment les modèles génératifs fonctionnent.
-- **Construire des applications avec .NET** : Découvrez comment intégrer des modèles d'IA générative dans vos projets .NET.
-- **Explorer des cas d'utilisation réels** : Apprenez à appliquer ces technologies dans des contextes pratiques.
-
----
-
-## 🚀 Démarrer
-
-Pour commencer, suivez les instructions dans [02-SetupDevEnvironment/readme.md](02-SetupDevEnvironment/readme.md) pour configurer votre environnement de développement.
-
----
-
-## 📚 Ressources Incluses
-
-Voici quelques-unes des choses que vous trouverez dans ce dépôt :
-
-- Des exemples de code pour comprendre et implémenter des concepts.
-- Des exercices pour mettre en pratique ce que vous apprenez.
-- Des leçons progressives pour vous guider tout au long du processus.
-
----
-
-## 🌟 Ressources Supplémentaires
-
-### **Tirez parti des modèles GitHub** : Essayez des démonstrations alimentées par l'IA directement hébergées dans ce dépôt. Nous en expliquons davantage dans les leçons au fur et à mesure. *(Si vous souhaitez en savoir plus sur les modèles GitHub, cliquez [ici](https://docs.github.com/github-models))*
-
-Lorsque vous serez prêt à aller plus loin, nous avons également des guides pour :
-
-- Passer à **Azure OpenAI Services** pour des solutions évolutives et adaptées aux entreprises.
-- Utiliser **Ollama** pour exécuter des modèles localement sur votre matériel, offrant ainsi une confidentialité et un contrôle accrus.
-
----
-
 ## 🤝 Vous souhaitez contribuer ?
 
 Les contributions sont les bienvenues ! Voici comment vous pouvez aider :
@@ -188,6 +149,7 @@ Nous avons beaucoup d'autres contenus pour vous accompagner dans votre apprentis
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook : Exemples pratiques avec les modèles Phi de Microsoft](https://aka.ms/phicookbook)
 
 [Commençons à apprendre l'IA générative et .NET !](02-SetupDevEnvironment/readme.md) 🚀
 

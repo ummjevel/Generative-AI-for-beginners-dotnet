@@ -153,6 +153,7 @@
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Microsoft Phi モデルの実例集](https://aka.ms/phicookbook)
 
 [生成 AI と.NET の学習を始めましょう！](02-SetupDevEnvironment/readme.md) 🚀
 

@@ -152,8 +152,7 @@
 - [精通 GitHub Copilot 進行協作編程](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [精通 GitHub Copilot for C#/.NET 開發者](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [選擇你的 Copilot 冒險之旅](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: 微軟 Phi 模型實作範例](https://aka.ms/phicookbook)
 
 [讓我們開始學習生成式 AI 和 .NET 吧！](02-SetupDevEnvironment/readme.md) 🚀
-
-**免責聲明**:  
 本文件使用基於機器的人工智能翻譯服務進行翻譯。我們雖然努力確保準確性，但請注意，自動翻譯可能會包含錯誤或不準確之處。應以原文文件為權威來源。如需關鍵信息，建議尋求專業人工翻譯。我們對因使用此翻譯而引起的任何誤解或誤讀不承擔責任。

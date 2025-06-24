@@ -152,6 +152,7 @@ Wir haben viele weitere Inhalte, die Ihnen auf Ihrer Lernreise helfen können. S
 - [GitHub Copilot für Pair Programming meistern](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [GitHub Copilot für C#/.NET-Entwickler meistern](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Wählen Sie Ihr eigenes Copilot-Abenteuer](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Praktische Beispiele mit Microsofts Phi-Modellen](https://aka.ms/phicookbook)
 
 [Beginnen wir mit dem Lernen von Generativer KI und .NET!](02-SetupDevEnvironment/readme.md) 🚀
 
