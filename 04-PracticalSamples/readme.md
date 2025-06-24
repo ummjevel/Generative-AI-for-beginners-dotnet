@@ -519,7 +519,7 @@ Those are just a few examples of how you can use GenAI in your applications. The
 
 Learn about .NET Generative AI samples in the new lesson:
 
-👉 [Lesson 05: Generative App Samples](../05-GenerativeAppSamples/readme.md)
+👉 [Lesson 05: Generative App Samples](../05-AppCreatedWithGenAI/readme.md)
 
 Learn about responsible AI practices and how to ensure that your AI models are ethical and have a positive impact!
 
