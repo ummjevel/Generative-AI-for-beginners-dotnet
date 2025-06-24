@@ -1,15 +1,64 @@
-## Practical .NET Generative AI Samples
 
-The practical samples have moved! You can now find all the canonical and real-world .NET Generative AI samples in the new lesson:
+# Canonical Generative AI Samples
 
-👉 [Lesson 05: Generative App Samples](../05-GenerativeAppSamples/readme.md)
+See all the concepts you've learned in action in these real-world and practical samples.
 
-This includes:
-- eShopLite Demos (semantic search, audio, Azure AI integration)
-- Creative Writer Agent
-- And more!
+---
 
-Please visit the new location for the latest updates and all sample details.
+## What you'll achieve
+
+- See how GenAI fits into existing applications.
+- Understand how Agents work in complex scenarios.
+
+## Included samples
+- [Canonical Generative AI Samples](#canonical-generative-ai-samples)
+  - [What you'll achieve](#what-youll-achieve)
+  - [Included samples](#included-samples)
+  - [eShopLite Demos](#eshoplite-demos)
+    - [eShopLite with semantic search - In Memory](#eshoplite-with-semantic-search)
+    - [eShopLite with semantic search - Azure AI Search](#eshoplite-with-semantic-search-using-azure-ai-search)
+    - [eShopLite with realtime audio](#eshoplite-with-realtime-audio)
+  - [Creative Writer Agent](#creative-writer-agent)
+  - [Summary](#summary)
+    - [Additional resources](#additional-resources)
+    - [Next steps](#next-steps)
+
+
+[![overall explainer video](./images/LIM_GAN_09_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-overview)
+
+_⬆️Click the image to watch the video⬆️_
+
+## eShopLite Demos
+
+For our first demos, we'll explore the **eShopLite** projects. **eShopLite** is a simple e-commerce application for outdoor gear and camping enthusiasts that is augmented with Generative AI capabilities, such as search features optimization, customer support, and real-time audio analysis.
+
+These demos use [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service) and [Azure AI Foundry Models](https://ai.azure.com/) to do their inferences (or the generative AI portion) for the applications.
+
+In the first demo, we show how to use the Semantic Kernel to enhance the search capabilities, which can understand the context of the user's queries and provide accurate results.
+
+### eShopLite with semantic search
+
+[![eShop Semantic Search explainer video](./images/LIM_GAN_10_thumb_w480.png)](https://aka.ms/genainnet/videos/lesson4-eshoplite-semanticsearch)
+
+_⬆️Click the image to watch the video⬆️_
+
+In eShopLite with semantic search, we use Semantic Kernel to enhance the search capabilities of the e-commerce application. Semantic Kernel helps us create a more robust search engine that can understand the context of the user's queries and provide more accurate results.
+
+For example, if a user searches for "do you have something for cooking", the search engine can understand that the user is looking for kitchenware and show the most relevant products, in context of our sample, it returns Camping Cookware.
+
+> 🧑‍💻**Sample**: Check out the [eShopLite semantic search sample](https://aka.ms/eshoplite/repo)
+
+![Image demonstrating the search capabilities in eShopLite](./images/search-eshoplite.png)
+
+Semantic search can help users find the products they need more easily, leading to a better shopping experience and increased sales, to implement this feature, we need to have a vector store with the products, a search index, and a language model. The [.NET Aspire](https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview) tooling helps to coordinate all the processes in the backend.
+
+![Image demonstrating the .NET Aspire Dashboard](./images/aspire-dashboard.png)
+
+In the .NET Aspire dashboard, we can see the products, SQL, and store containers, which can interact with the language model. Looking deeper into the Aspire App Host, we have the following:
+
+```csharp
+if (builder.ExecutionContext.IsPublishMode)
+{
     // Add the Azure Application Insights for monitoring
     var appInsights = builder.AddAzureApplicationInsights("appInsights");
     // Add the Azure OpenAI for the chat and embeddings deployments, the embedding is used for the vector entities
@@ -465,7 +514,12 @@ Those are just a few examples of how you can use GenAI in your applications. The
 - [eShopLite with DeepSeek](https://aka.ms/eshoplite/deepseekr1/repo)
 - [eShopLite with MCP](https://aka.ms/eshoplite/mcp/repo)
 - [eShopLite with Azure AI Search](https://aka.ms/eshoplite/AzureAISearch/repo)
+
 ### Next steps
+
+Learn about .NET Generative AI samples in the new lesson:
+
+👉 [Lesson 05: Generative App Samples](../05-GenerativeAppSamples/readme.md)
 
 Learn about responsible AI practices and how to ensure that your AI models are ethical and have a positive impact!
 
