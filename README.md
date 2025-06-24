@@ -79,7 +79,7 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 | 02  | [**Setting Up for .NET Development with Generative AI**](./02-SetupDevEnvironment/readme.md) | <ul><li>Using libraries like **Microsoft.Extensions.AI** and **Semantic Kernel**.</li><li>Setup providers like GitHub Models, Azure AI Foundry, and local development like Ollama.</li></ul> |
 | 03  | [**Core Generative AI Techniques with .NET**](./03-CoreGenerativeAITechniques/readme.md) | <ul><li>Text generation and conversational flows.</li><li> Multimodal capabilities (vision and audio).</li><li>Agents</li></ul> |
 | 04  | [**Practical .NET Generative AI Samples**](./04-PracticalSamples/readme.md) | <ul><li>Complete samples demonstrating GenAI in real-life scenarios</li><li>Semantic search applications.</li><li>Multiple agent applications</li></ul> |
-| 05  | [**.NET App created using GenAI tools (aka: Vibe Coding Prompts)**](./05-GenerativeAppSamples/readme.md) | <ul><li>Sample .NET apps generated using Generative AI tools like GitHub Copilot Agent.</li><li>First sample: **SpaceAINet retro console game 👾**</li></ul> |
+| 05  | [**.NET App created using GenAI tools (aka: Vibe Coding Prompts)**](./05-GenerativeAppSamples/readme.md) | <ul><li>Sample .NET apps generated using Generative AI tools like GitHub Copilot Agent.</li><li>First sample: **Retro Invaders retro console game 👾**</li></ul> |
 | 06  | [**Responsible Use of Generative AI in .NET Apps**](./09-ResponsibleGenAI/readme.md) | <ul><li>Ethical considerations, bias mitigation, and secure implementations.</li></ul> |
 
 ## 🌐 Multi-Language Support

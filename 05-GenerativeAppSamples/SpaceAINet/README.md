@@ -15,7 +15,7 @@
 
 ## Requirements
 
-- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- [.NET 9 or newer](https://dotnet.microsoft.com/download/)
 - **For local AI (Ollama):**
   - [Ollama](https://ollama.com/) running locally (default: `http://localhost:11434`)
   - At least one supported model pulled (e.g., `ollama run phi4-mini`)
@@ -33,6 +33,7 @@ cd SpaceAINet
 ```
 
 ### 2. Configure Azure OpenAI (optional)
+
 If you want to use Azure OpenAI, set up [User Secrets](https://learn.microsoft.com/aspnet/core/security/app-secrets) for the main project:
 
 ```bash
@@ -50,8 +51,13 @@ If you want to use local models, install and start Ollama:
 - Start Ollama (it usually runs at `http://localhost:11434`)
 
 ### 4. Build and run the game
+
+```bash
+cd SpaceAINet.Console
 dotnet build
-cd SpaceAINet
+dotnet run
+```
+
 ## Usage
 
 | Key(s)                | Behavior/Action                                              |
@@ -68,7 +74,6 @@ cd SpaceAINet
 
 You can switch between manual, Azure OpenAI, and Ollama AI modes at any time during gameplay. All tool keys (F, S) work in any mode.
 
-
 ## How it works
 
 - The game sends the last three frames and the last action to the selected AI provider.
@@ -84,8 +89,9 @@ You can switch between manual, Azure OpenAI, and Ollama AI modes at any time dur
 - For best results, ensure your chosen AI provider is running and properly configured before starting the game.
 
 ### Feedback
+
 If you encounter any issues or have suggestions, please report them to the repository's issue tracker.
 
 ---
 
-Enjoy experimenting with AI-powered Space Invaders!
+Enjoy experimenting with AI-powered Retro Invaders!
