@@ -1,15 +1,12 @@
-## Practical .NET Generative AI Samples
+## .NET Generative App Samples (Vibe Coding Prompts)
 
-The practical samples have moved! You can now find all the canonical and real-world .NET Generative AI samples in the new lesson:
+This lesson features sample .NET applications generated using Generative AI tools like GitHub Copilot Agent and advanced prompt engineering.
 
-👉 [Lesson 05: Generative App Samples](../05-GenerativeAppSamples/readme.md)
+### What you'll find here
+- **SpaceAINet Console App**: The first sample, SpaceAINet, is a console-based space battle game created with Copilot Agent Mode and GPT-4.1. [See details here.](./SpaceAINet/README.md)
+- More sample apps will be added, each showcasing how Generative AI can help build real-world .NET solutions.
 
-This includes:
-- eShopLite Demos (semantic search, audio, Azure AI integration)
-- Creative Writer Agent
-- And more!
-
-Please visit the new location for the latest updates and all sample details.
+� After exploring these samples, [move to the last lesson on Responsible GenAI](../09-ResponsibleGenAI/readme.md) to learn about ethical and secure AI development.
     // Add the Azure Application Insights for monitoring
     var appInsights = builder.AddAzureApplicationInsights("appInsights");
     // Add the Azure OpenAI for the chat and embeddings deployments, the embedding is used for the vector entities
