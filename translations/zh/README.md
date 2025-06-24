@@ -139,10 +139,10 @@
 我们还有许多其他内容可以帮助你的学习之旅，查看以下资源：
 
 - [生成式 AI 初学者教程](https://aka.ms/genai-beginners)
-- [生成式 AI 初学者 .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
-- [JavaScript 的生成式 AI](https://github.com/microsoft/generative-ai-with-javascript)
+- [生成式 AI 初学者 .NET](https://aka.ms/genainet)
+- [JavaScript 的生成式 AI](https://aka.ms/genai-js-course)
 - [AI 初学者教程](https://aka.ms/ai-beginners)
-- [AI 代理初学者课程](https://github.com/microsoft/ai-agents-for-beginners)
+- [AI 代理初学者课程](https://aka.ms/ai-agents-beginners)
 - [数据科学初学者教程](https://aka.ms/datascience-beginners)
 - [机器学习初学者教程](https://aka.ms/ml-beginners)
 - [网络安全初学者教程](https://github.com/microsoft/Security-101) 

@@ -139,10 +139,10 @@ Generative AI는 소프트웨어 개발의 패러다임을 변화시키고 있�
 학습 여정을 돕기 위한 다양한 콘텐츠가 준비되어 있습니다. 아래 강의를 확인해 보세요:
 
 - [초보자를 위한 생성형 AI](https://aka.ms/genai-beginners)
-- [초보자를 위한 생성형 AI .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
-- [JavaScript로 배우는 생성형 AI](https://github.com/microsoft/generative-ai-with-javascript)
+- [초보자를 위한 생성형 AI .NET](https://aka.ms/genainet)
+- [JavaScript로 배우는 생성형 AI](https://aka.ms/genai-js-course)
 - [초보자를 위한 AI](https://aka.ms/ai-beginners)
-- [초보자를 위한 AI 에이전트 - 강의](https://github.com/microsoft/ai-agents-for-beginners)
+- [초보자를 위한 AI 에이전트 - 강의](https://aka.ms/ai-agents-beginners)
 - [초보자를 위한 데이터 과학](https://aka.ms/datascience-beginners)
 - [초보자를 위한 머신러닝](https://aka.ms/ml-beginners)
 - [초보자를 위한 사이버 보안](https://github.com/microsoft/Security-101)

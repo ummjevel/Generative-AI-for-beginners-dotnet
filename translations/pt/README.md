@@ -139,10 +139,10 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](../.
 Temos muito mais conteúdo para ajudar na sua jornada de aprendizado. Confira:
 
 - [IA Generativa para Iniciantes](https://aka.ms/genai-beginners)
-- [IA Generativa para Iniciantes .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
-- [IA Generativa com JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
+- [IA Generativa para Iniciantes .NET](https://aka.ms/genainet)
+- [IA Generativa com JavaScript](https://aka.ms/genai-js-course)
 - [IA para Iniciantes](https://aka.ms/ai-beginners)
-- [Agentes de IA para Iniciantes - Um Curso](https://github.com/microsoft/ai-agents-for-beginners)
+- [Agentes de IA para Iniciantes - Um Curso](https://aka.ms/ai-agents-beginners)
 - [Ciência de Dados para Iniciantes](https://aka.ms/datascience-beginners)
 - [ML para Iniciantes](https://aka.ms/ml-beginners)
 - [Cibersegurança para Iniciantes](https://github.com/microsoft/Security-101) 
