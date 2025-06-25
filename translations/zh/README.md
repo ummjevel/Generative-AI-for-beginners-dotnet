@@ -139,10 +139,10 @@
 我们还有许多其他内容可以帮助你的学习之旅，查看以下资源：
 
 - [生成式 AI 初学者教程](https://aka.ms/genai-beginners)
-- [生成式 AI 初学者 .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
-- [JavaScript 的生成式 AI](https://github.com/microsoft/generative-ai-with-javascript)
+- [生成式 AI 初学者 .NET](https://aka.ms/genainet)
+- [JavaScript 的生成式 AI](https://aka.ms/genai-js-course)
 - [AI 初学者教程](https://aka.ms/ai-beginners)
-- [AI 代理初学者课程](https://github.com/microsoft/ai-agents-for-beginners)
+- [AI 代理初学者课程](https://aka.ms/ai-agents-beginners)
 - [数据科学初学者教程](https://aka.ms/datascience-beginners)
 - [机器学习初学者教程](https://aka.ms/ml-beginners)
 - [网络安全初学者教程](https://github.com/microsoft/Security-101) 
@@ -152,8 +152,7 @@
 - [精通 GitHub Copilot 进行配对编程](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [C#/.NET 开发者的 GitHub Copilot 精通指南](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [选择你的 Copilot 探索之旅](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: 微软 Phi 模型实践示例](https://aka.ms/phicookbook)
 
 [让我们开始学习生成式 AI 和 .NET 吧！](02-SetupDevEnvironment/readme.md) 🚀
-
-**免责声明**：  
 本文件使用基于机器的人工智能翻译服务进行翻译。虽然我们尽力确保准确性，但请注意，自动翻译可能包含错误或不准确之处。应以原文所在的母语版本作为权威来源。对于关键信息，建议寻求专业人工翻译服务。因使用本翻译而导致的任何误解或误读，我们概不负责。

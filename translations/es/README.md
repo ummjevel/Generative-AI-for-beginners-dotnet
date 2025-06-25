@@ -139,10 +139,10 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 Tenemos mucho más contenido para ayudarte en tu proceso de aprendizaje. Échale un vistazo a:
 
 - [Generative AI for Beginners](https://aka.ms/genai-beginners)
-- [Generative AI for Beginners .NET](https://github.com/microsoft/Generative-AI-for-beginners-dotnet)
-- [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
+- [Generative AI for Beginners .NET](https://aka.ms/genainet)
+- [Generative AI with JavaScript](https://aka.ms/genai-js-course)
 - [AI for Beginners](https://aka.ms/ai-beginners)
-- [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners)
+- [AI Agents for Beginners - A Course](https://aka.ms/ai-agents-beginners)
 - [Data Science for Beginners](https://aka.ms/datascience-beginners)
 - [ML for Beginners](https://aka.ms/ml-beginners)
 - [Cybersecurity for Beginners](https://github.com/microsoft/Security-101) 
@@ -152,6 +152,7 @@ Tenemos mucho más contenido para ayudarte en tu proceso de aprendizaje. Échale
 - [Mastering GitHub Copilot for Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)
 - [Mastering GitHub Copilot for C#/.NET Developers](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers)
 - [Choose Your Own Copilot Adventure](https://github.com/microsoft/CopilotAdventures)
+- [Phi Cookbook: Ejemplos Prácticos con los Modelos Phi de Microsoft](https://aka.ms/phicookbook)
 
 [¡Empecemos a aprender sobre Generative AI y .NET!](02-SetupDevEnvironment/readme.md) 🚀
 
