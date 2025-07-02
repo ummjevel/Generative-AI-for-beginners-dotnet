@@ -6,16 +6,28 @@ This page tracks the history of new features, tools, and models added to the cou
 
 ### New: Azure OpenAI Sora Video Generation Demo
 
-- **New Lesson 3 Sample: Azure Sora Video Generation**
-- Lesson 3 now features a hands-on demo showing how to generate videos from text prompts using the new [Sora video generation model](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) in Azure OpenAI.
-- The sample demonstrates how to:
-  - Submit a video generation job with a creative prompt.
-  - Poll for job status and download the resulting video file automatically.
-  - Save the generated video to your desktop for easy viewing.
-- See the official docs: [Azure OpenAI Sora video generation](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-- Find the sample in [Lesson 3: Core Generative AI Techniques /src/VideoGeneration-AzureSora-01/Program.cs](../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+- **New: Foundry Local demos!**
+  - Lesson 3 now features hands-on demos for [Foundry Local models](https://github.com/microsoft/Foundry-Local/tree/main).
+  - See the official docs: [Foundry Local documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
+  - **Full explanation and code samples are available in [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](./03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
 
-### New eShopLite Scenario: Concurrent Agent Orchestration (June 2025)
+- **New: Azure OpenAI Sora Video Generation Demo!**
+  - Lesson 3 now features a hands-on demo showing how to generate videos from text prompts using the new [Sora video generation model](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) in Azure OpenAI.
+  - The sample demonstrates how to:
+    - Submit a video generation job with a creative prompt.
+    - Poll for job status and download the resulting video file automatically.
+    - Save the generated video to your desktop for easy viewing.
+  - See the official docs: [Azure OpenAI Sora video generation](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
+  - Find the sample in [Lesson 3: Core Generative AI Techniques /src/VideoGeneration-AzureSora-01/Program.cs](./03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+
+- **New: Azure OpenAI Image Generation Model (`gpt-image-1`)**: Lesson 3 now features code samples for using the new Azure OpenAI image generation model, `gpt-image-1`. Learn how to generate images from .NET using the latest Azure OpenAI capabilities.
+  - See the official: [How to use Azure OpenAI image generation models](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) and [openai-dotnet image generation guide](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) for more details.
+  - Find the sample in [Lesson 3: Core Generative AI Techniques .. /src/ImageGeneration-01.csproj](./03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
+
+- **New Scenario: Concurrent Agent Orchestration in eShopLite**: The [eShopLite repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) now features a scenario demonstrating concurrent agent orchestration using Semantic Kernel. This scenario showcases how multiple agents can work in parallel to analyze user queries and provide valuable insights for future analysis.
+
+[View all previous updates in our What's New section](./10-WhatsNew/readme.md)
+[View all previous updates in our What's New section](./10-WhatsNew/readme.md)
 
 - **New Scenario: Concurrent Agent Orchestration**
 - The [eShopLite repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) now features a scenario demonstrating concurrent agent orchestration using Semantic Kernel.
