@@ -57,7 +57,7 @@
 1. 前往 Fork 後存儲庫的 **Settings** 標籤，然後在左側選單中展開 **Secrets and variables**，選擇 **Codespaces**。  
 
     ![添加新的 Codespace Secret](../../../translated_images/codespaces-secret.0e168026d0078356489f51ca61b195603283511c73bb805b056619f994652f7c.tw.jpeg)  
-1. 將 Secret 命名為 **AZURE_AI_KEY**。  
+1. 將 Secret 命名為 **AZURE_AI_SECRET**。  
 1. 將你從 Azure AI Foundry 入口網站複製的 API Key 粘貼到 **Secret** 欄位中。
 
 ## 創建 GitHub Codespace

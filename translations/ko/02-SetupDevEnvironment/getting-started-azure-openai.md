@@ -57,7 +57,7 @@ Azure AI Foundry 모델을 사용하려면, Azure AI Foundry 포털에서 허브
 1. 포크한 리포지토리의 **Settings** 탭으로 이동한 다음, 왼쪽 메뉴에서 **Secrets and variables**를 확장하고 **Codespaces**를 선택합니다.  
 
     ![새 Codespace secret 추가](../../../translated_images/codespaces-secret.0e168026d0078356489f51ca61b195603283511c73bb805b056619f994652f7c.ko.jpeg)  
-1. Secret 이름을 **AZURE_AI_KEY**로 지정합니다.  
+1. Secret 이름을 **AZURE_AI_SECRET**로 지정합니다.  
 1. Azure AI Foundry 포털에서 복사한 API 키를 **Secret** 필드에 붙여넣습니다.  
 
 ## GitHub Codespace 생성하기

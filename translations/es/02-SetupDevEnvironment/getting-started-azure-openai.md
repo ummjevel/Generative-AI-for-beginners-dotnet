@@ -57,7 +57,7 @@ Para mantener la seguridad, vamos a agregar la clave API que acabas de crear a l
 1. Ve a la pestaña **Settings** de tu repositorio bifurcado, luego expande **Secrets and variables** en el menú de la izquierda y selecciona **Codespaces**.
 
     ![Agregar un nuevo secreto en Codespace](../../../translated_images/codespaces-secret.0e168026d0078356489f51ca61b195603283511c73bb805b056619f994652f7c.es.jpeg)
-1. Nombra tu secreto **AZURE_AI_KEY**.
+1. Nombra tu secreto **AZURE_AI_SECRET**.
 1. Pega la clave API que copiaste del portal de Azure AI Foundry en el campo **Secret**.
 
 ## Crear un Codespace en GitHub
