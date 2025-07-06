@@ -62,7 +62,7 @@ We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.Vector
         [VectorStoreData]
         public string Description { get; set; }
 
-        [VectorStoreVector(384, DistanceFunction = DistanceFunction.CosineSimilarity)]
+        [VectorStoreVector(384, DistanceFunction.CosineSimilarity)]
         public ReadOnlyMemory<float> Vector { get; set; }
     }
     ```
