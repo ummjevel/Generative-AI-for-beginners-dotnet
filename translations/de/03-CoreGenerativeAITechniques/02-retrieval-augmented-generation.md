@@ -46,21 +46,21 @@ Wir verwenden Microsoft.Extension.AI zusammen mit den Bibliotheken [Microsoft.Ex
     ```csharp
     public class Movie
     {
-        [VectorStoreRecordKey]
+        [VectorStoreKey]
         public int Key { get; set; }
 
-        [VectorStoreRecordData]
+        [VectorStoreData]
         public string Title { get; set; }
 
-        [VectorStoreRecordData]
+        [VectorStoreData]
         public string Description { get; set; }
 
-        [VectorStoreRecordVector(384, DistanceFunction.CosineSimilarity)]
+        [VectorStoreVector(384, DistanceFunction.CosineSimilarity)]
         public ReadOnlyMemory<float> Vector { get; set; }
     }
     ```
 
-    Mit Attributen wie `[VectorStoreRecordKey]` makes it easier for the vector store implementations to map POCO objects to their underlying data models.
+    Mit Attributen wie `[VectorStoreKey]` makes it easier for the vector store implementations to map POCO objects to their underlying data models.
 
 2. Of course we're going to need that knowledge data populated. Create a list of `Movie` objects, and create an `InMemoryVectorStore`, die eine Sammlung von Filmen enthalten wird.
 
