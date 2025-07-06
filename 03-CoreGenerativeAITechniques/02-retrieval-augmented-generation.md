@@ -36,10 +36,11 @@ You may have heard of vector databases. These are databases that store data in a
 We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) and [Microsoft.SemanticKernel.Connectors.InMemory](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) libraries to implement RAG below.
 
 > 🧑‍💻**Sample code:** You can follow along with the [sample code here](./src/RAGSimple-02MEAIVectorsMemory/).
-> 
+>
 > You can also see how to implement a RAG app [using Semantic Kernel by itself in our sample source code here](./src/RAGSimple-01SK/).
 >
 > We have additional RAG examples for different vector stores and models:
+>
 > - [RAGSimple-03MEAIVectorsAISearch](./src/RAGSimple-03MEAIVectorsAISearch/) - Using Azure AI Search as a vector store
 > - [RAGSimple-04MEAIVectorsQdrant](./src/RAGSimple-04MEAIVectorsQdrant/) - Using Qdrant as a vector store
 > - [RAGSimple-10SKOllama](./src/RAGSimple-10SKOllama/) - Using Semantic Kernel with Ollama
@@ -52,21 +53,21 @@ We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.Vector
     ```csharp
     public class Movie
     {
-        [VectorStoreRecordKey]
+        [VectorStoreKey]
         public int Key { get; set; }
 
-        [VectorStoreRecordData]
+        [VectorStoreData]
         public string Title { get; set; }
 
-        [VectorStoreRecordData]
+        [VectorStoreData]
         public string Description { get; set; }
 
-        [VectorStoreRecordVector(384, DistanceFunction.CosineSimilarity)]
+        [VectorStoreVector(384, DistanceFunction = DistanceFunction.CosineSimilarity)]
         public ReadOnlyMemory<float> Vector { get; set; }
     }
     ```
 
-    Using the attributes like `[VectorStoreRecordKey]` makes it easier for the vector store implementations to map POCO objects to their underlying data models.
+    Using the attributes like `[VectorStoreKey]` makes it easier for the vector store implementations to map POCO objects to their underlying data models.
 
 2. Of course we're going to need that knowledge data populated. Create a list of `Movie` objects, and create an `InMemoryVectorStore` that will have a collection of movies.
 
@@ -75,7 +76,7 @@ We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.Vector
 
     // get movie list
     var movies = vectorStore.GetCollection<int, MovieVector<int>>("movies");
-    await movies.CreateCollectionIfNotExistsAsync();
+    await movies.EnsureCollectionExistsAsync();
     var movieData = MovieFactory<int>.GetMovieVectorList();
 
     ```
@@ -107,14 +108,9 @@ We'll use the Microsoft.Extension.AI along with the [Microsoft.Extensions.Vector
     // generate the embedding vector for the user's prompt
     var query = "A family friendly movie that includes ogres and dragons";
     var queryEmbedding = await generator.GenerateVectorAsync(query);
-    var searchOptions = new VectorSearchOptions()
-    {
-        Top = 2,
-        VectorPropertyName = "Vector"
-    };
 
     // search the knowledge store based on the user's prompt
-    var results = await movies.VectorizedSearchAsync(queryEmbedding, searchOptions);
+    var results = movies.SearchAsync(queryEmbedding, 2, new VectorSearchOptions<MovieVector<int>>());
 
     // let's see the results just so we know what they look like
     await foreach (var result in results.Results)
@@ -136,7 +132,7 @@ So we could do something like the following while looping through the results of
 
 ```csharp
 
-// assuming chatClient is instatiated as before to a language model
+// assuming chatClient is instantiated as before to a language model
 // assuming the vector search is done as above
 // assuming List<ChatMessage> conversation object is already instantiated and has a system prompt
 
@@ -157,7 +153,7 @@ var response = await chatClient.GetResponseAsync(conversation);
 conversation.Add(new ChatMessage(ChatRole.Assistant, response.Message));
 
 //display the conversation
-Console.WriteLine($"Bot:> {response.Message.Text});
+Console.WriteLine($"Bot:> {response.Message.Text}");
 ```
 
 > 🙋 **Need help?**: If you encounter any issues, [open an issue in the repository](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/issues/new).
