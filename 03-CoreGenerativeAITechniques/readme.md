@@ -26,6 +26,11 @@ For this lesson, we will subdivide the content into the following sections:
 - [Running models locally with AI Toolkit, Docker, and Foundry Local](./06-LocalModelRunners.md)
 - [Image and Video Generation with New Azure OpenAI Models](./07-ImageVideoGenerationNewModels.md)
 
-Starting with Language Model completions and Chat applications and function implementations with language models in .NET.
 
 👉 [Go to part 1 - completions, chat and functions](./01-lm-completions-functions.md)
+
+---
+
+## Want to know more?
+
+See the [Project Documentation](./docs/projects.md) for detailed breakdowns, dependencies, and demo instructions for every project in this lesson.
