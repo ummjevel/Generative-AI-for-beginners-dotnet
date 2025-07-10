@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIFoundryLocal-02-MEAI-Chat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGeneration-AzureSoraSDK-02", "VideoGeneration-AzureSoraSDK-02\VideoGeneration-AzureSoraSDK-02.csproj", "{5844D64E-6C50-CC23-64C5-02DCC5380E97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicChat-05AIFoundryModels", "BasicChat-05AIFoundryModels\BasicChat-05AIFoundryModels.csproj", "{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -515,6 +517,18 @@ Global
 		{5844D64E-6C50-CC23-64C5-02DCC5380E97}.Release|x64.Build.0 = Release|Any CPU
 		{5844D64E-6C50-CC23-64C5-02DCC5380E97}.Release|x86.ActiveCfg = Release|Any CPU
 		{5844D64E-6C50-CC23-64C5-02DCC5380E97}.Release|x86.Build.0 = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|x64.Build.0 = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Debug|x86.Build.0 = Debug|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|x64.ActiveCfg = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|x64.Build.0 = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|x86.ActiveCfg = Release|Any CPU
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -554,6 +568,7 @@ Global
 		{7D7A17CF-5390-4534-8F4B-42930DF81A54} = {D9030679-D656-46A5-AD1B-5D6A4C560C58}
 		{8882C1F4-9A63-476D-9305-93DCFB7BFA8F} = {D9030679-D656-46A5-AD1B-5D6A4C560C58}
 		{5844D64E-6C50-CC23-64C5-02DCC5380E97} = {A02293A0-BFF3-4708-A110-30944AD39A69}
+		{07F43AC9-EBB1-4F21-BC51-6DAD0F2F0E55} = {1248F5FA-C7D6-4876-8313-A15A942F84FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {961EEBAB-4149-4AA4-BEE7-9DAAE4C94133}
