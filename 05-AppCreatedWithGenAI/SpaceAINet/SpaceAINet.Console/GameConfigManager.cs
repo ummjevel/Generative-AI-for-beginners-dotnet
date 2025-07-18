@@ -9,7 +9,7 @@ public class GameConfigManager
     public GameConfigManager()
     {
         var config = new ConfigurationBuilder()
-            .AddUserSecrets(typeof(AoaiGameActionProvider).Assembly)
+            .AddUserSecrets(typeof(Program).Assembly)
             .Build();
         AzureOpenAIEndpoint = config["AZURE_OPENAI_ENDPOINT"] ?? string.Empty;
         AzureOpenAIModel = config["AZURE_OPENAI_MODEL"] ?? string.Empty;
