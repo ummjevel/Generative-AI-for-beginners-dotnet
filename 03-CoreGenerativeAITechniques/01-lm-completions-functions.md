@@ -39,7 +39,7 @@ To run the sample code, you'll need to:
 ```csharp
 // this example illustrates using a model hosted on GitHub Models
 IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.ai.azure.com"),
+        endpoint: new Uri("https://models.inference.azure.com"),
         new AzureKeyCredential(githubToken))
         .AsIChatClient("Phi-3.5-MoE-instruct");
 
@@ -171,7 +171,7 @@ There are a couple of setup steps you need to take in order to call functions wi
 
     ```csharp
     IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.ai.azure.com"),
+        endpoint: new Uri("https://models.inference.azure.com"),
         new AzureKeyCredential(githubToken))
     .AsIChatClient("gpt-4o-mini")
     .AsBuilder()

@@ -81,7 +81,7 @@ RAG アーキテクチャには主に2つのフェーズがあります: **検�
 2. 次に、知識ストア（`movieData` オブジェクト）を埋め込みに変換し、それをインメモリベクターストアに保存します。この埋め込みを作成する際には、言語モデルではなく埋め込みモデルを使用します。
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.ai.azure.com");
+    var endpoint = new Uri("https://models.inference.azure.com");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 
