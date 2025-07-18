@@ -26,7 +26,7 @@ Bien, vamos a poner a prueba el modelo y preguntarle cuántos zapatos rojos hay 
 
     ```csharp
     IChatClient chatClient = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.ai.azure.com"),
+        endpoint: new Uri("https://models.inference.azure.com"),
         new AzureKeyCredential(githubToken)) // make sure to grab githubToken from the secrets or environment
     .AsChatClient("gpt-4o-mini");
 
