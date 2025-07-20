@@ -81,7 +81,7 @@ Wir verwenden Microsoft.Extension.AI zusammen mit den Bibliotheken [Microsoft.Ex
 3. Als Nächstes müssen wir unseren Wissensspeicher (das `movieData`-Objekt) in Embeddings umwandeln und diese dann im In-Memory-Vektorspeicher speichern. Dabei verwenden wir ein anderes Modell – ein Embeddings-Modell anstelle eines Sprachmodells.
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.azure.com");
+    var endpoint = new Uri("https://models.ai.azure.com");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 

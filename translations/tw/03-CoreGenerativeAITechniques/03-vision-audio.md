@@ -26,7 +26,7 @@ _⬆️點擊圖片觀看影片⬆️_
 
     ```csharp
     IChatClient chatClient = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.azure.com"),
+        endpoint: new Uri("https://models.ai.azure.com"),
         new AzureKeyCredential(githubToken)) // make sure to grab githubToken from the secrets or environment
     .AsChatClient("gpt-4o-mini");
 

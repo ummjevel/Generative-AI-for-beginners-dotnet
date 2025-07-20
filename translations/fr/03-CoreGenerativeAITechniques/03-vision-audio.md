@@ -26,7 +26,7 @@ Très bien - nous allons mettre le modèle à l'épreuve et lui demander s'il pe
 
     ```csharp
     IChatClient chatClient = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.azure.com"),
+        endpoint: new Uri("https://models.ai.azure.com"),
         new AzureKeyCredential(githubToken)) // make sure to grab githubToken from the secrets or environment
     .AsChatClient("gpt-4o-mini");
 

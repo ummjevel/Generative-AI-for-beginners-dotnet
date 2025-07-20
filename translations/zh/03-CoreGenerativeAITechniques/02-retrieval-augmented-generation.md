@@ -81,7 +81,7 @@ RAG 架构主要分为两个阶段：**检索** 和 **生成**。
 3. 接下来，我们需要将知识库 (`movieData` 对象) 转换为嵌入，并将它们存储到内存向量存储中。当我们创建嵌入时，将使用不同的模型——一个嵌入模型，而不是语言模型。
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.azure.com");
+    var endpoint = new Uri("https://models.ai.azure.com");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 

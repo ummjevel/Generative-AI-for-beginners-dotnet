@@ -26,7 +26,7 @@ Okay – wir werden das Modell auf die Probe stellen und es fragen, wie viele ro
 
     ```csharp
     IChatClient chatClient = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.inference.azure.com"),
+        endpoint: new Uri("https://models.ai.azure.com"),
         new AzureKeyCredential(githubToken)) // make sure to grab githubToken from the secrets or environment
     .AsChatClient("gpt-4o-mini");
 
