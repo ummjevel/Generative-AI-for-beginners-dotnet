@@ -32,7 +32,7 @@ Ok - so we're going to put the model through its paces and ask it if it can tell
     ```csharp
     IChatClient chatClient =
         new ChatCompletionsClient(
-            endpoint: new Uri("https://models.ai.azure.com"),
+            endpoint: new Uri("https://models.github.ai/"),
             new AzureKeyCredential(githubToken))
             .AsIChatClient("gpt-4o-mini");
 

@@ -24,7 +24,7 @@ _⬆️画像をクリックして動画を見る⬆️_
 
 // this example illustrates using a model hosted on GitHub Models
 IChatClient client = new ChatCompletionsClient(
-    endpoint: new Uri("https://models.ai.azure.com"),
+    endpoint: new Uri("https://models.github.ai/"),
     new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
     .AsChatClient("gpt-4o-mini");
 
@@ -149,7 +149,7 @@ MEAIを使用して関数を呼び出すには、いくつかの設定手順が�
 
     ```csharp
     IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.ai.azure.com"),
+        endpoint: new Uri("https://models.github.ai/"),
         new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
     .AsChatClient("gpt-4o-mini")
     .AsBuilder()

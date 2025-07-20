@@ -20,7 +20,7 @@ ChatOptions options = new ChatOptions
 
 
 IChatClient client = new ChatCompletionsClient(
-    endpoint: new Uri("https://models.ai.azure.com"),
+    endpoint: new Uri("https://models.github.ai/"),
     new AzureKeyCredential(githubToken))
     .AsIChatClient("gpt-4o-mini")
     .AsBuilder()

@@ -24,7 +24,7 @@ Veamos cómo usarías completaciones de texto utilizando la biblioteca **Microso
 
 // this example illustrates using a model hosted on GitHub Models
 IChatClient client = new ChatCompletionsClient(
-    endpoint: new Uri("https://models.ai.azure.com"),
+    endpoint: new Uri("https://models.github.ai/"),
     new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
     .AsChatClient("gpt-4o-mini");
 
@@ -149,7 +149,7 @@ Hay algunos pasos de configuración que necesitas realizar para llamar funciones
 
     ```csharp
     IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.ai.azure.com"),
+        endpoint: new Uri("https://models.github.ai/"),
         new AzureKeyCredential(githubToken)) // githubToken is retrieved from the environment variables
     .AsChatClient("gpt-4o-mini")
     .AsBuilder()
