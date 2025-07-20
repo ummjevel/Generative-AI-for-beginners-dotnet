@@ -17,7 +17,7 @@ if (string.IsNullOrEmpty(githubToken))
     githubToken = config["GITHUB_TOKEN"];
 }
 var modelId = "gpt-4o-mini";
-var uri = "https://models.inference.azure.com";
+var uri = "https://models.ai.azure.com";
 
 // create client
 var client = new OpenAIClient(new ApiKeyCredential(githubToken),
