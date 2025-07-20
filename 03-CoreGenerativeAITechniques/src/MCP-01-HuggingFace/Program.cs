@@ -59,7 +59,6 @@ var chatOptions = new ChatOptions
 // Create image
 Console.WriteLine("Starting the process to generate an image of a pixelated puppy...");
 var query = "Create an image of a pixelated puppy.";
-var sb = new StringBuilder();
 var result = await client.GetResponseAsync(query, chatOptions);
 Console.Write($"AI response: {result}");
 Console.WriteLine();
