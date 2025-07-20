@@ -39,7 +39,7 @@ To run the sample code, you'll need to:
 ```csharp
 // this example illustrates using a model hosted on GitHub Models
 IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.github.ai/"),
+        endpoint: new Uri("https://models.github.ai/inference"),
         new AzureKeyCredential(githubToken))
         .AsIChatClient("Phi-3.5-MoE-instruct");
 
@@ -61,6 +61,8 @@ Console.WriteLine(response.Text);
 > 🗒️**Note:** This example showed GitHub Models as the hosting service. If you want to use Ollama, [check out this example](./src/BasicChat-03Ollama/) (it instantiates a different `IChatClient`).
 > 
 > If you want to use Azure AI Foundry you can use the same code, but you will need to change the endpoint and the credentials.
+>
+> **GitHub Models Endpoint:** The endpoint `https://models.github.ai/inference` is the new dedicated GitHub Models endpoint as announced in the [GitHub Models deprecation notice](https://github.blog/changelog/2025-07-17-deprecation-of-azure-endpoint-for-github-models/), replacing the previous Azure-based endpoint.
 >
 > If you want to use both Ollama and Semantic Kernel together, [check out the BasicChat-04OllamaSK example](./src/BasicChat-04OllamaSK/).
 > 
@@ -171,7 +173,7 @@ There are a couple of setup steps you need to take in order to call functions wi
 
     ```csharp
     IChatClient client = new ChatCompletionsClient(
-        endpoint: new Uri("https://models.github.ai/"),
+        endpoint: new Uri("https://models.github.ai/inference"),
         new AzureKeyCredential(githubToken))
     .AsIChatClient("gpt-4o-mini")
     .AsBuilder()

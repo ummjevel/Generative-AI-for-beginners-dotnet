@@ -12,7 +12,7 @@ if (string.IsNullOrEmpty(githubToken))
 
 IChatClient chatClient =
     new ChatCompletionsClient(
-        endpoint: new Uri("https://models.github.ai/"),
+        endpoint: new Uri("https://models.github.ai/inference"),
         new AzureKeyCredential(githubToken))
         .AsIChatClient("gpt-4o-mini");
 
