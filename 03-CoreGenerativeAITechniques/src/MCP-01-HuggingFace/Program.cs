@@ -6,7 +6,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using ModelContextProtocol.Client;
 using System.ClientModel;
-using System.Text;
 
 // To run the sample, you need to set the following environment variables or user secrets:
 // Using GitHub models
@@ -15,7 +14,7 @@ using System.Text;
 // Using Azure OpenAI models
 //      "endpoint": "https://<endpoint>.services.ai.azure.com/",
 //      "apikey": " your key ",
-//      "deploymentName": "a deployment name, ie: phi-4.1-mini"
+//      "deploymentName": "a deployment name, ie: gpt-4.1-mini"
 
 var builder = Host.CreateApplicationBuilder(args);
 var config = builder.Configuration
