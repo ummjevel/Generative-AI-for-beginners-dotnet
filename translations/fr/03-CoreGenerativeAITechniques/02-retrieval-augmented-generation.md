@@ -81,7 +81,7 @@ Nous utiliserons la bibliothèque Microsoft.Extension.AI ainsi que [Microsoft.Ex
 3. Ensuite, nous devons convertir notre base de connaissances (l'objet `movieData`) en embeddings, puis les stocker dans une base vectorielle en mémoire. Pour créer ces embeddings, nous utiliserons un modèle différent - un modèle d'embeddings au lieu d'un modèle de langage.
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.azure.com");
+    var endpoint = new Uri("https://models.github.ai/inference");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 

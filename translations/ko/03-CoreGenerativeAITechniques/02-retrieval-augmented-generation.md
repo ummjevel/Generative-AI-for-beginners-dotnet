@@ -81,7 +81,7 @@ RAG 아키텍처에는 두 가지 주요 단계가 있습니다: **검색(Retrie
 3. 다음으로, 우리의 지식 저장소(`movieData` 객체)를 임베딩으로 변환한 후, 이를 인메모리 벡터 저장소에 저장해야 합니다. 임베딩을 생성할 때는 언어 모델 대신 임베딩 모델을 사용합니다.
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.azure.com");
+    var endpoint = new Uri("https://models.github.ai/inference");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 

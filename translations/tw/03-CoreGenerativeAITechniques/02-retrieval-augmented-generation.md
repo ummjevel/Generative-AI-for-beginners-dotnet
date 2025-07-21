@@ -81,7 +81,7 @@ RAG 架構主要包含兩個階段：**檢索** 和 **生成**。
 3. 接下來，我們的任務是將知識庫（`movieData` 物件）轉換為嵌入，然後將它們存儲到記憶體中的向量存儲中。在創建嵌入時，我們將使用一個不同的模型——嵌入模型，而不是語言模型。
 
     ```csharp
-    var endpoint = new Uri("https://models.inference.azure.com");
+    var endpoint = new Uri("https://models.github.ai/inference");
     var modelId = "text-embedding-3-small";
     var credential = new AzureKeyCredential(githubToken); // githubToken is retrieved from the environment variables
 
