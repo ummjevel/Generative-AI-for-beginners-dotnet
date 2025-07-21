@@ -2,6 +2,17 @@
 
 This page tracks the history of new features, tools, and models added to the course. Check back for updates!
 
+## July 2025
+
+### **🕹️ New! Apps Generated with AI**
+
+We're excited to introduce a new section featuring full applications generated with AI tools like GitHub Copilot Agent. These apps demonstrate how generative AI can be used to build real-world .NET solutions leveraging AI as a co-pilot.
+
+- **First Sample: SpaceAINet**
+  - [SpaceAINet Console App](./05-AppCreatedWithGenAI/SpaceAINet/README.md)
+  - **SpaceAINet** is an AI-powered Space Battle game for .NET 9, designed to showcase how modern AI models can play classic games. The solution allows you to run the game with either local AI models (via Ollama) or cloud-based models (via Azure AI Foundry), which analyze the game state and predict the next best action to win.
+  - Try it out and see how AI can master classic arcade gameplay!
+
 ## June 2025
 
 ### New: Azure OpenAI Sora Video Generation Demo
