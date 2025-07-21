@@ -32,6 +32,12 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 We're constantly improving this course with the latest AI tools, models, and practical samples:
 
+- **New: Hugging Face MCP Server Image Generation Samples!**
+  - Explore new C# console app samples that show how to use the Hugging Face MCP Server to generate images directly from your code.
+  - Try the sample using GitHub Models or Azure AI Foundry: [`03-CoreGenerativeAITechniques/src/MCP-01-HuggingFace/Program.cs`](./03-CoreGenerativeAITechniques/src/MCP-01-HuggingFace/Program.cs)
+  - Or use Ollama for local model inference: [`03-CoreGenerativeAITechniques/src/MCP-02-HuggingFace-Ollama/Program.cs`](./03-CoreGenerativeAITechniques/src/MCP-02-HuggingFace-Ollama/Program.cs)
+  - These samples demonstrate how to integrate image generation into .NET console applications using modern AI model providers.
+
 - **🕹️ New! Apps Generated with AI**
 
 We're excited to introduce a new section featuring full applications generated with AI tools like GitHub Copilot Agent. These apps demonstrate how generative AI can be used to build real-world .NET solutions leveraging AI as a co-pilot.
@@ -40,11 +46,6 @@ We're excited to introduce a new section featuring full applications generated w
   - [SpaceAINet Console App](./05-AppCreatedWithGenAI/SpaceAINet/README.md)
   - **SpaceAINet** is an AI-powered Space Battle game for .NET 9, designed to showcase how modern AI models can play classic games. The solution allows you to run the game with either local AI models (via Ollama) or cloud-based models (via Azure AI Foundry), which analyze the game state and predict the next best action to win.
   - Try it out and see how AI can master classic arcade gameplay!
-
-- **New: Foundry Local demos!**
-  - Lesson 3 now features hands-on demos for [Foundry Local models](https://github.com/microsoft/Foundry-Local/tree/main).
-  - See the official docs: [Foundry Local documentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
-  - **Full explanation and code samples are available in [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](./03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
 
 ## 🚀 Introduction
 
