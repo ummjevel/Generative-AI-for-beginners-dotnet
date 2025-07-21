@@ -34,18 +34,18 @@ We're constantly improving this course with the latest AI tools, models, and pra
 
 - **🖼️ New! Hugging Face MCP Server Image Generation Samples!**
 
-  - Explore new C# console app samples that show how to use the Hugging Face MCP Server to generate images directly from your code.
+  Explore new C# console app samples that show how to use the Hugging Face MCP Server to generate images directly from your code.
+
   - [Try the sample using GitHub Models or Azure AI Foundry](./03-CoreGenerativeAITechniques/src/MCP-01-HuggingFace/Program.cs)
   - [Use Ollama for local model inference](./03-CoreGenerativeAITechniques/src/MCP-02-HuggingFace-Ollama/Program.cs)
 
 - **🕹️ New! Apps Generated with AI**
 
-We're excited to introduce a new section featuring full applications generated with AI tools like GitHub Copilot Agent. These apps demonstrate how generative AI can be used to build real-world .NET solutions leveraging AI as a co-pilot.
+  We're excited to introduce a new section featuring full applications generated with AI tools like GitHub Copilot Agent. These apps demonstrate how generative AI can be used to build real-world .NET solutions leveraging AI as a co-pilot.
 
-- **First Sample: SpaceAINet**
-  - [SpaceAINet Console App](./05-AppCreatedWithGenAI/SpaceAINet/README.md)
-  - **SpaceAINet** is an AI-powered Space Battle game for .NET 9, designed to showcase how modern AI models can play classic games. The solution allows you to run the game with either local AI models (via Ollama) or cloud-based models (via Azure AI Foundry), which analyze the game state and predict the next best action to win.
-  - Try it out and see how AI can master classic arcade gameplay!
+  - **First Sample: [SpaceAINet Console App](./05-AppCreatedWithGenAI/SpaceAINet/README.md)**
+  **SpaceAINet** is an AI-powered Space Battle game for .NET 9, designed to showcase how modern AI models can play classic games. The solution allows you to run the game with either local AI models (via Ollama) or cloud-based models (via Azure AI Foundry), which analyze the game state and predict the next best action to win.
+  Try it out and see how AI can master classic arcade gameplay!
 
 ## 🚀 Introduction
 
