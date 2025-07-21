@@ -8,7 +8,8 @@ using ModelContextProtocol.Client;
 using OllamaSharp;
 
 // To run the sample, you need to set the following environment variables or user secrets:
-//      "HF_API_KEY": " your HF token"
+// "HF_API_KEY": " your HF token"
+// "deploymentName" : "llama3.2" // Optional, defaults to "llama3.2" if not specified
 
 var builder = Host.CreateApplicationBuilder(args);
 var config = builder.Configuration
