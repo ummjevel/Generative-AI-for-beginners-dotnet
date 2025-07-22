@@ -31,7 +31,7 @@
 
 ```bash
 git clone <repository-url>
-cd HFMCP.GenImage.AppHost
+cd /05-AppCreatedWithGenAI/HFMCP.GenImage/HFMCP.GenImage.AppHost
 ```
 
 ### 2. Build the solution
@@ -44,7 +44,7 @@ dotnet build
 ### 3. Run the application
 
 ```bash
-dotnet run --project HFMCP.GenImage.AppHost
+dotnet run 
 ```
 
 The Aspire dashboard and web application will be available at the URLs shown in the console output (e.g., `https://localhost:17147`).
@@ -54,7 +54,7 @@ The Aspire dashboard and web application will be available at the URLs shown in 
 1. Open the web application and go to the **Settings** page.
 1. Enter your **Hugging Face Access Token**.
 1. Enter your **GitHub Personal Access Token**.
-1. Select your preferred AI model (default: gpt-4/1-mini).
+1. Select your preferred AI model (default: gpt-4-1-mini).
 1. Save the configuration.
 
 #### Getting a GitHub Token
@@ -77,5 +77,6 @@ The Aspire dashboard and web application will be available at the URLs shown in 
 
 - GPT-4.1-mini (recommended)
 - Llama 3.2
+- Any model available that supports function calling
 
 You can switch models at any time from the Settings page.
