@@ -5,6 +5,8 @@
 
 **HFMCP.GenImage** is a .NET Aspire solution that brings AI-powered chat to your browser. The solution is designed for extensibility, security, and a great developer experience.
 
+![Demo of the app generating an image](./images/HFMCP-Demo01.gif)
+
 ---
 
 ## Solution Structure
