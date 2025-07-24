@@ -1,6 +1,6 @@
 name: .NET Build Validation
 
-on:
+'on':
   pull_request:
     branches: [ main ]
     paths:
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     
     strategy:
-      fail-fast: false
+      fail-fast: false  # Show results for all projects even if some fail
       matrix:
         solution:
         - path: "02-SetupDevEnvironment/src/GetingReadySamples.sln"
@@ -48,16 +48,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup .NET
+    - name: Setup .NET 9.0
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '9.0.x'
 
-    - name: Restore dependencies
+    - name: Restore dependencies for ${{ matrix.solution.name }}
       run: dotnet restore "${{ matrix.solution.path }}"
 
-    - name: Build solution
-      run: dotnet build "${{ matrix.solution.path }}" --no-restore --configuration Release
+    - name: Build ${{ matrix.solution.name }}
+      run: dotnet build "${{ matrix.solution.path }}" --no-restore --configuration Release --verbosity minimal
 
     - name: Display build result
       if: success()
