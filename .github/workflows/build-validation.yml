@@ -33,7 +33,7 @@ jobs:
       fail-fast: false  # Show results for all projects even if some fail
       matrix:
         solution:
-        - path: "02-SetupDevEnvironment/src/GetingReadySamples.sln"
+        - path: "02-SetupDevEnvironment/src/GettingReadySamples.sln"
           name: "Setup Samples"
         - path: "03-CoreGenerativeAITechniques/src/CoreGenerativeAITechniques.sln"
           name: "Core Techniques"
