@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\McpSample.AspNetCoreSseServer\McpSample.AspNetCoreSseServer.csproj" />
+		<ProjectReference Include="..\McpSample.AspNetCoreServer\McpSample.AspNetCoreServer.csproj" />
 		<ProjectReference Include="..\McpSample.Chat\McpSample.BlazorChat.csproj" />
 	</ItemGroup>
 

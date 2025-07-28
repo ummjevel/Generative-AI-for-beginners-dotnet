@@ -30,9 +30,9 @@ builder.Services.AddSingleton<IMcpClient>(sp =>
     var clientTransport = new SseClientTransport(
         new()
         {
-            Name = "AspNetCoreSse Server",
-            Endpoint = new Uri("https://localhost:7133"), // Remove /sse endpoint since it's deprecated
-            TransportMode = HttpTransportMode.StreamableHttp // Use new Streamable HTTP transport
+            Name = "AspNetCore Server",
+            Endpoint = new Uri("https://localhost:7133"), // MCP server endpoint
+            TransportMode = HttpTransportMode.StreamableHttp
         });
 
     var mcpClient = McpClientFactory.CreateAsync(clientTransport).GetAwaiter().GetResult();
