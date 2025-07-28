@@ -17,6 +17,5 @@ app.UseHttpsRedirection();
 
 // map endpoints
 app.MapGet("/", () => $"Hello World! {DateTime.Now}");
-app.MapMcpSse();
 
 app.Run();
