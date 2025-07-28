@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.35906.104
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McpSample.ServiceDefaults", "src\McpSample.ServiceDefaults\McpSample.ServiceDefaults.csproj", "{63E130E2-B108-D8A0-C6C6-0C05493F0690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McpSample.AspNetCoreSseServer", "src\McpSample.AspNetCoreSseServer\McpSample.AspNetCoreSseServer.csproj", "{C9D8E344-77A7-C7C8-4F2B-D9521B6A441B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McpSample.AspNetCoreServer", "src\McpSample.AspNetCoreServer\McpSample.AspNetCoreServer.csproj", "{C9D8E344-77A7-C7C8-4F2B-D9521B6A441B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McpSample.BlazorChat", "src\McpSample.Chat\McpSample.BlazorChat.csproj", "{6CC10BEE-2C2D-1BE7-4111-17587C4F7CC6}"
 EndProject
