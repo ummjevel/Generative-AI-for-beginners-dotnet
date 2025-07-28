@@ -22,7 +22,7 @@
 - [ビジョンと音声のAIアプリケーション](./03-vision-audio.md)
 - [Azure OpenAIによる画像生成](./05-ImageGenerationOpenAI.md)  
 - [エージェント](04-agents.md)
-- [AI Toolkit、Docker、Foundry Localを使用したモデルのローカル実行](./06-LocalModelRunners.md)  
+- [AI Toolkit、Docker、Foundry Localを使用したモデルのローカル実行](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)  
 
 まずは、言語モデルによる補完、チャットアプリケーション、そして.NETでの関数実装について学びます。
 

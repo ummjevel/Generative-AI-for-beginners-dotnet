@@ -10,7 +10,7 @@ Die Möglichkeit, KI-Modelle lokal auszuführen, bietet mehrere Vorteile wie Pri
 
 ## Videoanleitung
 
-[![Video zu AI Toolkit und Docker](https://img.youtube.com/vi/1GwmV1PGRjI/0.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
+[![Video zu AI Toolkit und Docker](https://img.youtube.com/vi/1GwmV1PGRjI/maxresdefault.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
 
 _⬆️ Klicken Sie auf das Bild, um das Video anzusehen ⬆️_
 

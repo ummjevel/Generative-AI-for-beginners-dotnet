@@ -13,7 +13,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)
 
 
-[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://aka.ms/ai-discord/dotnet)
+[![Azure AI Community Discord](https://img.shields.io/discord/1113626258182504448?label=Azure%20AI%20Community%20Discord)](https://aka.ms/ai-discord/dotnet)
 [![Azure AI Foundry GitHub Diskussionen](https://img.shields.io/badge/Discussions-Azure%20AI%20Foundry-blueviolet?logo=github&style=for-the-badge)](https://aka.ms/ai-discussions/dotnet)
 
 ![Generative AI für Anfänger .NET Logo](../../translated_images/main-logo.5ac974278bc20b3520e631aaa6bf8799f2d219c5aec555da85555725546f25f8.de.jpg)
@@ -35,7 +35,7 @@ Wir verbessern diesen Kurs kontinuierlich mit den neuesten KI-Tools, Modellen un
 - **Neu: Foundry Local Demos!**
   - Lektion 3 bietet jetzt praktische Demonstrationen für [Foundry Local Modelle](https://github.com/microsoft/Foundry-Local/tree/main).
   - Siehe die offizielle Dokumentation: [Foundry Local Dokumentation](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
-  - **Vollständige Erklärung und Codebeispiele sind verfügbar unter [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
+  - **Vollständige Erklärung und Codebeispiele sind verfügbar unter [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
 
 - **Neu: Azure OpenAI Sora Video-Generierungs-Demo!**
   - Lektion 3 bietet jetzt eine praktische Demonstration, die zeigt, wie man Videos aus Text-Prompts mit dem neuen [Sora Video-Generierungsmodell](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) in Azure OpenAI generiert.
@@ -44,11 +44,11 @@ Wir verbessern diesen Kurs kontinuierlich mit den neuesten KI-Tools, Modellen un
     - Den Auftragsstatus abfragt und die resultierende Videodatei automatisch herunterlädt.
     - Das generierte Video auf dem Desktop zur einfachen Anzeige speichert.
   - Siehe die offizielle Dokumentation: [Azure OpenAI Sora Video-Generierung](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken /src/VideoGeneration-AzureSora-01/Program.cs](../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 - **Neu: Azure OpenAI Bild-Generierungsmodell (`gpt-image-1`)**: Lektion 3 bietet jetzt Codebeispiele für die Verwendung des neuen Azure OpenAI Bild-Generierungsmodells `gpt-image-1`. Lernen Sie, wie Sie Bilder aus .NET mit den neuesten Azure OpenAI-Funktionen generieren.
   - Siehe die offizielle Dokumentation: [Wie man Azure OpenAI Bild-Generierungsmodelle verwendet](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) und den [openai-dotnet Bild-Generierungsleitfaden](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) für weitere Details.
-  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken .. /src/ImageGeneration-01.csproj](../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
+  - Finden Sie das Beispiel unter [Lektion 3: Grundlegende Generative KI-Techniken .. /src/ImageGeneration-01.csproj](../../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
 
 - **Neues Szenario: Parallele Agent-Orchestrierung in eShopLite**: Das [eShopLite Repository](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) bietet jetzt ein Szenario, das parallele Agent-Orchestrierung mit Semantic Kernel demonstriert. Dieses Szenario zeigt, wie mehrere Agenten parallel arbeiten können, um Benutzeranfragen zu analysieren und wertvolle Erkenntnisse für zukünftige Analysen zu liefern.
 

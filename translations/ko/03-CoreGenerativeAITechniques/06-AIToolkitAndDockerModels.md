@@ -6,7 +6,7 @@
 
 ## 소개
 
-[![AI Toolkit 및 Docker 비디오](https://img.youtube.com/vi/1GwmV1PGRjI/0.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
+[![AI Toolkit 및 Docker 비디오](https://img.youtube.com/vi/1GwmV1PGRjI/maxresdefault.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
 
 _⬆️ 비디오를 보려면 이미지를 클릭하세요 ⬆️_
 

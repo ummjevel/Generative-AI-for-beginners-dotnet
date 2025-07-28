@@ -149,7 +149,7 @@ Image generation opens up new creative possibilities for your applications, allo
 
 - [Generate images with AI and .NET](https://learn.microsoft.com/dotnet/ai/quickstarts/quickstart-openai-generate-images?tabs=azd&pivots=openai)
 - [DALL-E on Azure AI services](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1)
-- [Image generation overview](https://learn.microsoft.com/azure/ai-services/openai/concepts/understanding-image-generation-responses)
+- [Image generation overview](https://learn.microsoft.com/azure/ai-services/openai/concepts/models)
 
 ## Up next
 

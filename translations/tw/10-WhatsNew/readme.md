@@ -13,7 +13,7 @@
   - 輪詢工作狀態並自動下載產生的影片檔案。
   - 將產生的影片儲存到桌面以便輕鬆檢視。
 - 查看官方文件：[Azure OpenAI Sora 影片產生](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-- 在這裡找到範例：[第3課：核心生成式 AI 技術 /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+- 在這裡找到範例：[第3課：核心生成式 AI 技術 /src/VideoGeneration-AzureSora-01/Program.cs](../../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 ### 新增 eShopLite 情境：並發代理協調（2025年6月）
 
@@ -29,7 +29,7 @@
   - 第3課現在包含使用新的 Azure OpenAI 圖像產生模型 `gpt-image-1` 的程式碼範例和說明。
   - 學習如何直接從 .NET 使用最新的 Azure OpenAI 功能產生圖像。
   - 查看 [官方 Azure OpenAI DALL·E 文件](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) 和 [openai-dotnet 圖像產生指南](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) 了解更多詳情。
-  - 在這裡找到範例：[第3課：核心生成式 AI 技術](../../03-CoreGenerativeAITechniques/)。
+  - 在這裡找到範例：[第3課：核心生成式 AI 技術](../../../03-CoreGenerativeAITechniques/)。
 
 ### 使用 AI Toolkit 和 Docker 執行本地模型
 
@@ -41,7 +41,7 @@
 
 - **適用於 .NET 的模型內容協定**：我們新增了對 [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) 的支援，它提供了一種標準化的方式來與不同提供者的 AI 模型進行通訊。
 - 這種整合使模型互動更加一致，同時減少對供應商的依賴。
-- 查看我們在 [核心生成式 AI 技術](../../03-CoreGenerativeAITechniques/) 部分展示 MCP 整合的新範例。
+- 查看我們在 [核心生成式 AI 技術](../../../03-CoreGenerativeAITechniques/) 部分展示 MCP 整合的新範例。
 
 ### eShopLite 情境存放庫
 

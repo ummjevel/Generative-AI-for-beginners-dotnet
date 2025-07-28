@@ -22,7 +22,7 @@
 - [视觉与音频 AI 应用](./03-vision-audio.md)  
 - [使用 Azure OpenAI 生成图像](./05-ImageGenerationOpenAI.md)  
 - [代理](04-agents.md)  
-- [使用 AI Toolkit、Docker 和 Foundry Local 在本地运行模型](./06-LocalModelRunners.md)  
+- [使用 AI Toolkit、Docker 和 Foundry Local 在本地运行模型](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)  
 
 从语言模型补全、对话应用及其在 .NET 中的函数实现开始。
 

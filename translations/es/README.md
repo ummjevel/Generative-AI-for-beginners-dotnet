@@ -13,7 +13,7 @@
 [![Estrellas en GitHub](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)
 
 
-[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://aka.ms/ai-discord/dotnet)
+[![Azure AI Community Discord](https://img.shields.io/discord/1113626258182504448?label=Azure%20AI%20Community%20Discord)](https://aka.ms/ai-discord/dotnet)
 [![Discusiones de Azure AI Foundry en GitHub](https://img.shields.io/badge/Discussions-Azure%20AI%20Foundry-blueviolet?logo=github&style=for-the-badge)](https://aka.ms/ai-discussions/dotnet)
 
 ![Logo de Generative AI para Principiantes .NET](../../translated_images/main-logo.5ac974278bc20b3520e631aaa6bf8799f2d219c5aec555da85555725546f25f8.es.jpg)
@@ -35,7 +35,7 @@ Estamos mejorando constantemente este curso con las últimas herramientas de IA,
 - **¡Nuevo: Demos de Foundry Local!**
   - La Lección 3 ahora presenta demostraciones prácticas para [modelos Foundry Local](https://github.com/microsoft/Foundry-Local/tree/main).
   - Ve la documentación oficial: [Documentación de Foundry Local](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
-  - **Explicación completa y ejemplos de código están disponibles en [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
+  - **Explicación completa y ejemplos de código están disponibles en [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)**
 
 - **¡Nuevo: Demo de Generación de Video Azure OpenAI Sora!**
   - La Lección 3 ahora presenta una demostración práctica que muestra cómo generar videos a partir de prompts de texto usando el nuevo [modelo de generación de video Sora](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation) en Azure OpenAI.
@@ -44,11 +44,11 @@ Estamos mejorando constantemente este curso con las últimas herramientas de IA,
     - Consultar el estado del trabajo y descargar automáticamente el archivo de video resultante.
     - Guardar el video generado en tu escritorio para una visualización fácil.
   - Ve la documentación oficial: [Generación de video Azure OpenAI Sora](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-  - Encuentra el ejemplo en [Lección 3: Técnicas de IA Generativa Fundamentales /src/VideoGeneration-AzureSora-01/Program.cs](../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+  - Encuentra el ejemplo en [Lección 3: Técnicas de IA Generativa Fundamentales /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 - **Nuevo: Modelo de Generación de Imágenes Azure OpenAI (`gpt-image-1`)**: La Lección 3 ahora presenta ejemplos de código para usar el nuevo modelo de generación de imágenes de Azure OpenAI, `gpt-image-1`. Aprende cómo generar imágenes desde .NET usando las últimas capacidades de Azure OpenAI.
   - Ve la documentación oficial: [Cómo usar modelos de generación de imágenes de Azure OpenAI](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) y la [guía de generación de imágenes openai-dotnet](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) para más detalles.
-  - Encuentra el ejemplo en [Lección 3: Técnicas de IA Generativa Fundamentales .. /src/ImageGeneration-01.csproj](../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
+  - Encuentra el ejemplo en [Lección 3: Técnicas de IA Generativa Fundamentales .. /src/ImageGeneration-01.csproj](../../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj).
 
 - **Nuevo Escenario: Orquestación de Agentes Concurrentes en eShopLite**: El [repositorio eShopLite](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent) ahora presenta un escenario que demuestra la orquestación de agentes concurrentes usando Semantic Kernel. Este escenario muestra cómo múltiples agentes pueden trabajar en paralelo para analizar consultas de usuarios y proporcionar insights valiosos para análisis futuros.
 

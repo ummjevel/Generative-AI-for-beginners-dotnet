@@ -158,7 +158,7 @@ In this lesson, you learned how to set up your development environment for the r
 
 - [Azure AI Foundry Documentation](https://learn.microsoft.com/azure/ai-services/)
 - [Working with GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)
-- [How to Deploy Models in Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/deploy/)
+- [How to Deploy Models in Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai)
 - [Azure.AI.OpenAI NuGet Package](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## Next Steps

@@ -6,7 +6,7 @@ Dans cette leçon, vous apprendrez comment exécuter des modèles d'IA générat
 
 ## Introduction
 
-[![Vidéo sur AI Toolkit et Docker](https://img.youtube.com/vi/1GwmV1PGRjI/0.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
+[![Vidéo sur AI Toolkit et Docker](https://img.youtube.com/vi/1GwmV1PGRjI/maxresdefault.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
 
 _⬆️ Cliquez sur l'image pour regarder la vidéo ⬆️_
 

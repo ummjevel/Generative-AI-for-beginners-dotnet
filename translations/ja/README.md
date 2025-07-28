@@ -13,7 +13,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/microsoft/Generative-AI-For-Beginners-Dotnet.svg?style=social&label=Star)](https://github.com/microsoft/Generative-AI-For-Beginners-Dotnet/stargazers/)  
 
 
-[![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://aka.ms/ai-discord/dotnet)
+[![Azure AI Community Discord](https://img.shields.io/discord/1113626258182504448?label=Azure%20AI%20Community%20Discord)](https://aka.ms/ai-discord/dotnet)
 [![Azure AI Foundry GitHub Discussions（ディスカッション）](https://img.shields.io/badge/Discussions-Azure%20AI%20Foundry-blueviolet?logo=github&style=for-the-badge)](https://aka.ms/ai-discussions/dotnet)
 
 ![初心者向け 生成 AI .NET ロゴ](../../translated_images/main-logo.5ac974278bc20b3520e631aaa6bf8799f2d219c5aec555da85555725546f25f8.ja.jpg)
@@ -35,7 +35,7 @@
 - **新機能：Foundry Local デモ！**
   - レッスン3では、[Foundry Local モデル](https://github.com/microsoft/Foundry-Local/tree/main) の実践的なデモを提供しています。
   - 公式ドキュメントを確認：[Foundry Local ドキュメント](https://learn.microsoft.com/azure/ai-foundry/foundry-local/)
-  - **詳細な説明とコードサンプルは [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../03-CoreGenerativeAITechniques/06-LocalModelRunners.md) で確認できます**
+  - **詳細な説明とコードサンプルは [03-CoreGenerativeAITechniques/06-LocalModelRunners.md](../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md) で確認できます**
 
 - **新機能：Azure OpenAI Sora 動画生成デモ！**
   - レッスン3では、Azure OpenAIの新しい[Sora動画生成モデル](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)を使用してテキストプロンプトから動画を生成する実践的なデモを提供しています。
@@ -44,11 +44,11 @@
     - ジョブの状態をポーリングして生成された動画ファイルを自動的にダウンロードする。
     - 生成された動画をデスクトップに保存して簡単に表示する。
   - 公式ドキュメントを確認：[Azure OpenAI Sora動画生成](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-  - サンプルはこちら：[レッスン3：コア生成AI技術 /src/VideoGeneration-AzureSora-01/Program.cs](../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+  - サンプルはこちら：[レッスン3：コア生成AI技術 /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 - **新機能：Azure OpenAI 画像生成モデル (`gpt-image-1`)**：レッスン3では、新しいAzure OpenAI画像生成モデル`gpt-image-1`を使用するコードサンプルを提供しています。最新のAzure OpenAI機能を使用して.NETから画像を生成する方法を学習できます。
   - 公式ドキュメントを確認：[Azure OpenAI画像生成モデルの使用方法](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1)と[openai-dotnet画像生成ガイド](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images)で詳細を確認してください。
-  - サンプルはこちら：[レッスン3：コア生成AI技術 .. /src/ImageGeneration-01.csproj](../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj)。
+  - サンプルはこちら：[レッスン3：コア生成AI技術 .. /src/ImageGeneration-01.csproj](../../03-CoreGenerativeAITechniques/src/ImageGeneration-01/ImageGeneration-01.csproj)。
 
 - **新シナリオ：eShopLiteでの並行エージェントオーケストレーション**：[eShopLiteリポジトリ](https://github.com/Azure-Samples/eShopLite/tree/main/scenarios/07-AgentsConcurrent)では、Semantic Kernelを使用した並行エージェントオーケストレーションを示すシナリオを提供しています。このシナリオでは、複数のエージェントが並行して動作してユーザークエリを分析し、将来の分析に役立つ貴重な洞察を提供する方法を紹介しています。
 

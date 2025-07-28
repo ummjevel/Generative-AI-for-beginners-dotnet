@@ -13,7 +13,7 @@ Esta página acompanha o histórico de novas funcionalidades, ferramentas e mode
   - Fazer polling do status do trabalho e baixar automaticamente o arquivo de vídeo resultante.
   - Salvar o vídeo gerado na sua área de trabalho para visualização fácil.
 - Veja a documentação oficial: [Geração de vídeo Azure OpenAI Sora](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-- Encontre o exemplo em [Lição 3: Técnicas de IA Generativa Fundamentais /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+- Encontre o exemplo em [Lição 3: Técnicas de IA Generativa Fundamentais /src/VideoGeneration-AzureSora-01/Program.cs](../../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 ### Novo Cenário eShopLite: Orquestração de Agentes Concorrentes (Junho 2025)
 
@@ -29,7 +29,7 @@ Esta página acompanha o histórico de novas funcionalidades, ferramentas e mode
   - A Lição 3 agora inclui exemplos de código e explicações para usar o novo modelo de geração de imagens do Azure OpenAI: `gpt-image-1`.
   - Aprenda como gerar imagens usando as mais recentes capacidades do Azure OpenAI diretamente do .NET.
   - Veja a [documentação oficial do Azure OpenAI DALL·E](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1) e o [guia de geração de imagens openai-dotnet](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images) para mais detalhes.
-  - Encontre o exemplo em [Lição 3: Técnicas de IA Generativa Fundamentais](../../03-CoreGenerativeAITechniques/).
+  - Encontre o exemplo em [Lição 3: Técnicas de IA Generativa Fundamentais](../../../03-CoreGenerativeAITechniques/).
 
 ### Executar Modelos Locais com AI Toolkit e Docker
 
@@ -41,7 +41,7 @@ Esta página acompanha o histórico de novas funcionalidades, ferramentas e mode
 
 - **Protocolo de Contexto de Modelo para .NET**: Adicionamos suporte para o [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk), que fornece uma maneira padronizada de se comunicar com modelos de IA de diferentes provedores.
 - Esta integração permite interações mais consistentes com modelos enquanto reduz o vendor lock-in.
-- Confira nossos novos exemplos demonstrando integração MCP na seção [Técnicas de IA Generativa Fundamentais](../../03-CoreGenerativeAITechniques/).
+- Confira nossos novos exemplos demonstrando integração MCP na seção [Técnicas de IA Generativa Fundamentais](../../../03-CoreGenerativeAITechniques/).
 
 ### Repositório de Cenários eShopLite
 

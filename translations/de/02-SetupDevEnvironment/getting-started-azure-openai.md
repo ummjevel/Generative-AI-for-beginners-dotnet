@@ -156,7 +156,7 @@ In dieser Lektion hast du gelernt, wie du deine Entwicklungsumgebung für den Re
 
 - [Azure AI Foundry-Dokumentation](https://learn.microsoft.com/azure/ai-services/)  
 - [Arbeiten mit GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started)  
-- [Wie man Modelle in Azure AI Foundry bereitstellt](https://learn.microsoft.com/azure/ai-services/deploy/)  
+- [Wie man Modelle in Azure AI Foundry bereitstellt](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai)  
 - [Azure.AI.OpenAI NuGet-Paket](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## Nächste Schritte

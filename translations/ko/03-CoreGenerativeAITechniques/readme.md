@@ -22,7 +22,7 @@
 - [비전 및 오디오 AI 애플리케이션](./03-vision-audio.md)  
 - [Azure OpenAI를 활용한 이미지 생성](./05-ImageGenerationOpenAI.md)  
 - [에이전트](04-agents.md)  
-- [AI Toolkit, Docker, Foundry Local을 활용한 로컬 모델 실행](./06-LocalModelRunners.md)  
+- [AI Toolkit, Docker, Foundry Local을 활용한 로컬 모델 실행](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)  
 
 우리는 언어 모델 완성과 채팅 애플리케이션, 그리고 .NET에서 언어 모델을 활용한 함수 구현부터 시작할 것입니다.
 
