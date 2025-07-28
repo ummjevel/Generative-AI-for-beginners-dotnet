@@ -22,7 +22,7 @@
 
 - [.NET 9.0 or newer](https://dotnet.microsoft.com/download/)
 - GitHub Personal Access Token with Models API access
-- [Hugging Face Access Token](https://huggingface.co/docs/mcp) (optional for image generation)
+- [Hugging Face Access Token](https://huggingface.co/docs/hub/security-tokens) (optional for image generation)
 - Visual Studio 2022 or VS Code with C# extension
 
 ## Setup

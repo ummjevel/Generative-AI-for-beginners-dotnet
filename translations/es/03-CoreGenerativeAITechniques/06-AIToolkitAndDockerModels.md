@@ -6,7 +6,7 @@ En esta lección, aprenderá cómo ejecutar modelos de IA generativa localmente 
 
 ## Introducción
 
-[![Video sobre AI Toolkit y Docker](https://img.youtube.com/vi/1GwmV1PGRjI/0.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
+[![Video sobre AI Toolkit y Docker](https://img.youtube.com/vi/1GwmV1PGRjI/maxresdefault.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
 
 _⬆️ Haga clic en la imagen para ver el video ⬆️_
 

@@ -156,7 +156,7 @@ Dans cette leçon, vous avez appris à configurer votre environnement de dévelo
 
 - [Documentation Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/)  
 - [Travailler avec GitHub Codespaces](https://docs.github.com/fr/codespaces/getting-started)  
-- [Comment déployer des modèles dans Azure AI Foundry](https://learn.microsoft.com/azure/ai-services/deploy/)  
+- [Comment déployer des modèles dans Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai)  
 - [Package NuGet Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)
 
 ## Prochaines étapes

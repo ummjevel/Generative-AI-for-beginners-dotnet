@@ -6,7 +6,7 @@
 
 ## 介绍
 
-[![AI Toolkit 和 Docker 视频](https://img.youtube.com/vi/1GwmV1PGRjI/0.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
+[![AI Toolkit 和 Docker 视频](https://img.youtube.com/vi/1GwmV1PGRjI/maxresdefault.jpg)](https://youtu.be/1GwmV1PGRjI?feature=shared)
 
 _⬆️ 点击图片观看视频 ⬆️_
 
