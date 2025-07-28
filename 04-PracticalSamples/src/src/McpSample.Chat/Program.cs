@@ -31,7 +31,7 @@ builder.Services.AddSingleton<IMcpClient>(sp =>
         new()
         {
             Name = "AspNetCore Server",
-            Endpoint = new Uri("https://localhost:7133"), // Use new Streamable HTTP transport
+            Endpoint = new Uri("https://localhost:7133"), // MCP server endpoint
             TransportMode = HttpTransportMode.StreamableHttp
         });
 
