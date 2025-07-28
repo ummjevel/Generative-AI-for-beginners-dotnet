@@ -1,8 +1,7 @@
+using McpSample.BlazorChat;
 using McpSample.BlazorChat.Components;
 using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
-using ModelContextProtocol.Configuration;
-using ModelContextProtocol.Protocol.Transport;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,23 +27,15 @@ builder.Services.AddSingleton<ILogger>(sp => sp.GetRequiredService<ILogger<Progr
 // add MCP client
 builder.Services.AddSingleton<IMcpClient>(sp =>
 {
-    McpClientOptions mcpClientOptions = new() 
-    { ClientInfo = new() { Name = "AspNetCoreSseClient", Version = "1.0.0" } };
+    var clientTransport = new SseClientTransport(
+        new()
+        {
+            Name = "AspNetCoreSse Server",
+            Endpoint = new Uri("https://localhost:7133"), // Remove /sse endpoint since it's deprecated
+            TransportMode = HttpTransportMode.StreamableHttp // Use new Streamable HTTP transport
+        });
 
-    HttpClient httpClient = new()
-    {
-        BaseAddress = new("https://localhost:7133/sse")  //"https +http://aspnetsseserver" + "/sse")
-    }; 
-
-    McpServerConfig mcpServerConfig = new()
-    {
-        Id = "AspNetCoreSse",
-        Name = "AspNetCoreSse",
-        TransportType = TransportTypes.Sse,
-        Location = httpClient.BaseAddress.ToString(),
-    };
-
-    var mcpClient = McpClientFactory.CreateAsync(mcpServerConfig, mcpClientOptions).GetAwaiter().GetResult();
+    var mcpClient = McpClientFactory.CreateAsync(clientTransport).GetAwaiter().GetResult();
     return mcpClient;
 });
 
