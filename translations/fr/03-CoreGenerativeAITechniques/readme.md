@@ -22,7 +22,7 @@ Pour cette leçon, nous allons diviser le contenu en sections suivantes :
 - [Applications IA pour la vision et l'audio](./03-vision-audio.md)
 - [Génération d'images avec Azure OpenAI](./05-ImageGenerationOpenAI.md)  
 - [Agents](04-agents.md)
-- [Exécution locale de modèles avec AI Toolkit, Docker et Foundry Local](./06-LocalModelRunners.md)  
+- [Exécution locale de modèles avec AI Toolkit, Docker et Foundry Local](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)  
 
 Nous commencerons par les complétions des modèles de langage, les applications de chat et les implémentations de fonctions avec des modèles de langage dans .NET.
 

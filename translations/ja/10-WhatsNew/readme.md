@@ -13,7 +13,7 @@
   - ジョブの状態をポーリングして生成された動画ファイルを自動的にダウンロードする。
   - 生成された動画をデスクトップに保存して簡単に表示する。
 - 公式ドキュメントを確認：[Azure OpenAI Sora動画生成](https://learn.microsoft.com/azure/ai-services/openai/concepts/video-generation)
-- サンプルはこちら：[レッスン3：コア生成AI技術 /src/VideoGeneration-AzureSora-01/Program.cs](../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
+- サンプルはこちら：[レッスン3：コア生成AI技術 /src/VideoGeneration-AzureSora-01/Program.cs](../../../03-CoreGenerativeAITechniques/src/VideoGeneration-AzureSora-01/Program.cs)
 
 ### 新しいeShopLiteシナリオ：並行エージェントオーケストレーション（2025年6月）
 
@@ -29,7 +29,7 @@
   - レッスン3では、新しいAzure OpenAI画像生成モデル`gpt-image-1`を使用するコードサンプルと説明を含んでいます。
   - .NETから最新のAzure OpenAI機能を使用して画像を生成する方法を学習できます。
   - [公式Azure OpenAI DALL·Eドキュメント](https://learn.microsoft.com/azure/ai-services/openai/how-to/dall-e?tabs=gpt-image-1)と[openai-dotnet画像生成ガイド](https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-generate-images)で詳細を確認してください。
-  - サンプルはこちら：[レッスン3：コア生成AI技術](../../03-CoreGenerativeAITechniques/)。
+  - サンプルはこちら：[レッスン3：コア生成AI技術](../../../03-CoreGenerativeAITechniques/)。
 
 ### AI ToolkitとDockerを使用してローカルモデルを実行
 
@@ -41,7 +41,7 @@
 
 - **.NET用モデルコンテキストプロトコル**：異なるプロバイダーのAIモデルと通信するための標準化された方法を提供する[MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk)のサポートを追加しました。
 - この統合により、プロバイダーロックインを削減しながら、モデルとのより一貫した相互作用が可能になります。
-- [コア生成AI技術](../../03-CoreGenerativeAITechniques/)セクションでMCP統合を示す新しいサンプルをご確認ください。
+- [コア生成AI技術](../../../03-CoreGenerativeAITechniques/)セクションでMCP統合を示す新しいサンプルをご確認ください。
 
 ### eShopLiteシナリオリポジトリ
 

@@ -22,7 +22,7 @@
 - [視覺與音頻 AI 應用](./03-vision-audio.md)  
 - [使用 Azure OpenAI 生成圖像](./05-ImageGenerationOpenAI.md)  
 - [代理](04-agents.md)
-- [使用 AI Toolkit、Docker 和 Foundry Local 在本地運行模型](./06-LocalModelRunners.md)  
+- [使用 AI Toolkit、Docker 和 Foundry Local 在本地運行模型](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)  
 
 首先，我們將從語言模型的補全、聊天應用以及在 .NET 中的函數實現開始學習。
 

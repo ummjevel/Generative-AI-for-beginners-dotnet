@@ -46,7 +46,7 @@ In dem [ImageGeneration-01](./src/ImageGeneration-01)-Beispiel haben wir eine Ko
 
 ## Als nächstes
 
-👉 [Lasst uns lokale Modelle mit AI Toolkit, Docker und Foundry Local ausführen!](./06-LocalModelRunners.md)
+👉 [Lasst uns lokale Modelle mit AI Toolkit, Docker und Foundry Local ausführen!](../../../03-CoreGenerativeAITechniques/06-LocalModelRunners.md)
 
 **Haftungsausschluss**:  
 Dieses Dokument wurde mit KI-gestützten maschinellen Übersetzungsdiensten übersetzt. Obwohl wir uns um Genauigkeit bemühen, weisen wir darauf hin, dass automatisierte Übersetzungen Fehler oder Ungenauigkeiten enthalten können. Das Originaldokument in seiner ursprünglichen Sprache sollte als maßgebliche Quelle betrachtet werden. Für kritische Informationen wird eine professionelle menschliche Übersetzung empfohlen. Wir übernehmen keine Haftung für Missverständnisse oder Fehlinterpretationen, die sich aus der Nutzung dieser Übersetzung ergeben.
