@@ -14,5 +14,6 @@
 	  <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.12.0" />
 	  <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.12.0" />
 	  <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.12.0" />
+    <PackageReference Include="ModelContextProtocol" Version="0.3.0-preview.3" />
   </ItemGroup>
 </Project>
