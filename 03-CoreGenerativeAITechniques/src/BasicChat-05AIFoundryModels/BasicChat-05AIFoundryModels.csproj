@@ -7,12 +7,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UserSecretsId>2a714645-d488-4c22-be11-b6f155b55d20</UserSecretsId>
+    <IncludePrerelease>true</IncludePrerelease>
   </PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Azure.Identity" Version="1.14.2" />
-		<PackageReference Include="Microsoft.Extensions.AI" Version="9.7.1" />
-		<PackageReference Include="Microsoft.Extensions.AI.AzureAIInference" Version="9.7.1-preview.1.25365.4" />
+		<PackageReference Include="Microsoft.Extensions.AI" Version="9.7.1-preview" />
+		<PackageReference Include="Microsoft.Extensions.AI.AzureAIInference" Version="9.7.1-preview" />
 		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.7.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.7" />
 		<PackageReference Include="Microsoft.SemanticKernel" Version="1.61.0" />
