@@ -28,18 +28,22 @@ Don't forget to [star (🌟) this repo](https://docs.github.com/en/get-started/e
 
 ➡️Get your own copy by [Forking this repo](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/fork) and find it next in your own repositories.
 
-## ✨ What's New!
+## ✨ What's New
 
 We're constantly improving this course with the latest AI tools, models, and practical samples:
 
-- **🖼️ New! Hugging Face MCP Server Image Generation Samples!**
+- **� New! Basic Chat App for OpenAI gpt-oss Model!**
+
+  Try out our new [Basic Chat application](./03-CoreGenerativeAITechniques/src/BasicChat-07Ollama-gpt-oss) designed to test the [OpenAI gpt-oss model](https://openai.com/index/introducing-gpt-oss/). This sample demonstrates how to use the latest open-source model from OpenAI in a .NET console app, making it easy to experiment with conversational AI locally or in the cloud.
+
+- **🖼️ Hugging Face MCP Server Image Generation Samples!**
 
   Explore new C# console app samples that show how to use the Hugging Face MCP Server to generate images directly from your code.
 
   - [Try the sample using GitHub Models or Azure AI Foundry](./03-CoreGenerativeAITechniques/src/MCP-01-HuggingFace/Program.cs)
   - [Use Ollama for local model inference](./03-CoreGenerativeAITechniques/src/MCP-02-HuggingFace-Ollama/Program.cs)
 
-- **🕹️ New! Apps Generated with AI**
+- **🕹️ Apps Generated with AI**
 
   We're excited to introduce a new section featuring full applications generated with AI tools like GitHub Copilot Agent. These apps demonstrate how generative AI can be used to build real-world .NET solutions leveraging AI as a co-pilot.
 
@@ -87,7 +91,6 @@ You'll learn how to implement Generative AI into .NET projects, from basic text 
 | Portuguese           | pt   | [Portuguese Translation](./translations/pt/README.md)   | 2025-06-24   |
 | Spanish              | es   | [Spanish Translation](./translations/es/README.md)      | 2025-06-24   |
 | German               | de   | [German Translation](./translations/de/README.md)       | 2025-06-24   |
-
 
 > **Note:** All translations were updated to match the original content on **2025-06-24**. See [PR #161](https://github.com/microsoft/Generative-AI-for-beginners-dotnet/pull/161) for details.
 
@@ -142,7 +145,7 @@ We have a lot of other content to help your learning journey. Check out:
 - [AI Agents for Beginners - A Course](https://aka.ms/ai-agents-beginners)
 - [Data Science for Beginners](https://aka.ms/datascience-beginners)
 - [ML for Beginners](https://aka.ms/ml-beginners)
-- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101) 
+- [Cybersecurity for Beginners](https://github.com/microsoft/Security-101)
 - [Web Dev for Beginners](https://aka.ms/webdev-beginners)
 - [IoT for Beginners](https://aka.ms/iot-beginners)
 - [XR Development for Beginners](https://github.com/microsoft/xr-development-for-beginners)
